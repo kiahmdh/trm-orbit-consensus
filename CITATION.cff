@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "Beyond Majority Voting: Structured Orbit Consensus for Tiny Recursive Models"
+type: software
+version: 0.1.0
+date-released: 2026-08-18
+authors:
+  - family-names: Aryafar
+    given-names: Aida
+  - family-names: Hamidieh
+    given-names: Kiarash
+license: MIT
+abstract: >-
+  Training-free structured aggregation and diagnostics for cached Tiny Recursive
+  Model augmentation orbits on ARC-AGI-1 and ARC-AGI-2.
