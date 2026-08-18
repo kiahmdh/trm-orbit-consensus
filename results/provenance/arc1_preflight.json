@@ -1,0 +1,33 @@
+{
+  "build_spec": {
+    "expected_identifier_count": 876406,
+    "num_aug": 1000,
+    "seed": 42,
+    "subsets": [
+      "training",
+      "evaluation",
+      "concept"
+    ],
+    "test_set_name": "evaluation"
+  },
+  "checkpoint_embedding_rows": 876406,
+  "checkpoint_revision": "sha256:53689643ad1606d7c22c758f8af0a71b3b66275dea074f214d2f1048d9a01fb0",
+  "code_revision": "010206d1f0c25ebac0865f69e39c09969e6b896b",
+  "dataset_revision": "010206d1f0c25ebac0865f69e39c09969e6b896b",
+  "identifier_count": 876406,
+  "prediction_shards": [],
+  "transform_gate": {
+    "dihedral_ids_seen": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "translated_cases": 4090,
+    "trials": 4096
+  }
+}

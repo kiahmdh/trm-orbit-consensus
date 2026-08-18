@@ -1,0 +1,80 @@
+{
+  "date": "2026-08-18",
+  "execution": {
+    "cpu_only": true,
+    "gpu_inference_run": false,
+    "caches_modified": false
+  },
+  "provenance": {
+    "trm_revision": "010206d1f0c25ebac0865f69e39c09969e6b896b",
+    "checkpoint_hf_revision": "55ced5dd59de74c52f53d47aa2898232b5a15b7a",
+    "proposal_document_id": "16QicLuTfwuobtOYIl4xeEKZ2krRWdOOyXKsX2Uomh3w"
+  },
+  "arc1_blank": {
+    "verdict": "valid retained-prediction zero-embedding ablation; published 0% scorer output is an evaluator-mask artifact",
+    "blank_identifier": 0,
+    "identifier_zero_label": "<blank>",
+    "checkpoint_row_zero": {
+      "all_zero": true,
+      "l2_norm": 0.0,
+      "sample_rows_1_to_10000_median_norm": 3.1617190837860107
+    },
+    "blanking_stage": "model input only; original identifier retained for inverse transform and grouping",
+    "inventory": {
+      "puzzles": 400,
+      "descriptors": 419,
+      "candidates": 385815,
+      "normal_blank_task_ids_equal": true,
+      "candidate_counts_equal": true,
+      "augmentation_indices_equal": true,
+      "inverse_transform_identifiers_equal": true,
+      "queries_targets_supports_equal": true,
+      "unchanged_paired_emissions": 9904,
+      "unchanged_paired_emission_fraction": 0.02567033422754429
+    },
+    "scores": {
+      "retained_prediction_upstream_pass_at_1": 0.035,
+      "retained_prediction_upstream_pass_at_2": 0.0425,
+      "pinned_experiment_script_score": 0.0,
+      "pinned_experiment_script_prediction_rows_scored": 0
+    },
+    "pinned_evaluator_issue": "outputs with puzzle_identifier == blank_identifier_id are padding-masked before voting; the experiment overwrites every real identifier with that sentinel",
+    "correct_task_ids": [
+      "070dd51e#0", "1d0a4b61#0", "256b0a75#0", "40f6cd08#0",
+      "60c09cac#0", "762cd429#0", "7ee1c6ea#0", "9def23fe#0",
+      "af24b4cc#0", "c663677b#0", "ca8f78db#0", "d017b73f#0",
+      "e7b06bea#0", "e95e3d8e#0"
+    ],
+    "gpu_rerun_recommended": false
+  },
+  "arc2": {
+    "verdict": "internally reproduced under pinned evaluator; external 6.2% unresolved",
+    "checkpoint": "arc_v2_public/step_723914",
+    "config_sha256": "9ae234d5892f2ffe7e89177710eaef4dc2fb5c3dc989b1a72f4cc88a84f750ac",
+    "dataset_recipe": {
+      "seed": 42,
+      "num_aug": 1000,
+      "subsets": ["training2", "evaluation2", "concept"],
+      "test_set_name": "evaluation2"
+    },
+    "identifier_count": 1191730,
+    "checkpoint_embedding_rows": 1191730,
+    "inventory": {"puzzles": 120, "descriptors": 172, "candidates": 170393},
+    "pinned_upstream_evaluator": {
+      "pass@1": 0.029166666666666667,
+      "pass@2": 0.05,
+      "pass@5": 0.06944444444444445,
+      "pass@10": 0.07222222222222222,
+      "pass@100": 0.10833333333333334,
+      "pass@1000": 0.11666666666666667
+    },
+    "online_orbit_b1": 0.029166666666666667,
+    "cache_recomputed_b1": 0.029166666666666667,
+    "top1_task_mismatches": 0,
+    "invalid_candidates": 188,
+    "invalid_exclusion_changes_scores": false,
+    "external_reference": 0.062,
+    "external_reference_status": "unresolved",
+    "downstream_classification": "diagnostic/supporting only"
+  }
+}

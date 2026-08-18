@@ -1,0 +1,24 @@
+{
+  "candidate_count": 170393,
+  "descriptors_with_invalid": 26,
+  "invalid_candidate_fraction": 0.0011033317096359593,
+  "invalid_candidates": 188,
+  "invalid_ranked_top1_descriptors": 7,
+  "invalid_ranked_top2_descriptors": 8,
+  "upstream_scores_excluding_invalid_sensitivity": {
+    "pass@1": 0.029166666666666667,
+    "pass@10": 0.07222222222222222,
+    "pass@100": 0.10833333333333334,
+    "pass@1000": 0.11666666666666667,
+    "pass@2": 0.05,
+    "pass@5": 0.06944444444444445
+  },
+  "upstream_scores_including_invalid": {
+    "pass@1": 0.029166666666666667,
+    "pass@10": 0.07222222222222222,
+    "pass@100": 0.10833333333333334,
+    "pass@1000": 0.11666666666666667,
+    "pass@2": 0.05,
+    "pass@5": 0.06944444444444445
+  }
+}

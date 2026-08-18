@@ -1,0 +1,212 @@
+{
+  "cache_fingerprint": {
+    "aggregate_sha256": "81f5f077adcc35770053c162486ea98c19953b1a94912f4dccf3998021043d20",
+    "npz_bytes": 9825347,
+    "npz_files": 172
+  },
+  "cache_treated_as_immutable": true,
+  "classification": "unresolved/supporting; external 6.2% reference not reproduced",
+  "counts": {
+    "candidates": 170393,
+    "descriptors": 172,
+    "puzzles": 120
+  },
+  "coverage_conditioned": [
+    {
+      "covered_puzzles": 17,
+      "method": "B0",
+      "mrr_given_covered": 0.17647058823529413,
+      "rank1_given_covered": 0.17647058823529413,
+      "top2_given_covered": 0.17647058823529413
+    },
+    {
+      "covered_puzzles": 17,
+      "method": "B1",
+      "mrr_given_covered": 0.39361341048329884,
+      "rank1_given_covered": 0.2647058823529412,
+      "top2_given_covered": 0.4117647058823529
+    },
+    {
+      "covered_puzzles": 17,
+      "method": "M1",
+      "mrr_given_covered": 0.3878816793716697,
+      "rank1_given_covered": 0.2647058823529412,
+      "top2_given_covered": 0.38235294117647056
+    },
+    {
+      "covered_puzzles": 17,
+      "method": "M1+M2",
+      "mrr_given_covered": 0.37083300955891607,
+      "rank1_given_covered": 0.2647058823529412,
+      "top2_given_covered": 0.3235294117647059
+    },
+    {
+      "covered_puzzles": 17,
+      "method": "M1+M2+M3",
+      "mrr_given_covered": 0.37083300955891607,
+      "rank1_given_covered": 0.2647058823529412,
+      "top2_given_covered": 0.3235294117647059
+    }
+  ],
+  "defect_auroc": [
+    {
+      "auroc_defect_for_incorrectness": 0.8279174330676476,
+      "auroc_negative_defect_for_correctness": 0.8279174330676476,
+      "descriptors": 172,
+      "puzzle_weighted_point_biserial_defect_correctness": -0.12076000611584373,
+      "puzzles": 120,
+      "split": "all"
+    }
+  ],
+  "frozen_hyperparameters": {
+    "dev_puzzle_ids_sha256": "d58a469503ff133c7f713bf43270a745398f49e09be51a432c0a5ffbf713e096",
+    "m1": {
+      "beta": 1.0,
+      "definition": "distinct",
+      "definition_order": 0,
+      "dev_rank1_accuracy": 0.4025,
+      "dev_top2_accuracy": 0.4375
+    },
+    "m2": {
+      "dev_rank1_accuracy": 0.3975,
+      "dev_top2_accuracy": 0.4375,
+      "epsilon": 1e-06,
+      "interpolation": 0.05,
+      "marginal_support": "emitted",
+      "support_order": 0
+    },
+    "parameters": {
+      "beta": 1.0,
+      "definition": "distinct",
+      "epsilon": 1e-06,
+      "interpolation": 0.05,
+      "marginal_support": "emitted"
+    },
+    "selection_split": "dev"
+  },
+  "invalid_predictions": {
+    "candidate_count": 170393,
+    "descriptors_with_invalid": 26,
+    "invalid_candidate_fraction": 0.0011033317096359593,
+    "invalid_candidates": 188,
+    "invalid_ranked_top1_descriptors": 7,
+    "invalid_ranked_top2_descriptors": 8,
+    "upstream_scores_excluding_invalid_sensitivity": {
+      "pass@1": 0.029166666666666667,
+      "pass@10": 0.07222222222222222,
+      "pass@100": 0.10833333333333334,
+      "pass@1000": 0.11666666666666667,
+      "pass@2": 0.05,
+      "pass@5": 0.06944444444444445
+    },
+    "upstream_scores_including_invalid": {
+      "pass@1": 0.029166666666666667,
+      "pass@10": 0.07222222222222222,
+      "pass@100": 0.10833333333333334,
+      "pass@1000": 0.11666666666666667,
+      "pass@2": 0.05,
+      "pass@5": 0.06944444444444445
+    }
+  },
+  "methods": [
+    {
+      "coverage": 0.11666666666666667,
+      "descriptor_count": 172,
+      "method": "B0",
+      "mrr": 0.020833333333333332,
+      "puzzle_count": 120,
+      "rank1_accuracy": 0.020833333333333332,
+      "selection_gap": 0.09583333333333334,
+      "top2_accuracy": 0.020833333333333332
+    },
+    {
+      "coverage": 0.11666666666666667,
+      "descriptor_count": 172,
+      "method": "B1",
+      "mrr": 0.045026946114763634,
+      "puzzle_count": 120,
+      "rank1_accuracy": 0.029166666666666667,
+      "selection_gap": 0.0875,
+      "top2_accuracy": 0.05
+    },
+    {
+      "coverage": 0.11666666666666667,
+      "descriptor_count": 172,
+      "method": "M1",
+      "mrr": 0.04419887577106884,
+      "puzzle_count": 120,
+      "rank1_accuracy": 0.029166666666666667,
+      "selection_gap": 0.0875,
+      "top2_accuracy": 0.04583333333333333
+    },
+    {
+      "coverage": 0.11666666666666667,
+      "descriptor_count": 172,
+      "method": "M1+M2",
+      "mrr": 0.041594505414008845,
+      "puzzle_count": 120,
+      "rank1_accuracy": 0.029166666666666667,
+      "selection_gap": 0.0875,
+      "top2_accuracy": 0.0375
+    },
+    {
+      "coverage": 0.11666666666666667,
+      "descriptor_count": 172,
+      "method": "M1+M2+M3",
+      "mrr": 0.041594505414008845,
+      "puzzle_count": 120,
+      "rank1_accuracy": 0.029166666666666667,
+      "selection_gap": 0.0875,
+      "top2_accuracy": 0.0375
+    }
+  ],
+  "reproduction": {
+    "cache_recomputed_b1": 0.029166666666666667,
+    "external_reference": 0.062,
+    "external_reference_status": "unresolved",
+    "online_orbit_b1": 0.029166666666666667,
+    "online_upstream_task_mismatches": [],
+    "pinned_upstream_evaluator": {
+      "pass@1": 0.029166666666666667,
+      "pass@10": 0.07222222222222222,
+      "pass@100": 0.10833333333333334,
+      "pass@1000": 0.11666666666666667,
+      "pass@2": 0.05,
+      "pass@5": 0.06944444444444445
+    }
+  },
+  "runtime_seconds": 204.57122130459175,
+  "selection_gap": [
+    {
+      "budget": 50,
+      "clamped_descriptors": 0,
+      "effective_budget_max": 50,
+      "effective_budget_min": 50,
+      "majority_at_k_mean": 0.03125,
+      "pass_at_k_mean": 0.07416666666666667,
+      "repeats": 10,
+      "selection_gap_mean": 0.042916666666666665
+    },
+    {
+      "budget": 250,
+      "clamped_descriptors": 1,
+      "effective_budget_max": 250,
+      "effective_budget_min": 72,
+      "majority_at_k_mean": 0.029166666666666667,
+      "pass_at_k_mean": 0.08472222222222223,
+      "repeats": 10,
+      "selection_gap_mean": 0.055555555555555546
+    },
+    {
+      "budget": 1000,
+      "clamped_descriptors": 3,
+      "effective_budget_max": 1000,
+      "effective_budget_min": 72,
+      "majority_at_k_mean": 0.029166666666666667,
+      "pass_at_k_mean": 0.11583333333333334,
+      "repeats": 10,
+      "selection_gap_mean": 0.08666666666666667
+    }
+  ],
+  "status": "passed_supporting_only"
+}

@@ -1,0 +1,26 @@
+{
+  "dev_puzzle_ids_sha256": "d58a469503ff133c7f713bf43270a745398f49e09be51a432c0a5ffbf713e096",
+  "m1": {
+    "beta": 1.0,
+    "definition": "distinct",
+    "definition_order": 0,
+    "dev_rank1_accuracy": 0.4025,
+    "dev_top2_accuracy": 0.4375
+  },
+  "m2": {
+    "dev_rank1_accuracy": 0.3975,
+    "dev_top2_accuracy": 0.4375,
+    "epsilon": 1e-06,
+    "interpolation": 0.05,
+    "marginal_support": "emitted",
+    "support_order": 0
+  },
+  "parameters": {
+    "beta": 1.0,
+    "definition": "distinct",
+    "epsilon": 1e-06,
+    "interpolation": 0.05,
+    "marginal_support": "emitted"
+  },
+  "selection_split": "dev"
+}

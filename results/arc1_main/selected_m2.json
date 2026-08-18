@@ -1,0 +1,8 @@
+{
+  "dev_rank1_accuracy": 0.3975,
+  "dev_top2_accuracy": 0.4375,
+  "epsilon": 1e-06,
+  "interpolation": 0.05,
+  "marginal_support": "emitted",
+  "support_order": 0
+}

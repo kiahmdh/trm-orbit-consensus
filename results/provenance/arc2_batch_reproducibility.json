@@ -1,0 +1,29 @@
+{
+  "probe_predictions": 80,
+  "production_batch_size": 1,
+  "batch1_repeat": {
+    "grid_differences": 0,
+    "q_value_differences": 0
+  },
+  "batch1_vs_batch2": {
+    "grid_differences": 31,
+    "q_value_differences": 59,
+    "max_abs_q_value_difference": 0.06385944411158562
+  },
+  "batch2_vs_batch4": {
+    "grid_differences": 0,
+    "q_value_differences": 0
+  },
+  "batch2_vs_batch8": {
+    "grid_differences": 0,
+    "q_value_differences": 0
+  },
+  "probe_predictions_per_second": {
+    "batch1_first_compile_included": 2.263850894937385,
+    "batch1_repeat": 2.558311440083041,
+    "batch2": 2.265910061802771,
+    "batch4": 2.8240112582867725,
+    "batch8": 2.4858712870842945
+  },
+  "note": "Batches 2, 4, and 8 agreed with each other but not with batch 1. Production used deterministic batch size 1."
+}

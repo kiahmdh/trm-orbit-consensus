@@ -1,0 +1,12 @@
+{
+  "augmentation_indices_equal": true,
+  "blank_correct_descriptors": 14,
+  "blank_correct_puzzles": 14,
+  "candidate_count": 385815,
+  "candidate_counts_equal": true,
+  "identical_emission_fraction": 0.02567033422754429,
+  "identical_emissions": 9904,
+  "inverse_transform_identifiers_equal": true,
+  "queries_targets_equal": true,
+  "task_id_sets_equal": true
+}

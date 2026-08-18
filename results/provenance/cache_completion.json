@@ -1,0 +1,41 @@
+{
+  "arc1_normal": {
+    "status": "passed",
+    "batch_size": 1,
+    "puzzles": 400,
+    "descriptors": 419,
+    "candidates": 385815,
+    "invalid_predictions": 92,
+    "online_b1": 0.4,
+    "cache_b1": 0.4,
+    "published_reference_b1": 0.4,
+    "cache_bytes": 14655304,
+    "aggregate_cache_sha256": "6cb320cb9b0e45c114d95722654663d2b7e98b01027a1d4a647c21ea4ce60fa1"
+  },
+  "arc1_blank": {
+    "status": "passed_with_scorer_caveat",
+    "batch_size": 1,
+    "puzzles": 400,
+    "descriptors": 419,
+    "candidates": 385815,
+    "invalid_predictions": 720,
+    "online_b1": 0.035,
+    "cache_b1": 0.035,
+    "cache_bytes": 17122246,
+    "aggregate_cache_sha256": "9982f59fd5b952f6e80430adadebf047b107d357a18c04abf3cc30b204f0e5bd"
+  },
+  "arc2_normal": {
+    "status": "passed_with_external_reproduction_caveat",
+    "batch_size": 1,
+    "puzzles": 120,
+    "descriptors": 172,
+    "candidates": 170393,
+    "invalid_predictions": 188,
+    "pinned_upstream_b1": 0.029166666666666667,
+    "online_b1": 0.029166666666666667,
+    "cache_b1": 0.029166666666666667,
+    "pinned_upstream_pass_at_2": 0.05,
+    "cache_bytes": 9825347,
+    "aggregate_cache_sha256": "81f5f077adcc35770053c162486ea98c19953b1a94912f4dccf3998021043d20"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "arc1": {
+    "subsets": ["training", "evaluation", "concept"],
+    "test_set_name": "evaluation",
+    "seed": 42,
+    "num_aug": 1000,
+    "code_revision": "010206d1f0c25ebac0865f69e39c09969e6b896b",
+    "identifier_count": 876406,
+    "identifier_file_sha256": "9f42efad9afc8796ba45dafa973e19484bc7d9006a847eba632453ff397b1ac9",
+    "observed_directory_bytes": 7273795728,
+    "expected_relative_path": "data/arc1concept-aug-1000"
+  },
+  "arc2": {
+    "subsets": ["training2", "evaluation2", "concept"],
+    "test_set_name": "evaluation2",
+    "seed": 42,
+    "num_aug": 1000,
+    "code_revision": "010206d1f0c25ebac0865f69e39c09969e6b896b",
+    "identifier_count": 1191730,
+    "identifier_file_sha256": "d7ff9bada1e1b449013a475ea6cd83d4dfda6c38ad40ca58940c2c7e6ad3aca3",
+    "observed_directory_bytes": 9648612450,
+    "expected_relative_path": "data/arc2concept-aug-1000"
+  }
+}

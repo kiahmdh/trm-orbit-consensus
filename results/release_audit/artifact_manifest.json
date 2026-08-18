@@ -1,0 +1,17 @@
+[
+  {
+    "bytes": 1125,
+    "path": "audit_report.json",
+    "sha256": "38290e9799b4cadd92141d38015b2593bffe7deb92d31c0ffe3496980e8b2891"
+  },
+  {
+    "bytes": 7091,
+    "path": "integrity_report.json",
+    "sha256": "ac0f830a2470c94e198e90426045399f1fa25c5b8d425695336c3239eea4e96d"
+  },
+  {
+    "bytes": 119,
+    "path": "shape_hedged_second_attempt.csv",
+    "sha256": "94c9185ba3978c70a395ce43b367c2cf8cb7b31b02c1a98594af9e870e1f7914"
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "all": {
+    "candidate_count": 385815,
+    "descriptors_with_invalid": 80,
+    "invalid_candidate_fraction": 0.0018661793864935268,
+    "invalid_candidates": 720,
+    "invalid_ranked_top1_descriptors": 13,
+    "invalid_ranked_top2_descriptors": 22,
+    "upstream_scores_excluding_invalid_sensitivity": {
+      "pass@1": 0.035,
+      "pass@10": 0.06125,
+      "pass@100": 0.09125,
+      "pass@1000": 0.09875,
+      "pass@2": 0.0425,
+      "pass@5": 0.05
+    },
+    "upstream_scores_including_invalid": {
+      "pass@1": 0.035,
+      "pass@10": 0.06125,
+      "pass@100": 0.09125,
+      "pass@1000": 0.09875,
+      "pass@2": 0.0425,
+      "pass@5": 0.05
+    }
+  },
+  "committed_test": {
+    "candidate_count": 192808,
+    "descriptors_with_invalid": 43,
+    "invalid_candidate_fraction": 0.0019034479897099706,
+    "invalid_candidates": 367,
+    "invalid_ranked_top1_descriptors": 4,
+    "invalid_ranked_top2_descriptors": 11,
+    "upstream_scores_excluding_invalid_sensitivity": {
+      "pass@1": 0.04,
+      "pass@10": 0.065,
+      "pass@100": 0.095,
+      "pass@1000": 0.1025,
+      "pass@2": 0.045,
+      "pass@5": 0.05
+    },
+    "upstream_scores_including_invalid": {
+      "pass@1": 0.04,
+      "pass@10": 0.065,
+      "pass@100": 0.095,
+      "pass@1000": 0.1025,
+      "pass@2": 0.045,
+      "pass@5": 0.05
+    }
+  }
+}

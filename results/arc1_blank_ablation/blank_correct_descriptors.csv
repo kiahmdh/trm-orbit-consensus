@@ -1,0 +1,15 @@
+task_id,puzzle_id,pair_index,candidate_count,target_votes,runner_up_votes,majority_margin,majority_share,same_normal_blank_emissions,same_normal_blank_fraction,normal_top1_same,normal_top1_correct,identity_prediction_correct,query_equals_target,target_monochrome,fully_identifier_invariant,substantial_emission_overlap,sparse_plurality
+070dd51e#0,070dd51e,0,1001,7,5,2,0.006993006993006993,7,0.006993006993006993,True,True,False,False,False,False,False,True
+1d0a4b61#0,1d0a4b61,0,1001,461,18,443,0.46053946053946054,187,0.18681318681318682,True,True,False,False,False,False,False,False
+256b0a75#0,256b0a75,0,1001,666,61,605,0.6653346653346653,695,0.6943056943056943,True,True,False,False,False,False,True,False
+40f6cd08#0,40f6cd08,0,1001,6,3,3,0.005994005994005994,0,0.0,True,True,False,False,False,False,False,True
+60c09cac#0,60c09cac,0,1001,79,26,53,0.07892107892107893,72,0.07192807192807193,True,True,False,False,False,False,False,False
+762cd429#0,762cd429,0,1001,459,56,403,0.45854145854145856,539,0.5384615384615384,True,True,False,False,False,False,True,False
+7ee1c6ea#0,7ee1c6ea,0,1001,79,29,50,0.07892107892107893,53,0.052947052947052944,True,True,True,False,False,False,False,False
+9def23fe#0,9def23fe,0,1001,364,338,26,0.36363636363636365,394,0.3936063936063936,True,True,True,False,False,False,False,False
+af24b4cc#0,af24b4cc,0,1001,81,43,38,0.08091908091908091,90,0.0899100899100899,True,True,False,False,False,False,False,False
+c663677b#0,c663677b,0,1001,1001,0,1001,1.0,1001,1.0,True,True,True,False,False,True,True,False
+ca8f78db#0,ca8f78db,0,1001,826,31,795,0.8251748251748252,506,0.5054945054945055,True,True,True,False,False,False,True,False
+d017b73f#0,d017b73f,0,1001,610,86,524,0.6093906093906094,560,0.5594405594405595,True,True,False,False,False,False,True,False
+e7b06bea#0,e7b06bea,0,1001,22,5,17,0.02197802197802198,11,0.01098901098901099,True,True,False,False,False,False,False,False
+e95e3d8e#0,e95e3d8e,0,1001,994,3,991,0.993006993006993,809,0.8081918081918081,True,True,True,False,False,False,True,False

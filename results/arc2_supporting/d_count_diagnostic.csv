@@ -1,0 +1,4 @@
+definition,finite_descriptors,undefined_descriptors,puzzle_weighted_mean_spearman,descriptor_median_spearman
+distinct,156,16,0.1393823463045077,0.11662032750942126
+multiset,157,15,0.17529781637758468,0.14747091129835982
+non_identical_support,156,16,0.14325726829395316,0.13421114581085164

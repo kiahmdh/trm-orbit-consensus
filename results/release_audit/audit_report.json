@@ -1,0 +1,42 @@
+{
+  "classification": "post-freeze CPU-only derivation of committed proposal section 4.6",
+  "descriptors": 208,
+  "dev_puzzle_ids_sha256": "d58a469503ff133c7f713bf43270a745398f49e09be51a432c0a5ffbf713e096",
+  "frozen_parameters": {
+    "beta": 1.0,
+    "definition": "distinct",
+    "epsilon": 1e-06,
+    "interpolation": 0.05,
+    "marginal_support": "emitted"
+  },
+  "output": {
+    "bytes": 122,
+    "path": "shape_hedged_second_attempt.csv",
+    "sha256": "415abdc828b540930f252e1807c72e60c520aeb208985ead60880c4bc236e857"
+  },
+  "puzzles": 200,
+  "results": [
+    {
+      "difference": -0.01,
+      "method": "M1+M2",
+      "shape_hedged_top2": 0.4275,
+      "split": "dev",
+      "standard_top2": 0.4375
+    },
+    {
+      "difference": -0.01,
+      "method": "M1+M2+M3",
+      "shape_hedged_top2": 0.4275,
+      "split": "dev",
+      "standard_top2": 0.4375
+    }
+  ],
+  "selection_split": "dev",
+  "shape_selection_trigger": {
+    "covered_descriptors": 131,
+    "puzzle_weighted_loss_rate": 0.01,
+    "shape_selection_losses_on_covered": 2
+  },
+  "status": "passed",
+  "test_split_inspected_for_selection": false
+}

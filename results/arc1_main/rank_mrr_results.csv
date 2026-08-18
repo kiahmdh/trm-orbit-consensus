@@ -1,0 +1,6 @@
+method,puzzle_weighted_mrr_all,target_ranked_coverage,descriptor_median_finite_rank,max_finite_rank
+B0,0.2925,0.2925,1.0,1.0
+B1,0.4532629025683677,0.6175,1.0,302.0
+M1,0.4530315878495292,0.6175,1.0,722.0
+M1+M2,0.4475657729973969,0.5875,1.0,600.0
+M1+M2+M3,0.4475657729973969,0.5875,1.0,600.0

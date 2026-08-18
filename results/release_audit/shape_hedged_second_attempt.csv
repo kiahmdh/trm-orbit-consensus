@@ -1,0 +1,3 @@
+split,method,standard_top2,shape_hedged_top2,difference
+dev,M1+M2,0.4375,0.4275,-0.01
+dev,M1+M2+M3,0.4375,0.4275,-0.01

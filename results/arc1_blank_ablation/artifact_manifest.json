@@ -1,0 +1,77 @@
+[
+  {
+    "bytes": 7655,
+    "path": "analysis_report.json",
+    "sha256": "ad0a4e3b0a3079832f4d1c978e8603fa9bba7c929e94d9824fe67ece3da6f1da"
+  },
+  {
+    "bytes": 2032,
+    "path": "blank_correct_descriptors.csv",
+    "sha256": "604a00dc3efcc579ffb99292205a1bb1a8de77f6baca68359c529f51dad771b8"
+  },
+  {
+    "bytes": 365,
+    "path": "cache_inventory_comparison.json",
+    "sha256": "cd9db0cca07dbc6df74b388e299a06a3d9fe3dcf96bec7fd2a925c68135693e3"
+  },
+  {
+    "bytes": 418,
+    "path": "coverage_conditioned_results.csv",
+    "sha256": "ef4c904b33619607d7380f9c715e256646e855e20b3ad6d7939030607378c639"
+  },
+  {
+    "bytes": 286,
+    "path": "d_count_diagnostic.csv",
+    "sha256": "9b862758b7fd471de3393443f17bb260da78383b297ae1b4d26d7c8f2cfd60f1"
+  },
+  {
+    "bytes": 357,
+    "path": "defect_auroc.csv",
+    "sha256": "1ef6b8c6758096a342181dc48a6b3fb71aa372e62ba935c2f10673852d5025e6"
+  },
+  {
+    "bytes": 371,
+    "path": "frozen_method_results.csv",
+    "sha256": "62c26dc9cab62e3c41e0b6d50a2a82482c5e71f1c9b66f450f47efa69cec5c9d"
+  },
+  {
+    "bytes": 1331,
+    "path": "invalid_prediction_statistics.json",
+    "sha256": "2148426351f2b47d0b9e765c1bee20b4d5cfadd25282fb48346da22edaaa6d91"
+  },
+  {
+    "bytes": 94731,
+    "path": "orbit_statistics.csv",
+    "sha256": "cb09b1177bbb9fea08f7b0bfc81cfb65da1fba1493a7e356c15e0fb9b0551334"
+  },
+  {
+    "bytes": 723,
+    "path": "orbit_statistics_summary.csv",
+    "sha256": "64fee369a0cdf17e8d9266dcf14dd579b345f18d1fc79aed78d6208f10c65382"
+  },
+  {
+    "bytes": 840,
+    "path": "paired_bootstrap_cis.csv",
+    "sha256": "1b43bc5a11d841c4f283cde6fb46fb540c44e2c1d035c0a17a59eb1e0fcc61a9"
+  },
+  {
+    "bytes": 294,
+    "path": "rank_mrr_results.csv",
+    "sha256": "516a0d956ae4711abec4c48f6cf1e0b5774bacac43bb367c31026cba2d0daf0b"
+  },
+  {
+    "bytes": 1608,
+    "path": "selection_gap_repeats.csv",
+    "sha256": "1ecac1a2a7b303a23225e552c60993a5706a4f33f51fe7edb42068bfcc125009"
+  },
+  {
+    "bytes": 314,
+    "path": "selection_gap_summary.csv",
+    "sha256": "58d5d4406925cb3da1a47a9c268433d69e25129a268a7336118bedaef652bc5b"
+  },
+  {
+    "bytes": 20208,
+    "path": "shape_screening_diagnostics.csv",
+    "sha256": "d0b2b8618d72b9ef152cccde8e9f13d8c48d0ae9732c7a9416d63b7c3bbff0b6"
+  }
+]

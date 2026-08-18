@@ -1,0 +1,162 @@
+{
+  "cache_path": "<external-cache>/arc1_normal",
+  "cache_treated_as_immutable": true,
+  "counts": {
+    "candidates": 385815,
+    "descriptors": 419,
+    "dev_descriptors": 208,
+    "dev_puzzles": 200,
+    "invalid_predictions": 92,
+    "puzzles": 400,
+    "test_descriptors": 211,
+    "test_puzzles": 200
+  },
+  "frozen_hyperparameters": {
+    "dev_puzzle_ids_sha256": "d58a469503ff133c7f713bf43270a745398f49e09be51a432c0a5ffbf713e096",
+    "m1": {
+      "beta": 1.0,
+      "definition": "distinct",
+      "definition_order": 0,
+      "dev_rank1_accuracy": 0.4025,
+      "dev_top2_accuracy": 0.4375
+    },
+    "m2": {
+      "dev_rank1_accuracy": 0.3975,
+      "dev_top2_accuracy": 0.4375,
+      "epsilon": 1e-06,
+      "interpolation": 0.05,
+      "marginal_support": "emitted",
+      "support_order": 0
+    },
+    "parameters": {
+      "beta": 1.0,
+      "definition": "distinct",
+      "epsilon": 1e-06,
+      "interpolation": 0.05,
+      "marginal_support": "emitted"
+    },
+    "selection_split": "dev"
+  },
+  "h1": [
+    {
+      "auroc_defect_for_incorrectness": 0.8215755208333333,
+      "auroc_negative_defect_for_correctness": 0.8215755208333333,
+      "descriptors": 419,
+      "puzzle_weighted_point_biserial_defect_correctness": -0.3561751889305399,
+      "puzzles": 400,
+      "split": "all"
+    },
+    {
+      "auroc_defect_for_incorrectness": 0.8048226728254912,
+      "auroc_negative_defect_for_correctness": 0.8048226728254912,
+      "descriptors": 208,
+      "puzzle_weighted_point_biserial_defect_correctness": -0.3402942496399334,
+      "puzzles": 200,
+      "split": "dev"
+    },
+    {
+      "auroc_defect_for_incorrectness": 0.8418617947451856,
+      "auroc_negative_defect_for_correctness": 0.8418617947451856,
+      "descriptors": 211,
+      "puzzle_weighted_point_biserial_defect_correctness": -0.37240640283659626,
+      "puzzles": 200,
+      "split": "test"
+    }
+  ],
+  "m3_summary": {
+    "puzzle_weighted_fallback_rate": 0.005,
+    "puzzle_weighted_filter_fraction": 0.008416097791097792,
+    "puzzle_weighted_target_shape_allowed": 0.86
+  },
+  "main_test_results": [
+    {
+      "coverage": 0.6175,
+      "descriptor_count": 211,
+      "method": "B0",
+      "mrr": 0.2925,
+      "puzzle_count": 200,
+      "rank1_accuracy": 0.2925,
+      "selection_gap": 0.325,
+      "top2_accuracy": 0.2925
+    },
+    {
+      "coverage": 0.6175,
+      "descriptor_count": 211,
+      "method": "B1",
+      "mrr": 0.4532629025683677,
+      "puzzle_count": 200,
+      "rank1_accuracy": 0.4025,
+      "selection_gap": 0.215,
+      "top2_accuracy": 0.455
+    },
+    {
+      "coverage": 0.6175,
+      "descriptor_count": 211,
+      "method": "M1",
+      "mrr": 0.4530315878495292,
+      "puzzle_count": 200,
+      "rank1_accuracy": 0.4025,
+      "selection_gap": 0.215,
+      "top2_accuracy": 0.455
+    },
+    {
+      "coverage": 0.6175,
+      "descriptor_count": 211,
+      "method": "M1+M2",
+      "mrr": 0.4475657729973969,
+      "puzzle_count": 200,
+      "rank1_accuracy": 0.4125,
+      "selection_gap": 0.205,
+      "top2_accuracy": 0.44
+    },
+    {
+      "coverage": 0.6175,
+      "descriptor_count": 211,
+      "method": "M1+M2+M3",
+      "mrr": 0.4475657729973969,
+      "puzzle_count": 200,
+      "rank1_accuracy": 0.4125,
+      "selection_gap": 0.205,
+      "top2_accuracy": 0.44
+    }
+  ],
+  "output_files": [
+    "committed_split.json",
+    "compute_matched_results.csv",
+    "coverage_conditioned_results.csv",
+    "d_count_diagnostic.csv",
+    "error_correlation_results.csv",
+    "frozen_hyperparameters.json",
+    "h1_auroc_results.csv",
+    "m1_dev_sweep.csv",
+    "m2_dev_sweep.csv",
+    "main_test_results.csv",
+    "marginal_support_ablation.csv",
+    "orbit_statistics.csv",
+    "orbit_statistics_summary.csv",
+    "paired_bootstrap_cis.csv",
+    "rank_mrr_results.csv",
+    "selected_m1.json",
+    "selected_m2.json",
+    "selection_gap.csv",
+    "shape_screening_diagnostics.csv"
+  ],
+  "pending": [
+    "puzzle-ID ablation (blank-ID cache unavailable)",
+    "ARC-v2 supporting analysis (ARC-v2 cache unavailable)"
+  ],
+  "runtime_seconds": 1495.4437085371464,
+  "scope": "ARC-v1 normal cache only",
+  "status": "passed",
+  "test_b1": 0.4025,
+  "validation": {
+    "bootstrap_resamples": 10000,
+    "finite_main_metrics": true,
+    "full_cache_b1": 0.4,
+    "invalid_predictions_preserved": 92,
+    "puzzle_level_bootstrap": true,
+    "puzzle_level_split": true,
+    "puzzle_weighted_metrics": true,
+    "test_parameters_frozen_from_dev": true
+  }
+}

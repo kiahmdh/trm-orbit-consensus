@@ -1,0 +1,27 @@
+[
+  {
+    "bytes": 722,
+    "path": "arc1_preflight.json",
+    "sha256": "598d9a84635d2ebb8f2771f1164899c2f337281d92f11050fcc4ab709bc770fe"
+  },
+  {
+    "bytes": 813,
+    "path": "arc2_batch_reproducibility.json",
+    "sha256": "70e9b38d82978f85223fa973b1bebe01674355669b5956c4ea970d74d6255cf8"
+  },
+  {
+    "bytes": 1233,
+    "path": "cache_completion.json",
+    "sha256": "2013d8d1bf8f791afcf0014d65f5ae0cb41b53fd8af1c8a4ab33d6dfc0d4bf26"
+  },
+  {
+    "bytes": 887,
+    "path": "dataset_builds.json",
+    "sha256": "56e88b402256df78c3027932d610c551829b571d443e0e3dad64ce8226dc4b12"
+  },
+  {
+    "bytes": 745,
+    "path": "upstream_revisions.json",
+    "sha256": "4d73ddf6be5a67d6063c122f26b568537c7383286e69526a3d931590c5bb2b64"
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "trm_repository": "https://github.com/AntonioRoye/TinyRecursiveModels.git",
+  "trm_commit": "010206d1f0c25ebac0865f69e39c09969e6b896b",
+  "hugging_face_repository": "arcprize/trm_arc_prize_verification",
+  "hugging_face_revision": "55ced5dd59de74c52f53d47aa2898232b5a15b7a",
+  "checkpoints": {
+    "arc1": {
+      "relative_path": "arc_v1_public/step_518071",
+      "bytes": 1822205258,
+      "sha256": "53689643ad1606d7c22c758f8af0a71b3b66275dea074f214d2f1048d9a01fb0"
+    },
+    "arc2": {
+      "relative_path": "arc_v2_public/step_723914",
+      "bytes": 2467988810,
+      "sha256": "8d7036b97e7ea38c7dd29d01216bfcfc4e212af3024d5233fe40dd3059e8f4a9"
+    }
+  },
+  "arc_agi_2_reference_commit": "f3283f727488ad98fe575ea6a5ac981e4a188e49"
+}

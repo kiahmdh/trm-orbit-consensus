@@ -1,0 +1,7 @@
+{
+  "beta": 1.0,
+  "definition": "distinct",
+  "definition_order": 0,
+  "dev_rank1_accuracy": 0.4025,
+  "dev_top2_accuracy": 0.4375
+}
