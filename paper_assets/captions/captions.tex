@@ -1,0 +1,46 @@
+% Auto-generated caption drafts; numbers resolve through macros/numbers.tex.
+
+% Figure 1
+\caption{Majority voting leaves \GapKthousand{} percentage points of generated-but-unselected correct answers at the full ARC-1 orbit budget: pass@$k$ reaches \CoverageKthousand\% while majority reaches \MajorityKthousand\%. Results use all \ARCOnePuzzles{} ARC-1 puzzles.}
+
+% Figure 2
+\caption{On ARC-1 TEST, structural defect supports abstention relative to random ordering, including \DefectAccuracyQuarter\% accuracy at \QuarterCoverage\% coverage, but its AURC (\DefectAURCFour) is worse than vote margin (\MarginAURCFour), vote share, and vote entropy. Lower AURC is better; this is a frozen confidence diagnostic, not a superior selector claim.}
+
+% Figure 3
+\caption{DEV-only beta dynamics are mixed and non-monotonic. Rank-1 changes little for positive beta, while only \BetaFlipLeSweep\% of \BetaFlipDescriptors{} eligible descriptor comparisons are flippable by the original sweep maximum $\beta=\BetaSweepMaximum$; the median empirical threshold is \BetaFlipMedianTwo. Net fix-minus-break annotations refer to distinct centrality.}
+
+% Figure A1
+\caption{Compute-matched ARC-1 accuracy clusters tightly across budgets and frozen methods. The deliberately truncated \ComputeAxisLow--\ComputeAxisHigh\% y-axis makes small differences visible; the audit found no Q or full-orbit leakage.}
+
+% Figure A2
+\caption{Frozen ARC-1 pair-scoped orbits vary widely in modal vote share and distinct candidate grids across \ARCOneDescriptors{} descriptors, motivating separation of candidate generation from selection.}
+
+% Figure A3
+\caption{On ARC-1 TEST, blanking puzzle identity collapses coverage from \NormalCoverage\% to \BlankCoverage\% and B1 Rank-1 from \NormalBOne\% to \BlankBOne\%. Whiskers show frozen Rank-1 bootstrap intervals; no coverage interval was stored.}
+
+% Figure A4
+\caption{ARC-2 supporting-only risk--coverage: structural defect AURC is \ARCTwoDefectAURC{} versus random expectation \ARCTwoRandomAURC. The difference from random is ambiguous, and the result is internally consistent under the pinned path, not an external benchmark reproduction.}
+
+% Table 1
+\caption{Frozen ARC-1 TEST results. M1 gives no Rank-1 gain; M1+M2 gains \MTwoRankDelta{} percentage point with a confidence interval including zero and reduces Top-2 by \MTwoTopDelta{} points. The result is exploratory.}
+
+% Table 2
+\caption{On \FailureCount{} covered ARC-1 DEV B1 failures, the original signal prefers the correct alternative only \FailPrefCorrectCount{} times versus \FailPrefWrongCount{} wrong preferences. The discriminative-cell variant improves local alignment but is DEV-only and was never evaluated on TEST.}
+
+% Table A1
+\caption{Frozen compute-matched ARC-1 Rank-1 accuracy at $k\in\{\BudgetFifty,\BudgetTwoFifty,\BudgetThousand\}$. Values are \GapRepeats-repeat means from the audited implementation.}
+
+% Table A2
+\caption{The ARC-1 candidate-generation/selection gap grows from \GapKFifty{} points at $k=\BudgetFifty$ to \GapKthousand{} points at $k=\BudgetThousand$.}
+
+% Table A3
+\caption{Frozen ARC-1 TEST selective-prediction AURCs and paired bootstrap comparisons. Structural defect beats random ordering but is reliably worse than vote margin, vote share, and vote entropy; positive defect-minus-baseline differences favor the baseline.}
+
+% Table A4
+\caption{Frozen ARC-2 supporting results. Rank-1 is \ARCTwoBOne\% for every structured method and coverage is \ARCTwoCoverage\%; the result is internally consistent under the pinned path, not external benchmark reproduction.}
+
+% Table A5
+\caption{Frozen ARC-1 TEST M3 diagnostics. Shape screening is active for \MThreeActive\% of puzzles but filters only \MThreeFiltered\% of emissions and changes Rank-1 by \MThreeRankChange{} percentage points.}
+
+% Table A6
+\caption{DEV-only discriminative-cell transitions on the \FailureCount{} covered B1 failures. \DiscWrongToCorrect{} wrong decisions become correct, \DiscCorrectToWrong{} correct decision becomes wrong, and the variant was not promoted to TEST.}

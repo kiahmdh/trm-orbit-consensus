@@ -7,6 +7,10 @@ the cache format, aggregation methods, frozen analyses, compact scientific resul
 and reproducibility metadata. Model weights, processed datasets, and prediction
 caches are intentionally not committed.
 
+**EXPERIMENTS FROZEN AS OF FINAL PHASE-4 AUDIT.** The authoritative frozen record is
+in `results/final_freeze/`; no result in that record is a prompt for further tuning
+or held-out evaluation.
+
 ## Main findings
 
 ARC-AGI-1 has a large candidate-selection gap. Across the full 400-puzzle cache,
@@ -28,6 +32,13 @@ The M2 gain over B1 is exploratory: +1.00 percentage point, with a 10,000-resamp
 paired puzzle bootstrap CI of [0.00, 2.50] points and two-sided p = 0.266. The
 interval includes zero, so this is not statistically persuasive evidence of an
 improvement. M1 and M3 do not improve rank-1; M2 also lowers top-2 by 1.5 points.
+
+Structural defect also supports selective prediction relative to random ordering
+(AURC 0.315862, 95% CI [0.246809, 0.394852], versus random 0.597500), but it is not
+a superior confidence measure: vote margin, vote share, and vote entropy all have
+lower AURC. Phase-1/2 diagnostics show that local structural signal exists but is
+poorly aligned with the exact majority failures, and a DEV-only discriminative-cell
+variant was therefore classified ambiguous/no-go without TEST evaluation.
 
 ## Ablations and supporting evaluation
 
@@ -53,6 +64,7 @@ src/           CPU cache schema, aggregation, diagnostics, and analyses
 scripts/       CPU analysis, audit, preflight, and compact-result verification
 experiments/   Deterministic dataset builder, GPU probe, and resumable cache runner
 results/       Compact immutable tables, reports, caveat audit, and provenance
+paper_assets/  Camera-ready PDFs, PNG previews, tables, macros, captions, and renderer
 docs/          Experiment status, coverage, results, and reproduction instructions
 tests/         Unit tests, including invalid (0, 0) prediction round trips
 manifests/     Scientific-artifact and complete release manifests
@@ -81,6 +93,27 @@ python scripts/verify_compact_results.py
 
 The compact verification command requires no GPU, checkpoint, processed dataset,
 or prediction cache.
+
+Camera-ready assets use only the frozen JSON/CSV record and can be rebuilt without
+prediction caches or a GPU:
+
+```bash
+python -m pip install -e '.[figures]'
+CUDA_VISIBLE_DEVICES= PYTHONDONTWRITEBYTECODE=1 python paper_assets/build_assets.py
+```
+
+Before uploading a software/artifact release, refresh only the publication inventory,
+verify it, and build the deterministic archive:
+
+```bash
+python scripts/generate_manifests.py --release-only
+python scripts/verify_release.py
+python scripts/package_release.py
+```
+
+The archive is written next to this repository and excludes `.git`, virtual
+environments, caches, checkpoints, datasets, and prediction artifacts. See
+[PUBLICATION_CHECKLIST.md](docs/PUBLICATION_CHECKLIST.md).
 
 ## Data and checkpoints
 
@@ -171,6 +204,12 @@ path for an independent reproduction.
 - `results/release_audit/`: definitive integrity report and the post-freeze §4.6 audit.
 - `results/provenance/`: revisions, build recipes, cache inventories, and checksums.
 - `results/paper_summary/`: concise paper-facing machine-readable summary.
+- `results/top_mode_diagnostic/` through `results/discriminative_cell_dev/`: compact
+  Phase-1/2 mechanism and policy audits.
+- `results/risk_coverage/` and `results/risk_coverage_bootstrap/`: frozen Phase-3
+  selective-prediction outputs.
+- `results/final_freeze/`: authoritative headline manifest, claims, reconciliation,
+  and scientific-artifact checksums.
 
 See [RESULTS.md](docs/RESULTS.md) for the authoritative narrative and
 [PROPOSAL_COVERAGE.md](docs/PROPOSAL_COVERAGE.md) for the line-by-line runbook audit.

@@ -1,0 +1,33 @@
+{
+  "allowed_indices_q_equals_reduced_orbit_q": true,
+  "buggy_hybrid_full_q_winner": "B",
+  "correct_reduced_orbit_winner": "A",
+  "duplicates_inside_and_outside_selected_set": true,
+  "full_orbit_mean_q": {
+    "A": 0.5333333333333333,
+    "B": 0.81
+  },
+  "grid_ids": {
+    "A": "59794cac235653057ff2",
+    "B": "06eb3688a0fac5800103",
+    "outside_only_C": "15626cf7c598cf4bb2fb"
+  },
+  "passed": true,
+  "purpose": "equal selected votes; selected mean-Q favors A; full-orbit mean-Q favors B",
+  "result_deterministic_across_reruns": true,
+  "selected_indices": [
+    0,
+    2,
+    5,
+    7
+  ],
+  "selected_indices_non_contiguous": true,
+  "selected_mean_q": {
+    "A": 0.8,
+    "B": 0.45
+  },
+  "selected_vote_counts": {
+    "A": 2,
+    "B": 2
+  }
+}

@@ -3,7 +3,7 @@ message: "If you use this software, please cite it using the metadata below."
 title: "Beyond Majority Voting: Structured Orbit Consensus for Tiny Recursive Models"
 type: software
 version: 0.1.0
-date-released: 2026-08-18
+date-released: 2026-08-19
 authors:
   - family-names: Aryafar
     given-names: Aida

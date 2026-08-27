@@ -9,8 +9,8 @@ description = "Training-free structured aggregation for cached TRM augmentation 
 readme = "README.md"
 license = { file = "LICENSE" }
 authors = [
-  { name = "Kiarash Hamidieh" },
   { name = "Aida Aryafar" },
+  { name = "Kiarash Hamidieh" },
 ]
 requires-python = ">=3.10"
 dependencies = [
@@ -22,6 +22,9 @@ dev = [
   "pytest>=8,<9",
   "ruff>=0.9,<1",
 ]
+figures = [
+  "matplotlib>=3.8,<4",
+]
 
 [tool.setuptools.packages.find]
 where = ["src"]
@@ -32,3 +35,7 @@ testpaths = ["tests"]
 [tool.ruff]
 line-length = 100
 target-version = "py310"
+
+[tool.ruff.lint.per-file-ignores]
+"experiments/*.py" = ["E402"]
+"scripts/trm_preflight.py" = ["E402"]

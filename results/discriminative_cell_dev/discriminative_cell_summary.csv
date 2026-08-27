@@ -1,0 +1,15 @@
+record_type,method,beta,dev_rank1_accuracy,dev_top2_accuracy,changed_descriptors,changed_puzzles_any,changed_puzzle_equivalents,changed_puzzle_equivalent_fraction,fixes_descriptors,breaks_descriptors,wrong_to_different_wrong_descriptors,fixes_puzzle_equivalents,breaks_puzzle_equivalents,wrong_to_different_wrong_puzzle_equivalents,same_as_B1_puzzle_equivalents,net_gain_puzzle_equivalents,failure_descriptors,failure_puzzles,fixed_descriptors,same_wrong_descriptors,different_wrong_descriptors,fixed_puzzle_equivalents,same_wrong_puzzle_equivalents,different_wrong_puzzle_equivalents,feature,scope,pairwise_accuracy,pairwise_ci95_low,pairwise_ci95_high,pooled_auc,eligible_puzzles,eligible_descriptors,correct_preferred_failure_puzzles,wrong_preferred_failure_puzzles,tie_failure_puzzles
+method,B1,0.0,0.3975,0.4375,0,0,0,0.0,0,0,0,0,0,0,200.0,0,,,,,,,,,,,,,,,,,,,
+method,original_M1,1.0,0.4025,0.4375,6,6,6.0,0.03,1,0,5,1.0,0,5.0,194.0,1.0,,,,,,,,,,,,,,,,,,,
+method,discriminative_M1,1.0,0.4,0.4325,18,18,17.0,0.085,2,2,14,2.0,1.5,13.5,183.0,0.5,,,,,,,,,,,,,,,,,,,
+method,discriminative_M1,4.0,0.3875,0.43,52,50,49.0,0.245,3,6,43,2.5,4.5,42.0,151.0,-2.0,,,,,,,,,,,,,,,,,,,
+failure_subset,B1,0.0,,,,,,,,,,,,,,,47,46,0,47,0,0.0,46.0,0.0,,,,,,,,,,,
+failure_subset,original_M1,1.0,,,,,,,,,,,,,,,47,46,1,46,0,1.0,45.0,0.0,,,,,,,,,,,
+failure_subset,discriminative_M1,1.0,,,,,,,,,,,,,,,47,46,2,40,5,2.0,39.0,5.0,,,,,,,,,,,
+failure_subset,discriminative_M1,4.0,,,,,,,,,,,,,,,47,46,3,30,14,3.0,29.0,14.0,,,,,,,,,,,
+local_signal,,,,,,,,,,,,,,,,,,,,,,,,,original,top2,0.7469135802469136,0.654320987654321,0.8333333333333334,0.5451182454749637,81,87,0,0,0
+local_signal,,,,,,,,,,,,,,,,,,,,,,,,,original,top5,0.729868913857678,0.6643258426966292,0.7940074906367042,0.5491473096148192,89,95,0,0,0
+local_signal,,,,,,,,,,,,,,,,,,,,,,,,,original,covered_B1_failures,0.30434782608695654,0.0,0.0,0.0,46,47,14,32,0
+local_signal,,,,,,,,,,,,,,,,,,,,,,,,,discriminative,top2,0.7469135802469136,0.654320987654321,0.8333333333333334,0.7660853481305324,81,87,0,0,0
+local_signal,,,,,,,,,,,,,,,,,,,,,,,,,discriminative,top5,0.5994850187265918,0.5365168539325843,0.6596441947565542,0.5567039106145252,89,95,0,0,0
+local_signal,,,,,,,,,,,,,,,,,,,,,,,,,discriminative,covered_B1_failures,0.5543478260869565,0.0,0.0,0.0,46,47,21,16,9

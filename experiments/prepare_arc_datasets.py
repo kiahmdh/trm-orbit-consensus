@@ -15,7 +15,6 @@ if str(UPSTREAM_ROOT) not in sys.path:
 
 from dataset.build_arc_dataset import DataProcessConfig, convert_dataset
 
-
 @dataclass(frozen=True)
 class DatasetRecipe:
     name: str
@@ -127,7 +126,5 @@ def main() -> None:
 
     print("Prepared checkpoint-aligned dataset:")
     print(json.dumps(manifest, indent=2))
-
-
 if __name__ == "__main__":
     main()

@@ -1,0 +1,42 @@
+[
+  {
+    "bytes": 2443,
+    "path": "arc2_bootstrap_summary.csv",
+    "sha256": "cd73ef5c13c37aa2662d359e983a7a16f9d84498f7eda8716d9cd851dfc53fc5"
+  },
+  {
+    "bytes": 1003,
+    "path": "aurc_bootstrap_arc1.csv",
+    "sha256": "22b0830b1e8191e40eb249b8cdd989d96eeacb1e31f6fbf5c4b0345305702424"
+  },
+  {
+    "bytes": 1349,
+    "path": "aurc_bootstrap_summary.csv",
+    "sha256": "f8b176612b8cccd71647e889cf84d86856f4b9c75756b5280ece0d7867930a73"
+  },
+  {
+    "bytes": 1511,
+    "path": "aurc_paired_differences.csv",
+    "sha256": "7ef1c0240efcee42f5ed9dde6a7165180d9d146fe5f5892b88001cb67cbac12c"
+  },
+  {
+    "bytes": 2196,
+    "path": "blank_bootstrap_summary.csv",
+    "sha256": "6815915c4d98929e2812203caacc56e771b7fa359f8cd495974337b267dfeb24"
+  },
+  {
+    "bytes": 1790,
+    "path": "operating_point_bootstrap_arc1.csv",
+    "sha256": "25b1926e5a91b5e8712bd7cd8f2f0f6eab6295b33fc3657889c924b02760513e"
+  },
+  {
+    "bytes": 4499,
+    "path": "risk_coverage_bootstrap_report.md",
+    "sha256": "e704769aeac553f5e2a73d3b18d14518d00f5a27f9b342f9e3b10e62d98215a0"
+  },
+  {
+    "bytes": 17915,
+    "path": "risk_coverage_bootstrap_summary.json",
+    "sha256": "256a610cf7f29c51d021442883fde4fad7220171e2ecf445dcb55d897111b816"
+  }
+]

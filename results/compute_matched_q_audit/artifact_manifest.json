@@ -1,0 +1,22 @@
+[
+  {
+    "bytes": 1123,
+    "path": "compute_matched_q_audit.csv",
+    "sha256": "890f4c151d98eb509d5ba24cb8a175ef66bcdc1ad4c10439c43e6fb8af119e7d"
+  },
+  {
+    "bytes": 16611,
+    "path": "compute_matched_q_audit.json",
+    "sha256": "af9a8b916b65aff63714ab1093a27141d1f2183916b1f6c67617b8eb031ca5bc"
+  },
+  {
+    "bytes": 4944,
+    "path": "compute_matched_q_audit.md",
+    "sha256": "8b93fa5126d4296496cb2f8ae8314f7108bf835e368e9f7eedc8c576ca1e6e73"
+  },
+  {
+    "bytes": 756,
+    "path": "synthetic_q_subsample_case.json",
+    "sha256": "aea2864bbe7d5f9ca2cad06695ec1d860fc96be946ebc9d8cbaf4bdef62b6e1a"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "bytes": 13022,
+    "path": "b1_failure_pairwise.csv",
+    "sha256": "0e9ac15e9bf758472a2adf7e30c715cc6f1dc3a0284b164b2aa777c66f4a925e"
+  },
+  {
+    "bytes": 3514,
+    "path": "diagnostic_report.md",
+    "sha256": "2686b32c741c4fdaa3d5042f0b55a153789f65e583f9832b6a4778933ce971b7"
+  },
+  {
+    "bytes": 45008,
+    "path": "top2_cases.csv",
+    "sha256": "78a1baf118cd6fa431943a2c4c3ab4e0c50c6467d8b035540ccb4f2501c2a951"
+  },
+  {
+    "bytes": 108693,
+    "path": "top5_cases.csv",
+    "sha256": "40a2f5bc4b7626e8caed228ad0eb510a5a4871d78aac272fe2af0e17f9f29161"
+  },
+  {
+    "bytes": 12494,
+    "path": "top_mode_summary.csv",
+    "sha256": "086e1a6568614f65f03774c611010df338e299a7196f4e4a0410a18e15ceb11b"
+  },
+  {
+    "bytes": 10257,
+    "path": "top_mode_summary.json",
+    "sha256": "9230cd5fc006f8b0175001c3a18efdd49491791f63653e96b5bb0bbf8c4b8b06"
+  }
+]

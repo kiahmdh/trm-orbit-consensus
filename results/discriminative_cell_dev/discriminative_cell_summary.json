@@ -1,0 +1,579 @@
+{
+  "b1_failure_method_results": [
+    {
+      "beta": 0.0,
+      "different_wrong_descriptors": 0,
+      "different_wrong_puzzle_equivalents": 0.0,
+      "failure_descriptors": 47,
+      "failure_puzzles": 46,
+      "fixed_descriptors": 0,
+      "fixed_puzzle_equivalents": 0.0,
+      "method": "B1",
+      "same_wrong_descriptors": 47,
+      "same_wrong_puzzle_equivalents": 46.0
+    },
+    {
+      "beta": 1.0,
+      "different_wrong_descriptors": 0,
+      "different_wrong_puzzle_equivalents": 0.0,
+      "failure_descriptors": 47,
+      "failure_puzzles": 46,
+      "fixed_descriptors": 1,
+      "fixed_puzzle_equivalents": 1.0,
+      "method": "original_M1",
+      "same_wrong_descriptors": 46,
+      "same_wrong_puzzle_equivalents": 45.0
+    },
+    {
+      "beta": 1.0,
+      "different_wrong_descriptors": 5,
+      "different_wrong_puzzle_equivalents": 5.0,
+      "failure_descriptors": 47,
+      "failure_puzzles": 46,
+      "fixed_descriptors": 2,
+      "fixed_puzzle_equivalents": 2.0,
+      "method": "discriminative_M1",
+      "same_wrong_descriptors": 40,
+      "same_wrong_puzzle_equivalents": 39.0
+    },
+    {
+      "beta": 4.0,
+      "different_wrong_descriptors": 14,
+      "different_wrong_puzzle_equivalents": 14.0,
+      "failure_descriptors": 47,
+      "failure_puzzles": 46,
+      "fixed_descriptors": 3,
+      "fixed_puzzle_equivalents": 3.0,
+      "method": "discriminative_M1",
+      "same_wrong_descriptors": 30,
+      "same_wrong_puzzle_equivalents": 29.0
+    }
+  ],
+  "background_dominance": {
+    "b1_failure_winner_vs_correct": {
+      "comparison_type": "covered_B1_failure_winner_vs_correct",
+      "disagreement_fraction_mean": 0.11504783954660329,
+      "disagreement_fraction_median": 0.04,
+      "equal_shape_nonempty_comparisons": 46,
+      "fraction_with_at_least_90_percent_agreement_descriptive": 0.6739130434782609,
+      "mean_agreement_explained_by_shared_dominant_color": 0.660372337218777,
+      "mean_dominant_color_occupancy": 0.6723452201918659,
+      "median_agreement_explained_by_shared_dominant_color": 0.7360396136686768,
+      "median_dominant_color_occupancy": 0.6681072428971588,
+      "ordinary_similarity_mean": 0.8849521604533966,
+      "ordinary_similarity_median": 0.96,
+      "ordinary_similarity_q25": 0.835,
+      "ordinary_similarity_q75": 0.9823949579831932,
+      "total_comparisons": 47
+    },
+    "covered_top2_modes": {
+      "comparison_type": "covered_top2_B1_modes",
+      "disagreement_fraction_mean": 0.10956467903936204,
+      "disagreement_fraction_median": 0.04,
+      "equal_shape_nonempty_comparisons": 118,
+      "fraction_with_at_least_90_percent_agreement_descriptive": 0.7288135593220338,
+      "mean_agreement_explained_by_shared_dominant_color": 0.5798834102046141,
+      "mean_dominant_color_occupancy": 0.61599138091432,
+      "median_agreement_explained_by_shared_dominant_color": 0.6085810668353362,
+      "median_dominant_color_occupancy": 0.6026315789473684,
+      "ordinary_similarity_mean": 0.8904353209606379,
+      "ordinary_similarity_median": 0.96,
+      "ordinary_similarity_q25": 0.8888888888888888,
+      "ordinary_similarity_q75": 0.9839630066902794,
+      "top2_available_comparisons": 124,
+      "top2_unavailable_comparisons": 7,
+      "total_comparisons": 131
+    },
+    "threshold_note": "90% agreement is a descriptive mechanism summary only and was not used in mask construction, gating, or tuning"
+  },
+  "classification": {
+    "additional_correct_preferred_failure_puzzles": 7,
+    "case": "AMBIGUOUS",
+    "predeclared_gate_rule": "GO requires at least five additional correct-preferred failure puzzles (~11 pp), DEV Rank-1 >= frozen M1, and fixes > breaks; NO-GO if local gain <=2, DEV Rank-1 < B1, or fixes <= breaks; otherwise AMBIGUOUS",
+    "reason": "The local and DEV evidence is mixed and does not support a defensible TEST evaluation."
+  },
+  "failure_preference_transitions": {
+    "descriptor_counts": {
+      "both_correct": 13,
+      "both_wrong": 16,
+      "original_correct_to_discriminative_wrong": 1,
+      "original_wrong_to_discriminative_correct": 8,
+      "ties": 9
+    },
+    "puzzle_counts": {
+      "both_correct": 13,
+      "both_wrong": 15,
+      "original_correct_to_discriminative_wrong": 1,
+      "original_wrong_to_discriminative_correct": 8,
+      "ties": 9
+    }
+  },
+  "local_signal": {
+    "discriminative": {
+      "b1_failure": {
+        "descriptor_count": 47,
+        "preference_counts_descriptor": {
+          "correct_preferred": 21,
+          "tie": 9,
+          "wrong_preferred": 17
+        },
+        "preference_counts_puzzle": {
+          "correct_preferred": 21,
+          "tie": 9,
+          "wrong_preferred": 16
+        },
+        "preference_fractions_descriptor": {
+          "correct_preferred": 0.44680851063829785,
+          "tie": 0.19148936170212766,
+          "wrong_preferred": 0.3617021276595745
+        },
+        "preference_fractions_puzzle": {
+          "correct_preferred": 0.45652173913043476,
+          "tie": 0.1956521739130435,
+          "wrong_preferred": 0.34782608695652173
+        },
+        "puzzle_count": 46,
+        "puzzle_local_pairwise_accuracy": 0.5543478260869565
+      },
+      "top2": {
+        "candidate_mode_count": 174,
+        "eligible_descriptor_count": 87,
+        "eligible_puzzle_count": 81,
+        "pairwise_accuracy": 0.7469135802469136,
+        "pairwise_bootstrap": {
+          "bootstrap_resamples": 10000,
+          "bootstrap_unit": "puzzle",
+          "ci95_high": 0.8333333333333334,
+          "ci95_low": 0.654320987654321,
+          "estimate": 0.7469135802469136
+        },
+        "per_puzzle_auc": {
+          "count": 81,
+          "definition": "mean of pair-scoped descriptor AUROCs within each puzzle",
+          "mean": 0.7469135802469136,
+          "median": 1.0,
+          "std": 0.40156681400717514
+        },
+        "pooled_auc": 0.7660853481305324,
+        "pooled_auc_bootstrap": {
+          "bootstrap_resamples": 10000,
+          "bootstrap_unit": "puzzle",
+          "ci95_high": 0.8448132291274763,
+          "ci95_low": 0.6801222427877257,
+          "estimate": 0.7660853481305324,
+          "valid_bootstrap_resamples": 10000
+        },
+        "preference_counts_descriptor": {
+          "correct_preferred": 60,
+          "tie": 6,
+          "wrong_preferred": 21
+        },
+        "preference_counts_puzzle": {
+          "correct_preferred": 56,
+          "tie": 9,
+          "wrong_preferred": 16
+        },
+        "structural_margin_descriptor": {
+          "count": 87,
+          "fraction_eq_zero": 0.06896551724137931,
+          "fraction_gt_zero": 0.6896551724137931,
+          "fraction_lt_zero": 0.2413793103448276,
+          "mean": 0.24102945383759625,
+          "median": 0.17708333333333334,
+          "q25": 0.0,
+          "q75": 0.5,
+          "std": 0.37937838956493086
+        },
+        "structural_margin_puzzle": {
+          "count": 81,
+          "fraction_eq_zero": 0.07407407407407407,
+          "fraction_gt_zero": 0.691358024691358,
+          "fraction_lt_zero": 0.2345679012345679,
+          "mean": 0.264672352855868,
+          "median": 0.19047619047619052,
+          "q25": 0.0,
+          "q75": 0.5075757575757576,
+          "std": 0.3607233411087761
+        },
+        "top_k": 2
+      },
+      "top5": {
+        "candidate_mode_count": 453,
+        "eligible_descriptor_count": 95,
+        "eligible_puzzle_count": 89,
+        "pairwise_accuracy": 0.5994850187265918,
+        "pairwise_bootstrap": {
+          "bootstrap_resamples": 10000,
+          "bootstrap_unit": "puzzle",
+          "ci95_high": 0.6596441947565542,
+          "ci95_low": 0.5365168539325843,
+          "estimate": 0.5994850187265918
+        },
+        "per_puzzle_auc": {
+          "count": 89,
+          "definition": "mean of pair-scoped descriptor AUROCs within each puzzle",
+          "mean": 0.5994850187265918,
+          "median": 0.625,
+          "std": 0.2928306230707794
+        },
+        "pooled_auc": 0.5567039106145252,
+        "pooled_auc_bootstrap": {
+          "bootstrap_resamples": 10000,
+          "bootstrap_unit": "puzzle",
+          "ci95_high": 0.6073790106038267,
+          "ci95_low": 0.5026419768782868,
+          "estimate": 0.5567039106145252,
+          "valid_bootstrap_resamples": 10000
+        },
+        "preference_counts_descriptor": {
+          "correct_preferred": 59,
+          "tie": 12,
+          "wrong_preferred": 24
+        },
+        "preference_counts_puzzle": {
+          "correct_preferred": 57,
+          "tie": 12,
+          "wrong_preferred": 20
+        },
+        "structural_margin_descriptor": {
+          "count": 95,
+          "fraction_eq_zero": 0.5157894736842106,
+          "fraction_gt_zero": 0.1368421052631579,
+          "fraction_lt_zero": 0.3473684210526316,
+          "mean": -0.06331002446030203,
+          "median": 0.0,
+          "q25": -0.066394641716713,
+          "q75": 0.0,
+          "std": 0.14188366745559194
+        },
+        "structural_margin_puzzle": {
+          "count": 89,
+          "fraction_eq_zero": 0.5280898876404494,
+          "fraction_gt_zero": 0.14606741573033707,
+          "fraction_lt_zero": 0.3258426966292135,
+          "mean": -0.05039424404386938,
+          "median": 0.0,
+          "q25": -0.052238805970149294,
+          "q75": 0.0,
+          "std": 0.12222211917828184
+        },
+        "top_k": 5
+      }
+    },
+    "original": {
+      "b1_failure": {
+        "descriptor_count": 47,
+        "preference_counts_descriptor": {
+          "correct_preferred": 14,
+          "tie": 0,
+          "wrong_preferred": 33
+        },
+        "preference_counts_puzzle": {
+          "correct_preferred": 14,
+          "tie": 0,
+          "wrong_preferred": 32
+        },
+        "preference_fractions_descriptor": {
+          "correct_preferred": 0.2978723404255319,
+          "tie": 0.0,
+          "wrong_preferred": 0.7021276595744681
+        },
+        "preference_fractions_puzzle": {
+          "correct_preferred": 0.30434782608695654,
+          "tie": 0.0,
+          "wrong_preferred": 0.6956521739130435
+        },
+        "puzzle_count": 46,
+        "puzzle_local_pairwise_accuracy": 0.30434782608695654
+      },
+      "top2": {
+        "candidate_mode_count": 174,
+        "eligible_descriptor_count": 87,
+        "eligible_puzzle_count": 81,
+        "pairwise_accuracy": 0.7469135802469136,
+        "pairwise_bootstrap": {
+          "bootstrap_resamples": 10000,
+          "bootstrap_unit": "puzzle",
+          "ci95_high": 0.8333333333333334,
+          "ci95_low": 0.654320987654321,
+          "estimate": 0.7469135802469136
+        },
+        "per_puzzle_auc": {
+          "count": 81,
+          "definition": "mean of pair-scoped descriptor AUROCs within each puzzle",
+          "mean": 0.7469135802469136,
+          "median": 1.0,
+          "std": 0.40156681400717514
+        },
+        "pooled_auc": 0.5451182454749637,
+        "pooled_auc_bootstrap": {
+          "bootstrap_resamples": 10000,
+          "bootstrap_unit": "puzzle",
+          "ci95_high": 0.5703806228373702,
+          "ci95_low": 0.5268518358323722,
+          "estimate": 0.5451182454749637,
+          "valid_bootstrap_resamples": 10000
+        },
+        "preference_counts_descriptor": {
+          "correct_preferred": 60,
+          "tie": 6,
+          "wrong_preferred": 21
+        },
+        "preference_counts_puzzle": {
+          "correct_preferred": 56,
+          "tie": 9,
+          "wrong_preferred": 16
+        },
+        "structural_margin_descriptor": {
+          "count": 87,
+          "fraction_eq_zero": 0.06896551724137931,
+          "fraction_gt_zero": 0.6896551724137931,
+          "fraction_lt_zero": 0.2413793103448276,
+          "mean": 0.05357031057464537,
+          "median": 0.0036199092864990234,
+          "q25": 0.0,
+          "q75": 0.03125,
+          "std": 0.17146227471175568
+        },
+        "structural_margin_puzzle": {
+          "count": 81,
+          "fraction_eq_zero": 0.07407407407407407,
+          "fraction_gt_zero": 0.691358024691358,
+          "fraction_lt_zero": 0.2345679012345679,
+          "mean": 0.05850103011723328,
+          "median": 0.0031313137574628946,
+          "q25": 0.0,
+          "q75": 0.03125,
+          "std": 0.17565146887216157
+        },
+        "top_k": 2
+      },
+      "top5": {
+        "candidate_mode_count": 453,
+        "eligible_descriptor_count": 95,
+        "eligible_puzzle_count": 89,
+        "pairwise_accuracy": 0.729868913857678,
+        "pairwise_bootstrap": {
+          "bootstrap_resamples": 10000,
+          "bootstrap_unit": "puzzle",
+          "ci95_high": 0.7940074906367042,
+          "ci95_low": 0.6643258426966292,
+          "estimate": 0.729868913857678
+        },
+        "per_puzzle_auc": {
+          "count": 89,
+          "definition": "mean of pair-scoped descriptor AUROCs within each puzzle",
+          "mean": 0.729868913857678,
+          "median": 0.8333333333333334,
+          "std": 0.3135585915057344
+        },
+        "pooled_auc": 0.5491473096148192,
+        "pooled_auc_bootstrap": {
+          "bootstrap_resamples": 10000,
+          "bootstrap_unit": "puzzle",
+          "ci95_high": 0.5710419177361715,
+          "ci95_low": 0.5320097818776116,
+          "estimate": 0.5491473096148192,
+          "valid_bootstrap_resamples": 10000
+        },
+        "preference_counts_descriptor": {
+          "correct_preferred": 62,
+          "tie": 15,
+          "wrong_preferred": 18
+        },
+        "preference_counts_puzzle": {
+          "correct_preferred": 59,
+          "tie": 15,
+          "wrong_preferred": 15
+        },
+        "structural_margin_descriptor": {
+          "count": 95,
+          "fraction_eq_zero": 0.08421052631578947,
+          "fraction_gt_zero": 0.45263157894736844,
+          "fraction_lt_zero": 0.4631578947368421,
+          "mean": -0.007196279817549933,
+          "median": 0.0,
+          "q25": -0.005264868947076062,
+          "q75": 0.0038467288017272616,
+          "std": 0.04078833879053025
+        },
+        "structural_margin_puzzle": {
+          "count": 89,
+          "fraction_eq_zero": 0.0898876404494382,
+          "fraction_gt_zero": 0.47191011235955055,
+          "fraction_lt_zero": 0.43820224719101125,
+          "mean": -0.005616692105868069,
+          "median": 0.0,
+          "q25": -0.0026923077992904165,
+          "q75": 0.003999996185302668,
+          "std": 0.03948539763939379
+        },
+        "top_k": 5
+      }
+    }
+  },
+  "mask_definition": {
+    "cells": "exactly positions where B1 top1 != B1 top2",
+    "different_candidate_shapes": "similarity 0",
+    "empty_empty": "similarity 1",
+    "ground_truth_inputs": 0,
+    "hyperparameters_added": 0,
+    "non_applicable": "frozen whole-grid similarity fallback for the descriptor/pair",
+    "source": "top two unique canonical B1 vote modes",
+    "valid": "same non-empty shape and at least one differing cell"
+  },
+  "mechanism_assessment": {
+    "note": "descriptive assessment only; no threshold affected the mask or method",
+    "reason": "B1 failure competitors usually agree over most cells and differ in a comparatively small region.",
+    "supported_descriptively": true
+  },
+  "method_results": [
+    {
+      "beta": 0.0,
+      "breaks_descriptors": 0,
+      "breaks_puzzle_equivalents": 0,
+      "changed_descriptors": 0,
+      "changed_puzzle_equivalent_fraction": 0.0,
+      "changed_puzzle_equivalents": 0,
+      "changed_puzzles_any": 0,
+      "dev_rank1_accuracy": 0.3975,
+      "dev_top2_accuracy": 0.4375,
+      "fixes_descriptors": 0,
+      "fixes_puzzle_equivalents": 0,
+      "method": "B1",
+      "net_gain_puzzle_equivalents": 0,
+      "same_as_B1_puzzle_equivalents": 200.0,
+      "wrong_to_different_wrong_descriptors": 0,
+      "wrong_to_different_wrong_puzzle_equivalents": 0
+    },
+    {
+      "beta": 1.0,
+      "breaks_descriptors": 0,
+      "breaks_puzzle_equivalents": 0,
+      "changed_descriptors": 6,
+      "changed_puzzle_equivalent_fraction": 0.03,
+      "changed_puzzle_equivalents": 6.0,
+      "changed_puzzles_any": 6,
+      "dev_rank1_accuracy": 0.4025,
+      "dev_top2_accuracy": 0.4375,
+      "fixes_descriptors": 1,
+      "fixes_puzzle_equivalents": 1.0,
+      "method": "original_M1",
+      "net_gain_puzzle_equivalents": 1.0,
+      "same_as_B1_puzzle_equivalents": 194.0,
+      "wrong_to_different_wrong_descriptors": 5,
+      "wrong_to_different_wrong_puzzle_equivalents": 5.0
+    },
+    {
+      "beta": 1.0,
+      "breaks_descriptors": 2,
+      "breaks_puzzle_equivalents": 1.5,
+      "changed_descriptors": 18,
+      "changed_puzzle_equivalent_fraction": 0.085,
+      "changed_puzzle_equivalents": 17.0,
+      "changed_puzzles_any": 18,
+      "dev_rank1_accuracy": 0.4,
+      "dev_top2_accuracy": 0.4325,
+      "fixes_descriptors": 2,
+      "fixes_puzzle_equivalents": 2.0,
+      "method": "discriminative_M1",
+      "net_gain_puzzle_equivalents": 0.5,
+      "same_as_B1_puzzle_equivalents": 183.0,
+      "wrong_to_different_wrong_descriptors": 14,
+      "wrong_to_different_wrong_puzzle_equivalents": 13.5
+    },
+    {
+      "beta": 4.0,
+      "breaks_descriptors": 6,
+      "breaks_puzzle_equivalents": 4.5,
+      "changed_descriptors": 52,
+      "changed_puzzle_equivalent_fraction": 0.245,
+      "changed_puzzle_equivalents": 49.0,
+      "changed_puzzles_any": 50,
+      "dev_rank1_accuracy": 0.3875,
+      "dev_top2_accuracy": 0.43,
+      "fixes_descriptors": 3,
+      "fixes_puzzle_equivalents": 2.5,
+      "method": "discriminative_M1",
+      "net_gain_puzzle_equivalents": -2.0,
+      "same_as_B1_puzzle_equivalents": 151.0,
+      "wrong_to_different_wrong_descriptors": 43,
+      "wrong_to_different_wrong_puzzle_equivalents": 42.0
+    }
+  ],
+  "next_steps_started": {
+    "another_method_variant": false,
+    "phase_3": false,
+    "test_evaluation": false
+  },
+  "scope": {
+    "dev_descriptors": 208,
+    "dev_puzzles": 200,
+    "diagnostic_secondary_beta": 4.0,
+    "method_variants": 1,
+    "primary_beta": 1.0,
+    "split": "committed ARC1 DEV only",
+    "step": "Phase 2 Step 2.1 only",
+    "test_evaluated": false
+  },
+  "validation": {
+    "cache_files_written": 0,
+    "cache_fingerprint_after": {
+      "aggregate_sha256": "6cb320cb9b0e45c114d95722654663d2b7e98b01027a1d4a647c21ea4ce60fa1",
+      "npz_bytes": 14655304,
+      "npz_files": 419
+    },
+    "cache_fingerprint_before": {
+      "aggregate_sha256": "6cb320cb9b0e45c114d95722654663d2b7e98b01027a1d4a647c21ea4ce60fa1",
+      "npz_bytes": 14655304,
+      "npz_files": 419
+    },
+    "cache_unchanged": true,
+    "committed_split_sha256_after": "0f6e16e36c3b37703928a294655905d4af659fcda5f9f8b12d5d336931a6106d",
+    "committed_split_sha256_before": "0f6e16e36c3b37703928a294655905d4af659fcda5f9f8b12d5d336931a6106d",
+    "committed_split_unchanged": true,
+    "cuda_visible_devices": "",
+    "dev_cache_payloads_deserialized": 208,
+    "dev_cache_payloads_deserialized_for_inventory_completion": 7,
+    "focused_tests_passed": 8,
+    "frozen_result_tree_after": {
+      "aggregate_sha256": "3d47a841c13904ba4dbe10ac5f7e69adc80b48369e65d35d48e2577258f455ac",
+      "bytes": 159889,
+      "files": 21
+    },
+    "frozen_result_tree_before": {
+      "aggregate_sha256": "3d47a841c13904ba4dbe10ac5f7e69adc80b48369e65d35d48e2577258f455ac",
+      "bytes": 159889,
+      "files": 21
+    },
+    "frozen_result_tree_unchanged": true,
+    "gpu_work_launched": false,
+    "m1_beta_tree_after": {
+      "aggregate_sha256": "c3d269ce09472de70a79ae64451aae73fd12fefd60a550b5be35269088bdf837",
+      "bytes": 2058096,
+      "files": 17
+    },
+    "m1_beta_tree_before": {
+      "aggregate_sha256": "c3d269ce09472de70a79ae64451aae73fd12fefd60a550b5be35269088bdf837",
+      "bytes": 2058096,
+      "files": 17
+    },
+    "m1_beta_tree_unchanged": true,
+    "protected_artifact_files_written": 0,
+    "release_tests_passed": 20,
+    "test_cache_payloads_deserialized": 0,
+    "test_labels_loaded": 0,
+    "top_mode_tree_after": {
+      "aggregate_sha256": "b6836a8a56ba3c94b7331c62f51a062179e08fa94d4b70ec5c44e4be65dc993e",
+      "bytes": 236418,
+      "files": 9
+    },
+    "top_mode_tree_before": {
+      "aggregate_sha256": "b6836a8a56ba3c94b7331c62f51a062179e08fa94d4b70ec5c44e4be65dc993e",
+      "bytes": 236418,
+      "files": 9
+    },
+    "top_mode_tree_unchanged": true,
+    "torch_imported": false
+  }
+}

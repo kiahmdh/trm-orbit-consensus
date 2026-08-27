@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lrrlll}
+\toprule
+Signal & AURC & 95\% CI & Defect $-$ signal [95\% CI] & $P(D<S)$ & $p_{2s}$ \\
+\midrule
+Vote margin & 0.2608 & [0.1987, 0.3340] & +0.0551 [0.0270, 0.0865] & 0.0002 & 0.0006 \\
+Vote share & 0.2621 & [0.1998, 0.3351] & +0.0538 [0.0256, 0.0851] & 0.0001 & 0.0004 \\
+Vote entropy & 0.2777 & [0.2126, 0.3533] & +0.0382 [0.0084, 0.0704] & 0.0059 & 0.0120 \\
+Winner mean-Q & 0.3128 & [0.2435, 0.3944] & +0.0031 [-0.0385, 0.0444] & 0.4438 & 0.8877 \\
+Structural defect & 0.3159 & [0.2468, 0.3949] & --- & --- & --- \\
+Random ordering & 0.5975 & --- & -0.2816 [-0.3096, -0.2463] & 1.0000 & 0.0002 \\
+\bottomrule
+\end{tabular}
+\parbox{\linewidth}{\footnotesize Positive defect-minus-signal differences favor the baseline. For vote margin, the frozen one-sided tail fraction is \MarginTailProbability{} and the separately stored two-sided bootstrap p-value is \MarginTwoSidedP{}.}
+\end{table}

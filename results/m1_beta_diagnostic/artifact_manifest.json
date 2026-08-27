@@ -1,0 +1,32 @@
+[
+  {
+    "bytes": 53872,
+    "path": "m1_beta_changed_fraction.png",
+    "sha256": "4f4780ee4a6300927000ef1ffb6fc8ed7cd1799e50b78fc1df8539169f0fdbce"
+  },
+  {
+    "bytes": 67593,
+    "path": "m1_beta_dev_curve.png",
+    "sha256": "5dfcf32d3713571f6e6ef6e5331dab97a7884fdef0672669c1edc267d431c27a"
+  },
+  {
+    "bytes": 5329,
+    "path": "m1_beta_diagnostic.md",
+    "sha256": "cb6df15d3108ec4cbb38ab5b7abad4c9ac80e5e79c8fdbf82ff731a1818cbb9e"
+  },
+  {
+    "bytes": 24494,
+    "path": "m1_beta_flip_thresholds.csv",
+    "sha256": "024faf40a8281be821dd3c29537605cde5ca4be02257c1bb8de2b5267f95b36b"
+  },
+  {
+    "bytes": 4923,
+    "path": "m1_beta_summary.csv",
+    "sha256": "addc00b17e6fda0e4c254b70bec2932e518dcd9eb86781857b02fb824a60f7e5"
+  },
+  {
+    "bytes": 46708,
+    "path": "m1_beta_summary.json",
+    "sha256": "4a46e5a5f1677b642762107f1b30010b9b216b707c4d09b9276024cdb23c47f5"
+  }
+]

@@ -1,9 +1,12 @@
 {
-  "date": "2026-08-18",
+  "date": "2026-08-19",
+  "freeze_status": "EXPERIMENTS FROZEN AS OF FINAL PHASE-4 AUDIT",
   "validated_main_findings": {
     "arc1_exact_reproduction": {
       "puzzles": 400,
       "descriptors": 419,
+      "candidates": 385815,
+      "invalid_predictions": 92,
       "b1": 0.4,
       "published_reference": 0.4,
       "status": "exact"
@@ -23,6 +26,80 @@
       "M1": {"rank1": 0.4025, "top2": 0.455},
       "M1+M2": {"rank1": 0.4125, "top2": 0.44},
       "M1+M2+M3": {"rank1": 0.4125, "top2": 0.44}
+    },
+    "main_bootstrap_interpretation": {
+      "M1_delta": 0.0,
+      "M1+M2_delta": 0.01,
+      "M1+M2_ci95": [0.0, 0.025],
+      "M1+M2_p": 0.2663733626637336,
+      "status": "exploratory and not statistically persuasive"
+    }
+  },
+  "final_diagnostics": {
+    "top_mode": {
+      "top2_pairwise_accuracy": 0.7469135802469136,
+      "top2_ci95": [0.654320987654321, 0.8333333333333334],
+      "top5_within_puzzle_auroc": 0.729868913857678,
+      "top5_ci95": [0.6643258426966292, 0.7940074906367042],
+      "covered_b1_failure_correct_preference": 14,
+      "covered_b1_failure_wrong_preference": 32,
+      "interpretation": "local signal exists but is poorly aligned with exact B1 failures"
+    },
+    "m1_beta": {
+      "classification": "mixed / non-monotonic",
+      "beta1_changed_decisions": 6,
+      "beta1_fixes": 1,
+      "beta1_breaks": 0,
+      "beta_flip_median": 248.37414325754463,
+      "fraction_beta_flip_le_16": 0.08333333333333333
+    },
+    "background_dominance": {
+      "median_similarity": 0.96,
+      "median_disagreement_fraction": 0.04,
+      "median_dominant_color_occupancy": 0.6026315789473684,
+      "median_agreement_explained_by_dominant_color": 0.6085810668353362
+    },
+    "discriminative_cell_dev": {
+      "classification": "AMBIGUOUS / NO-GO FOR TEST",
+      "test_evaluated": false,
+      "b1_rank1": 0.3975,
+      "frozen_m1_rank1": 0.4025,
+      "discriminative_beta1_rank1": 0.4,
+      "discriminative_beta4_rank1": 0.3875,
+      "original_correct_preference": 0.30434782608695654,
+      "discriminative_correct_preference": 0.45652173913043476,
+      "original_top5_pairwise_accuracy": 0.729868913857678,
+      "discriminative_top5_pairwise_accuracy": 0.5994850187265918
+    },
+    "top2_policy": {
+      "implementation_matches_committed_policy": true,
+      "test_m2_m3_top2": 0.44,
+      "different_shape_runner_up_found": 0,
+      "eligible_dev_rankings": 402
+    },
+    "compute_matched": {
+      "classification": "IMPLEMENTATION CORRECT",
+      "q_leakage": false,
+      "full_orbit_leakage": false
+    }
+  },
+  "selective_prediction": {
+    "arc1": {
+      "defect_aurc": 0.31586167853807995,
+      "defect_aurc_ci95": [0.24680880147422518, 0.3948521220258649],
+      "random_aurc": 0.5975,
+      "defect_minus_random": -0.28163832146191997,
+      "defect_minus_random_ci95": [-0.3096076300081239, -0.2463203774253707],
+      "vote_margin_aurc": 0.2607539081534486,
+      "vote_share_aurc": 0.26206564698082846,
+      "vote_entropy_aurc": 0.2776887416829336,
+      "winner_mean_q_aurc": 0.3127768181492204,
+      "conclusion": "defect beats random but not simple majority-derived confidence"
+    },
+    "arc2": {
+      "defect_aurc": 0.9180768700795726,
+      "defect_minus_random_ci95": [-0.12127500165351199, 0.010857276406621201],
+      "conclusion": "improvement over random is ambiguous"
     }
   },
   "validated_ablations": {
@@ -71,9 +148,15 @@
     }
   },
   "source_artifacts": {
-    "arc1_main": "artifacts/results/arc1_main/analysis_report.json",
-    "arc1_blank": "artifacts/results/arc1_blank_ablation/analysis_report.json",
-    "arc2": "artifacts/results/arc2_supporting/analysis_report.json",
-    "reproduction_audit": "artifacts/results/reproduction_audit/diagnostic_report.json"
+    "arc1_main": "results/arc1_main/analysis_report.json",
+    "arc1_blank": "results/arc1_blank_ablation/analysis_report.json",
+    "arc2": "results/arc2_supporting/analysis_report.json",
+    "top_mode": "results/top_mode_diagnostic/top_mode_summary.json",
+    "top2_policy": "results/top2_policy_audit/top2_policy_summary.json",
+    "compute_matched": "results/compute_matched_q_audit/compute_matched_q_audit.json",
+    "m1_beta": "results/m1_beta_diagnostic/m1_beta_summary.json",
+    "discriminative_cell": "results/discriminative_cell_dev/discriminative_cell_summary.json",
+    "selective_prediction": "results/risk_coverage_bootstrap/risk_coverage_bootstrap_summary.json",
+    "final_freeze": "results/final_freeze/final_results_manifest.json"
   }
 }

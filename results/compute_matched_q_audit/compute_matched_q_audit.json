@@ -1,0 +1,457 @@
+{
+  "classification": {
+    "case": "CASE A \u2014 IMPLEMENTATION CORRECT",
+    "correction_required": false,
+    "main_full_orbit_results_affected": false,
+    "reason": "every selector and tie-breaker receives the same reduced k-emission TaskOrbit; synthetic and independent numerical checks agree exactly"
+  },
+  "correction_artifacts": {
+    "compute_matched_corrected_csv_created": false,
+    "compute_matched_delta_csv_created": false,
+    "reason": "CASE A; no historical value requires correction"
+  },
+  "dev_numerical_crosschecks": [
+    {
+      "budget": 50,
+      "case_label": "no_top_count_tie_with_multiple_duplicate_modes",
+      "distinct_selected_modes": 45,
+      "duplicate_mode_count": 4,
+      "effective_budget": 50,
+      "full_orbit_emissions": 1001,
+      "independent_indices_exact_match": true,
+      "k_strictly_smaller_than_full_orbit": true,
+      "m1_workspace_selected_only": true,
+      "m2_ranking_selected_only": true,
+      "m3_ranking_selected_only": true,
+      "manual_b1_winner_grid_id": "918aee8d025acfd247f2",
+      "manual_m1_winner_grid_id": "918aee8d025acfd247f2",
+      "max_abs_b1_mean_q_error": 0.0,
+      "max_abs_m1_centrality_error": 0.0,
+      "max_abs_m1_mean_q_error": 0.0,
+      "max_abs_m1_score_error": 0.0,
+      "passed": true,
+      "production_b1_winner_grid_id": "918aee8d025acfd247f2",
+      "production_m1_winner_grid_id": "918aee8d025acfd247f2",
+      "repeat": 0,
+      "selected_indices_first": [
+        3,
+        45,
+        100,
+        133,
+        150
+      ],
+      "selected_indices_last": [
+        909,
+        959,
+        970,
+        972,
+        975
+      ],
+      "selected_indices_sha256": "6a17a1fe68f8ff5c8724ef68f8291995aa6c85b0c78f47d25519d541be0055c9",
+      "selected_invalid_predictions": 0,
+      "target_or_correctness_used": false,
+      "task_id": "03560426#0",
+      "top_vote_count_tie": false
+    },
+    {
+      "budget": 50,
+      "case_label": "top_vote_count_tie",
+      "distinct_selected_modes": 35,
+      "duplicate_mode_count": 8,
+      "effective_budget": 50,
+      "full_orbit_emissions": 1001,
+      "independent_indices_exact_match": true,
+      "k_strictly_smaller_than_full_orbit": true,
+      "m1_workspace_selected_only": true,
+      "m2_ranking_selected_only": true,
+      "m3_ranking_selected_only": true,
+      "manual_b1_winner_grid_id": "a0fecccba3ea39413306",
+      "manual_m1_winner_grid_id": "a0fecccba3ea39413306",
+      "max_abs_b1_mean_q_error": 0.0,
+      "max_abs_m1_centrality_error": 0.0,
+      "max_abs_m1_mean_q_error": 0.0,
+      "max_abs_m1_score_error": 0.0,
+      "passed": true,
+      "production_b1_winner_grid_id": "a0fecccba3ea39413306",
+      "production_m1_winner_grid_id": "a0fecccba3ea39413306",
+      "repeat": 0,
+      "selected_indices_first": [
+        61,
+        74,
+        79,
+        149,
+        160
+      ],
+      "selected_indices_last": [
+        935,
+        985,
+        992,
+        994,
+        996
+      ],
+      "selected_indices_sha256": "e235da2aa3b5d9764456fba6b220112155f80b3e56755c30c1a6b016ccb87fc3",
+      "selected_invalid_predictions": 0,
+      "target_or_correctness_used": false,
+      "task_id": "11e1fe23#0",
+      "top_vote_count_tie": true
+    },
+    {
+      "budget": 50,
+      "case_label": "naturally_selected_invalid_prediction",
+      "distinct_selected_modes": 50,
+      "duplicate_mode_count": 0,
+      "effective_budget": 50,
+      "full_orbit_emissions": 1001,
+      "independent_indices_exact_match": true,
+      "k_strictly_smaller_than_full_orbit": true,
+      "m1_workspace_selected_only": true,
+      "m2_ranking_selected_only": true,
+      "m3_ranking_selected_only": true,
+      "manual_b1_winner_grid_id": "e2f9449b60aada7fd618",
+      "manual_m1_winner_grid_id": "8272083f03d17b11cb66",
+      "max_abs_b1_mean_q_error": 0.0,
+      "max_abs_m1_centrality_error": 0.0,
+      "max_abs_m1_mean_q_error": 0.0,
+      "max_abs_m1_score_error": 0.0,
+      "passed": true,
+      "production_b1_winner_grid_id": "e2f9449b60aada7fd618",
+      "production_m1_winner_grid_id": "8272083f03d17b11cb66",
+      "repeat": 0,
+      "selected_indices_first": [
+        1,
+        4,
+        7,
+        53,
+        92
+      ],
+      "selected_indices_last": [
+        941,
+        957,
+        970,
+        979,
+        996
+      ],
+      "selected_indices_sha256": "926bce5aab9af6601d32766cc1684dfb343a27f703f42aa94e89539b1d708282",
+      "selected_invalid_predictions": 1,
+      "target_or_correctness_used": false,
+      "task_id": "4aab4007#0",
+      "top_vote_count_tie": true
+    },
+    {
+      "budget": 250,
+      "case_label": "larger_budget_k_smaller_than_full_orbit",
+      "distinct_selected_modes": 1,
+      "duplicate_mode_count": 1,
+      "effective_budget": 250,
+      "full_orbit_emissions": 1001,
+      "independent_indices_exact_match": true,
+      "k_strictly_smaller_than_full_orbit": true,
+      "m1_workspace_selected_only": true,
+      "m2_ranking_selected_only": true,
+      "m3_ranking_selected_only": true,
+      "manual_b1_winner_grid_id": "d54ef9c901ec3073cb26",
+      "manual_m1_winner_grid_id": "d54ef9c901ec3073cb26",
+      "max_abs_b1_mean_q_error": 0.0,
+      "max_abs_m1_centrality_error": 0.0,
+      "max_abs_m1_mean_q_error": 0.0,
+      "max_abs_m1_score_error": 0.0,
+      "passed": true,
+      "production_b1_winner_grid_id": "d54ef9c901ec3073cb26",
+      "production_m1_winner_grid_id": "d54ef9c901ec3073cb26",
+      "repeat": 0,
+      "selected_indices_first": [
+        1,
+        9,
+        12,
+        13,
+        20
+      ],
+      "selected_indices_last": [
+        986,
+        987,
+        993,
+        994,
+        1000
+      ],
+      "selected_indices_sha256": "88b1c0f8acde493a80350823a827dad9ad450c2dab914deb78b53539dd20d5fc",
+      "selected_invalid_predictions": 0,
+      "target_or_correctness_used": false,
+      "task_id": "00576224#0",
+      "top_vote_count_tie": false
+    }
+  ],
+  "historical_compute_matched_results": [
+    {
+      "budget": 50,
+      "classification": "CASE A \u2014 IMPLEMENTATION CORRECT",
+      "correction_required": false,
+      "deterministic_repeats": 10,
+      "historical_mean_rank1": 0.40475000000000005,
+      "historical_mean_rank1_percent": 40.47500000000001,
+      "method": "B1",
+      "result_remains_valid": true
+    },
+    {
+      "budget": 50,
+      "classification": "CASE A \u2014 IMPLEMENTATION CORRECT",
+      "correction_required": false,
+      "deterministic_repeats": 10,
+      "historical_mean_rank1": 0.40374999999999994,
+      "historical_mean_rank1_percent": 40.37499999999999,
+      "method": "M1",
+      "result_remains_valid": true
+    },
+    {
+      "budget": 50,
+      "classification": "CASE A \u2014 IMPLEMENTATION CORRECT",
+      "correction_required": false,
+      "deterministic_repeats": 10,
+      "historical_mean_rank1": 0.40374999999999994,
+      "historical_mean_rank1_percent": 40.37499999999999,
+      "method": "M1+M2",
+      "result_remains_valid": true
+    },
+    {
+      "budget": 50,
+      "classification": "CASE A \u2014 IMPLEMENTATION CORRECT",
+      "correction_required": false,
+      "deterministic_repeats": 10,
+      "historical_mean_rank1": 0.40374999999999994,
+      "historical_mean_rank1_percent": 40.37499999999999,
+      "method": "M1+M2+M3",
+      "result_remains_valid": true
+    },
+    {
+      "budget": 250,
+      "classification": "CASE A \u2014 IMPLEMENTATION CORRECT",
+      "correction_required": false,
+      "deterministic_repeats": 10,
+      "historical_mean_rank1": 0.40499999999999997,
+      "historical_mean_rank1_percent": 40.5,
+      "method": "B1",
+      "result_remains_valid": true
+    },
+    {
+      "budget": 250,
+      "classification": "CASE A \u2014 IMPLEMENTATION CORRECT",
+      "correction_required": false,
+      "deterministic_repeats": 10,
+      "historical_mean_rank1": 0.4065,
+      "historical_mean_rank1_percent": 40.65,
+      "method": "M1",
+      "result_remains_valid": true
+    },
+    {
+      "budget": 250,
+      "classification": "CASE A \u2014 IMPLEMENTATION CORRECT",
+      "correction_required": false,
+      "deterministic_repeats": 10,
+      "historical_mean_rank1": 0.40499999999999997,
+      "historical_mean_rank1_percent": 40.5,
+      "method": "M1+M2",
+      "result_remains_valid": true
+    },
+    {
+      "budget": 250,
+      "classification": "CASE A \u2014 IMPLEMENTATION CORRECT",
+      "correction_required": false,
+      "deterministic_repeats": 10,
+      "historical_mean_rank1": 0.40499999999999997,
+      "historical_mean_rank1_percent": 40.5,
+      "method": "M1+M2+M3",
+      "result_remains_valid": true
+    },
+    {
+      "budget": 1000,
+      "classification": "CASE A \u2014 IMPLEMENTATION CORRECT",
+      "correction_required": false,
+      "deterministic_repeats": 10,
+      "historical_mean_rank1": 0.4035,
+      "historical_mean_rank1_percent": 40.35,
+      "method": "B1",
+      "result_remains_valid": true
+    },
+    {
+      "budget": 1000,
+      "classification": "CASE A \u2014 IMPLEMENTATION CORRECT",
+      "correction_required": false,
+      "deterministic_repeats": 10,
+      "historical_mean_rank1": 0.4035,
+      "historical_mean_rank1_percent": 40.35,
+      "method": "M1",
+      "result_remains_valid": true
+    },
+    {
+      "budget": 1000,
+      "classification": "CASE A \u2014 IMPLEMENTATION CORRECT",
+      "correction_required": false,
+      "deterministic_repeats": 10,
+      "historical_mean_rank1": 0.4125,
+      "historical_mean_rank1_percent": 41.25,
+      "method": "M1+M2",
+      "result_remains_valid": true
+    },
+    {
+      "budget": 1000,
+      "classification": "CASE A \u2014 IMPLEMENTATION CORRECT",
+      "correction_required": false,
+      "deterministic_repeats": 10,
+      "historical_mean_rank1": 0.4125,
+      "historical_mean_rank1_percent": 41.25,
+      "method": "M1+M2+M3",
+      "result_remains_valid": true
+    }
+  ],
+  "implementation_trace": [
+    {
+      "finding": "effective k is min(requested k, orbit size); SHA256(seed:task_id) seeds NumPy; every repeat is sorted choice-without-replacement indices.",
+      "source": "src/orbit_consensus/sampling.py:37-57 (paired_subsamples)"
+    },
+    {
+      "finding": "selected indices are copied into a new TaskOrbit; each selected candidate's grid, q_value, invalid flag, transform, and diagnostics are preserved.",
+      "source": "src/orbit_consensus/arc1_analysis.py:133-157 (_suborbit)"
+    },
+    {
+      "finding": "one paired plan per descriptor is materialized into reduced orbits, then evaluate_orbits receives only those reduced orbits.",
+      "source": "src/orbit_consensus/arc1_analysis.py:612-644 (compute_matched_rows)"
+    },
+    {
+      "finding": "allowed_indices is accepted; the same conditional filters the candidate before both grid_key and q_value are appended. With no argument, all candidates in the supplied (already reduced) orbit are used.",
+      "source": "src/orbit_consensus/baselines.py:9-14 (mean_q_by_grid)"
+    },
+    {
+      "finding": "B1 counts grids in the reduced orbit and ranks by count descending, reduced-orbit mean Q descending, then deterministic grid key ascending.",
+      "source": "src/orbit_consensus/baselines.py:17-34,44-48 (rank_candidates/majority_vote)"
+    },
+    {
+      "finding": "M1 preparation and B1/M1/M2/M3 evaluation all consume the same reduced orbit; no full-orbit prepared workspace is passed in compute-matched evaluation.",
+      "source": "src/orbit_consensus/arc1_analysis.py:168-205 (evaluate_orbits)"
+    },
+    {
+      "finding": "emission keys, distinct modes, counts, pairwise similarity, centrality, weights, and mean-Q tie-breaks are all built from the reduced orbit only.",
+      "source": "src/orbit_consensus/aggregators.py:51-97 (prepare_m1/m1_orbit_weighting)"
+    },
+    {
+      "finding": "M2/M3 weights, screening indices, modal shape, marginals, active counts, and mean Q are restricted to the reduced orbit; mean_q_by_grid receives the within-suborbit active_set.",
+      "source": "src/orbit_consensus/aggregators.py:114-210 (_shape_filter/m2_cell_marginal_score)"
+    },
+    {
+      "finding": "the hedge combines already subset-scoped M2/M3 and B1 rankings and cannot access the original orbit.",
+      "source": "src/orbit_consensus/aggregators.py:213-222 (two_attempt_policy)"
+    },
+    {
+      "finding": "the committed protocol fixes seed 20260807, k={50,250,1000}, ten paired repeats, and all four methods; reduced-orbit centrality matches the intended all-method compute-matched comparison.",
+      "source": "configs/experiment.toml:1-6 and docs/PROPOSAL_COVERAGE.md:22"
+    }
+  ],
+  "mean_q_end_to_end": {
+    "accepts_allowed_indices": true,
+    "b1_and_m1_scope": "caller supplies a reduced TaskOrbit, so allowed_indices=None means exactly selected k emissions",
+    "filters_grid_and_q_value_together": true,
+    "full_orbit_q_leakage": false,
+    "m2_and_m3_scope": "caller supplies a reduced TaskOrbit and mean_q_by_grid receives active modal-shape indices within it",
+    "selected_indices_reach_q_correctly": true
+  },
+  "method_scope_audit": {
+    "B1": "selected-only vote counts, mean Q, and deterministic tie-breaking",
+    "M1": "selected-only emissions, modes, counts, distinct structural centrality, weights, and mean Q",
+    "M1_structural_centrality_policy": "only the k-subsample (intended); no full-orbit structure",
+    "M2": "selected-only weights/evidence/counts; mean Q further restricted to selected modal-shape emissions",
+    "M3": "shape filter and empty-filter fallback range only over the selected suborbit; inherited M2/Q scope is selected-only",
+    "other_full_orbit_leakage_found": false
+  },
+  "next_steps_started": {
+    "beta_curve": false,
+    "risk_coverage": false,
+    "step_1_4": false
+  },
+  "numerical_crosscheck_summary": {
+    "max_abs_b1_mean_q_error": 0.0,
+    "max_abs_m1_centrality_error": 0.0,
+    "max_abs_m1_mean_q_error": 0.0,
+    "max_abs_m1_score_error": 0.0
+  },
+  "scope": {
+    "budgets": [
+      50,
+      250,
+      1000
+    ],
+    "cache_treated_read_only": "artifacts/cache/arc1_normal",
+    "execution": "CPU-only",
+    "frozen_results_treated_read_only": "artifacts/results/arc1_main",
+    "release_treated_read_only": ".",
+    "repeats": 10,
+    "seed": 20260807,
+    "split": "committed ARC1 DEV for direct cross-check; frozen TEST table read-only for historical means",
+    "step": "Step 1.3 \u2014 mean-Q subsample / compute-matched audit only"
+  },
+  "synthetic_regression": {
+    "allowed_indices_q_equals_reduced_orbit_q": true,
+    "buggy_hybrid_full_q_winner": "B",
+    "correct_reduced_orbit_winner": "A",
+    "duplicates_inside_and_outside_selected_set": true,
+    "full_orbit_mean_q": {
+      "A": 0.5333333333333333,
+      "B": 0.81
+    },
+    "grid_ids": {
+      "A": "59794cac235653057ff2",
+      "B": "06eb3688a0fac5800103",
+      "outside_only_C": "15626cf7c598cf4bb2fb"
+    },
+    "passed": true,
+    "purpose": "equal selected votes; selected mean-Q favors A; full-orbit mean-Q favors B",
+    "result_deterministic_across_reruns": true,
+    "selected_indices": [
+      0,
+      2,
+      5,
+      7
+    ],
+    "selected_indices_non_contiguous": true,
+    "selected_mean_q": {
+      "A": 0.8,
+      "B": 0.45
+    },
+    "selected_vote_counts": {
+      "A": 2,
+      "B": 2
+    }
+  },
+  "validation": {
+    "cache_files_written": 0,
+    "cache_fingerprint_after": {
+      "aggregate_sha256": "6cb320cb9b0e45c114d95722654663d2b7e98b01027a1d4a647c21ea4ce60fa1",
+      "npz_bytes": 14655304,
+      "npz_files": 419
+    },
+    "cache_fingerprint_before": {
+      "aggregate_sha256": "6cb320cb9b0e45c114d95722654663d2b7e98b01027a1d4a647c21ea4ce60fa1",
+      "npz_bytes": 14655304,
+      "npz_files": 419
+    },
+    "cache_unchanged": true,
+    "committed_split_sha256_after": "0f6e16e36c3b37703928a294655905d4af659fcda5f9f8b12d5d336931a6106d",
+    "committed_split_sha256_before": "0f6e16e36c3b37703928a294655905d4af659fcda5f9f8b12d5d336931a6106d",
+    "committed_split_unchanged": true,
+    "cuda_visible_devices": "",
+    "existing_results_fingerprint_after": {
+      "aggregate_sha256": "3d47a841c13904ba4dbe10ac5f7e69adc80b48369e65d35d48e2577258f455ac",
+      "bytes": 159889,
+      "files": 21
+    },
+    "existing_results_fingerprint_before": {
+      "aggregate_sha256": "3d47a841c13904ba4dbe10ac5f7e69adc80b48369e65d35d48e2577258f455ac",
+      "bytes": 159889,
+      "files": 21
+    },
+    "existing_results_unchanged": true,
+    "focused_tests_passed": 6,
+    "gpu_work_launched": false,
+    "held_out_test_cache_payloads_loaded": 0,
+    "historical_result_files_written": 0,
+    "release_tests_passed": 20,
+    "torch_imported": false
+  }
+}

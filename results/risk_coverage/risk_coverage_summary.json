@@ -1,0 +1,624 @@
+{
+  "aurc_convention": "AURC = (1/N) * sum_{n=1}^N risk(n), a discrete right-Riemann integral over uniform coverage increments",
+  "confidence_statistics": [
+    {
+      "definition": "Mean frozen descriptor-level orbit dispersion; lower is more coherent.",
+      "display_name": "Structural defect",
+      "field": "task_level_defect",
+      "higher_is_confident": false,
+      "name": "structural_defect",
+      "orientation": "lower_is_more_confident"
+    },
+    {
+      "definition": "Mean exact-grid emission share of the B1 winning mode; higher is more confident.",
+      "display_name": "B1 winner vote share",
+      "field": "vote_share",
+      "higher_is_confident": true,
+      "name": "vote_share",
+      "orientation": "higher_is_more_confident"
+    },
+    {
+      "definition": "Mean top-1 minus top-2 exact-grid vote share; higher is more confident.",
+      "display_name": "B1 vote margin",
+      "field": "vote_margin",
+      "higher_is_confident": true,
+      "name": "vote_margin",
+      "orientation": "higher_is_more_confident"
+    },
+    {
+      "definition": "Mean Shannon entropy in nats of the exact-grid emission distribution; lower is more confident.",
+      "display_name": "Vote entropy",
+      "field": "vote_entropy",
+      "higher_is_confident": false,
+      "name": "vote_entropy",
+      "orientation": "lower_is_more_confident"
+    },
+    {
+      "definition": "Mean Q of emissions belonging to the B1 winning mode, then averaged across puzzle outputs; higher is more confident.",
+      "display_name": "B1 winner mean Q",
+      "field": "q_confidence",
+      "higher_is_confident": true,
+      "name": "winner_mean_q",
+      "orientation": "higher_is_more_confident"
+    }
+  ],
+  "constraints": {
+    "bootstrap_run": false,
+    "cache_generation_run": false,
+    "cuda_visible_devices": "",
+    "gpu_inference_run": false,
+    "method_modified": false
+  },
+  "datasets": {
+    "arc1_blank_test": {
+      "candidate_count": 192808,
+      "defect_aurc": 0.922868554959021,
+      "descriptors": 211,
+      "display_name": "ARC1 blank-ID held-out TEST",
+      "full_coverage_accuracy": 0.04,
+      "full_coverage_risk": 0.96,
+      "invalid_emissions": 367,
+      "multi_output_puzzles": 11,
+      "operating_points": [
+        {
+          "accuracy": 0.05,
+          "accuracy_improvement_vs_full": 0.010000000000000002,
+          "b1_correct_count": 1.0,
+          "coverage": 0.1,
+          "dataset": "arc1_blank_test",
+          "maximum_defect_included": 0.08715239638623629,
+          "mean_defect_retained": 0.053155666992668535,
+          "operating_point": "decile",
+          "retained_puzzles": 20,
+          "risk": 0.95,
+          "target_coverage": 0.1,
+          "total_puzzles": 200
+        },
+        {
+          "accuracy": 0.1,
+          "accuracy_improvement_vs_full": 0.060000000000000005,
+          "b1_correct_count": 4.0,
+          "coverage": 0.2,
+          "dataset": "arc1_blank_test",
+          "maximum_defect_included": 0.14259285144088107,
+          "mean_defect_retained": 0.0876898535506233,
+          "operating_point": "decile",
+          "retained_puzzles": 40,
+          "risk": 0.9,
+          "target_coverage": 0.2,
+          "total_puzzles": 200
+        },
+        {
+          "accuracy": 0.08333333333333333,
+          "accuracy_improvement_vs_full": 0.04333333333333333,
+          "b1_correct_count": 5.0,
+          "coverage": 0.3,
+          "dataset": "arc1_blank_test",
+          "maximum_defect_included": 0.22067678268452784,
+          "mean_defect_retained": 0.11910886814724402,
+          "operating_point": "decile",
+          "retained_puzzles": 60,
+          "risk": 0.9166666666666666,
+          "target_coverage": 0.3,
+          "total_puzzles": 200
+        },
+        {
+          "accuracy": 0.0875,
+          "accuracy_improvement_vs_full": 0.047499999999999994,
+          "b1_correct_count": 7.0,
+          "coverage": 0.4,
+          "dataset": "arc1_blank_test",
+          "maximum_defect_included": 0.3273663980364043,
+          "mean_defect_retained": 0.1604578675080904,
+          "operating_point": "decile",
+          "retained_puzzles": 80,
+          "risk": 0.9125,
+          "target_coverage": 0.4,
+          "total_puzzles": 200
+        },
+        {
+          "accuracy": 0.08,
+          "accuracy_improvement_vs_full": 0.04,
+          "b1_correct_count": 8.0,
+          "coverage": 0.5,
+          "dataset": "arc1_blank_test",
+          "maximum_defect_included": 0.5577234207805284,
+          "mean_defect_retained": 0.21716681694345538,
+          "operating_point": "decile+quartile",
+          "retained_puzzles": 100,
+          "risk": 0.92,
+          "target_coverage": 0.5,
+          "total_puzzles": 200
+        },
+        {
+          "accuracy": 0.06666666666666667,
+          "accuracy_improvement_vs_full": 0.026666666666666665,
+          "b1_correct_count": 8.0,
+          "coverage": 0.6,
+          "dataset": "arc1_blank_test",
+          "maximum_defect_included": 0.7056181658537917,
+          "mean_defect_retained": 0.2883775913822493,
+          "operating_point": "decile",
+          "retained_puzzles": 120,
+          "risk": 0.9333333333333333,
+          "target_coverage": 0.6,
+          "total_puzzles": 200
+        },
+        {
+          "accuracy": 0.05714285714285714,
+          "accuracy_improvement_vs_full": 0.01714285714285714,
+          "b1_correct_count": 8.0,
+          "coverage": 0.7,
+          "dataset": "arc1_blank_test",
+          "maximum_defect_included": 0.8108015817987633,
+          "mean_defect_retained": 0.3567418508717436,
+          "operating_point": "decile",
+          "retained_puzzles": 140,
+          "risk": 0.9428571428571428,
+          "target_coverage": 0.7,
+          "total_puzzles": 200
+        },
+        {
+          "accuracy": 0.05,
+          "accuracy_improvement_vs_full": 0.010000000000000002,
+          "b1_correct_count": 8.0,
+          "coverage": 0.8,
+          "dataset": "arc1_blank_test",
+          "maximum_defect_included": 0.8595450860301731,
+          "mean_defect_retained": 0.41712747323733784,
+          "operating_point": "decile",
+          "retained_puzzles": 160,
+          "risk": 0.95,
+          "target_coverage": 0.8,
+          "total_puzzles": 200
+        },
+        {
+          "accuracy": 0.044444444444444446,
+          "accuracy_improvement_vs_full": 0.004444444444444445,
+          "b1_correct_count": 8.0,
+          "coverage": 0.9,
+          "dataset": "arc1_blank_test",
+          "maximum_defect_included": 0.9181654701245824,
+          "mean_defect_retained": 0.4699681796842972,
+          "operating_point": "decile",
+          "retained_puzzles": 180,
+          "risk": 0.9555555555555556,
+          "target_coverage": 0.9,
+          "total_puzzles": 200
+        },
+        {
+          "accuracy": 0.04,
+          "accuracy_improvement_vs_full": 0.0,
+          "b1_correct_count": 8.0,
+          "coverage": 1.0,
+          "dataset": "arc1_blank_test",
+          "maximum_defect_included": 0.9740411823386972,
+          "mean_defect_retained": 0.5169798873540956,
+          "operating_point": "decile+quartile",
+          "retained_puzzles": 200,
+          "risk": 0.96,
+          "target_coverage": 1.0,
+          "total_puzzles": 200
+        }
+      ],
+      "puzzles": 200,
+      "random_order_expected_aurc": 0.96,
+      "reversed_defect_aurc": 0.9882588059093997
+    },
+    "arc1_normal_test": {
+      "candidate_count": 192808,
+      "defect_aurc": 0.31586167853807995,
+      "descriptors": 211,
+      "display_name": "ARC1 normal held-out TEST",
+      "full_coverage_accuracy": 0.4025,
+      "full_coverage_risk": 0.5974999999999999,
+      "invalid_emissions": 53,
+      "multi_output_puzzles": 11,
+      "operating_points": [
+        {
+          "accuracy": 1.0,
+          "accuracy_improvement_vs_full": 0.5974999999999999,
+          "b1_correct_count": 20.0,
+          "coverage": 0.1,
+          "dataset": "arc1_normal_test",
+          "maximum_defect_included": 0.0017800918071714245,
+          "mean_defect_retained": 0.0004096603300502405,
+          "operating_point": "decile",
+          "retained_puzzles": 20,
+          "risk": 0.0,
+          "target_coverage": 0.1,
+          "total_puzzles": 200
+        },
+        {
+          "accuracy": 0.925,
+          "accuracy_improvement_vs_full": 0.5225,
+          "b1_correct_count": 37.0,
+          "coverage": 0.2,
+          "dataset": "arc1_normal_test",
+          "maximum_defect_included": 0.012925542742036389,
+          "mean_defect_retained": 0.003420768766541389,
+          "operating_point": "decile",
+          "retained_puzzles": 40,
+          "risk": 0.07499999999999996,
+          "target_coverage": 0.2,
+          "total_puzzles": 200
+        },
+        {
+          "accuracy": 0.88,
+          "accuracy_improvement_vs_full": 0.4775,
+          "b1_correct_count": 44.0,
+          "coverage": 0.25,
+          "dataset": "arc1_normal_test",
+          "maximum_defect_included": 0.019280723877600936,
+          "mean_defect_retained": 0.006093090808731946,
+          "operating_point": "quartile",
+          "retained_puzzles": 50,
+          "risk": 0.12,
+          "target_coverage": 0.25,
+          "total_puzzles": 200
+        },
+        {
+          "accuracy": 0.8666666666666667,
+          "accuracy_improvement_vs_full": 0.46416666666666667,
+          "b1_correct_count": 52.0,
+          "coverage": 0.3,
+          "dataset": "arc1_normal_test",
+          "maximum_defect_included": 0.02776080501858691,
+          "mean_defect_retained": 0.009066092164234478,
+          "operating_point": "decile",
+          "retained_puzzles": 60,
+          "risk": 0.1333333333333333,
+          "target_coverage": 0.3,
+          "total_puzzles": 200
+        },
+        {
+          "accuracy": 0.7375,
+          "accuracy_improvement_vs_full": 0.335,
+          "b1_correct_count": 59.0,
+          "coverage": 0.4,
+          "dataset": "arc1_normal_test",
+          "maximum_defect_included": 0.04131829573032786,
+          "mean_defect_retained": 0.0154512446805754,
+          "operating_point": "decile",
+          "retained_puzzles": 80,
+          "risk": 0.26249999999999996,
+          "target_coverage": 0.4,
+          "total_puzzles": 200
+        },
+        {
+          "accuracy": 0.63,
+          "accuracy_improvement_vs_full": 0.22749999999999998,
+          "b1_correct_count": 63.0,
+          "coverage": 0.5,
+          "dataset": "arc1_normal_test",
+          "maximum_defect_included": 0.06800825922329423,
+          "mean_defect_retained": 0.023619653302665133,
+          "operating_point": "decile+quartile",
+          "retained_puzzles": 100,
+          "risk": 0.37,
+          "target_coverage": 0.5,
+          "total_puzzles": 200
+        },
+        {
+          "accuracy": 0.575,
+          "accuracy_improvement_vs_full": 0.17249999999999993,
+          "b1_correct_count": 69.0,
+          "coverage": 0.6,
+          "dataset": "arc1_normal_test",
+          "maximum_defect_included": 0.10443308717580724,
+          "mean_defect_retained": 0.034163317752952005,
+          "operating_point": "decile",
+          "retained_puzzles": 120,
+          "risk": 0.42500000000000004,
+          "target_coverage": 0.6,
+          "total_puzzles": 200
+        },
+        {
+          "accuracy": 0.5142857142857142,
+          "accuracy_improvement_vs_full": 0.11178571428571421,
+          "b1_correct_count": 72.0,
+          "coverage": 0.7,
+          "dataset": "arc1_normal_test",
+          "maximum_defect_included": 0.141690671397948,
+          "mean_defect_retained": 0.04650528931684064,
+          "operating_point": "decile",
+          "retained_puzzles": 140,
+          "risk": 0.48571428571428577,
+          "target_coverage": 0.7,
+          "total_puzzles": 200
+        },
+        {
+          "accuracy": 0.49,
+          "accuracy_improvement_vs_full": 0.08749999999999997,
+          "b1_correct_count": 73.5,
+          "coverage": 0.75,
+          "dataset": "arc1_normal_test",
+          "maximum_defect_included": 0.20738582514331821,
+          "mean_defect_retained": 0.05447486677770094,
+          "operating_point": "quartile",
+          "retained_puzzles": 150,
+          "risk": 0.51,
+          "target_coverage": 0.75,
+          "total_puzzles": 200
+        },
+        {
+          "accuracy": 0.471875,
+          "accuracy_improvement_vs_full": 0.06937499999999996,
+          "b1_correct_count": 75.5,
+          "coverage": 0.8,
+          "dataset": "arc1_normal_test",
+          "maximum_defect_included": 0.24796862857715218,
+          "mean_defect_retained": 0.06546518432614457,
+          "operating_point": "decile",
+          "retained_puzzles": 160,
+          "risk": 0.528125,
+          "target_coverage": 0.8,
+          "total_puzzles": 200
+        },
+        {
+          "accuracy": 0.44166666666666665,
+          "accuracy_improvement_vs_full": 0.03916666666666663,
+          "b1_correct_count": 79.5,
+          "coverage": 0.9,
+          "dataset": "arc1_normal_test",
+          "maximum_defect_included": 0.6312664211875738,
+          "mean_defect_retained": 0.1053635478353217,
+          "operating_point": "decile",
+          "retained_puzzles": 180,
+          "risk": 0.5583333333333333,
+          "target_coverage": 0.9,
+          "total_puzzles": 200
+        },
+        {
+          "accuracy": 0.4025,
+          "accuracy_improvement_vs_full": 0.0,
+          "b1_correct_count": 80.5,
+          "coverage": 1.0,
+          "dataset": "arc1_normal_test",
+          "maximum_defect_included": 0.9611447028188597,
+          "mean_defect_retained": 0.1740216278822601,
+          "operating_point": "decile+quartile",
+          "retained_puzzles": 200,
+          "risk": 0.5974999999999999,
+          "target_coverage": 1.0,
+          "total_puzzles": 200
+        }
+      ],
+      "puzzles": 200,
+      "random_order_expected_aurc": 0.5974999999999999,
+      "reversed_defect_aurc": 0.8108308703654575
+    },
+    "arc2_supporting": {
+      "candidate_count": 170393,
+      "defect_aurc": 0.9180768700795726,
+      "descriptors": 172,
+      "display_name": "ARC2 full supporting set",
+      "full_coverage_accuracy": 0.029166666666666667,
+      "full_coverage_risk": 0.9708333333333333,
+      "invalid_emissions": 188,
+      "multi_output_puzzles": 49,
+      "operating_points": [
+        {
+          "accuracy": 0.16666666666666666,
+          "accuracy_improvement_vs_full": 0.13749999999999998,
+          "b1_correct_count": 2.0,
+          "coverage": 0.1,
+          "dataset": "arc2_supporting",
+          "maximum_defect_included": 0.019567744841220924,
+          "mean_defect_retained": 0.00941967152338453,
+          "operating_point": "decile",
+          "retained_puzzles": 12,
+          "risk": 0.8333333333333334,
+          "target_coverage": 0.1,
+          "total_puzzles": 120
+        },
+        {
+          "accuracy": 0.08333333333333333,
+          "accuracy_improvement_vs_full": 0.05416666666666666,
+          "b1_correct_count": 2.0,
+          "coverage": 0.2,
+          "dataset": "arc2_supporting",
+          "maximum_defect_included": 0.03575823519926846,
+          "mean_defect_retained": 0.01707428549360602,
+          "operating_point": "decile",
+          "retained_puzzles": 24,
+          "risk": 0.9166666666666666,
+          "target_coverage": 0.2,
+          "total_puzzles": 120
+        },
+        {
+          "accuracy": 0.05555555555555555,
+          "accuracy_improvement_vs_full": 0.026388888888888885,
+          "b1_correct_count": 2.0,
+          "coverage": 0.3,
+          "dataset": "arc2_supporting",
+          "maximum_defect_included": 0.06447539301483718,
+          "mean_defect_retained": 0.028664583636433563,
+          "operating_point": "decile",
+          "retained_puzzles": 36,
+          "risk": 0.9444444444444444,
+          "target_coverage": 0.3,
+          "total_puzzles": 120
+        },
+        {
+          "accuracy": 0.041666666666666664,
+          "accuracy_improvement_vs_full": 0.012499999999999997,
+          "b1_correct_count": 2.0,
+          "coverage": 0.4,
+          "dataset": "arc2_supporting",
+          "maximum_defect_included": 0.0878305580742933,
+          "mean_defect_retained": 0.04054864404894201,
+          "operating_point": "decile",
+          "retained_puzzles": 48,
+          "risk": 0.9583333333333334,
+          "target_coverage": 0.4,
+          "total_puzzles": 120
+        },
+        {
+          "accuracy": 0.03333333333333333,
+          "accuracy_improvement_vs_full": 0.004166666666666666,
+          "b1_correct_count": 2.0,
+          "coverage": 0.5,
+          "dataset": "arc2_supporting",
+          "maximum_defect_included": 0.13106978581599737,
+          "mean_defect_retained": 0.05484954852678956,
+          "operating_point": "decile+quartile",
+          "retained_puzzles": 60,
+          "risk": 0.9666666666666667,
+          "target_coverage": 0.5,
+          "total_puzzles": 120
+        },
+        {
+          "accuracy": 0.027777777777777776,
+          "accuracy_improvement_vs_full": -0.001388888888888891,
+          "b1_correct_count": 2.0,
+          "coverage": 0.6,
+          "dataset": "arc2_supporting",
+          "maximum_defect_included": 0.2240440624396941,
+          "mean_defect_retained": 0.0758127449762205,
+          "operating_point": "decile",
+          "retained_puzzles": 72,
+          "risk": 0.9722222222222222,
+          "target_coverage": 0.6,
+          "total_puzzles": 120
+        },
+        {
+          "accuracy": 0.041666666666666664,
+          "accuracy_improvement_vs_full": 0.012499999999999997,
+          "b1_correct_count": 3.5,
+          "coverage": 0.7,
+          "dataset": "arc2_supporting",
+          "maximum_defect_included": 0.4617295620661923,
+          "mean_defect_retained": 0.11598389552018454,
+          "operating_point": "decile",
+          "retained_puzzles": 84,
+          "risk": 0.9583333333333334,
+          "target_coverage": 0.7,
+          "total_puzzles": 120
+        },
+        {
+          "accuracy": 0.036458333333333336,
+          "accuracy_improvement_vs_full": 0.0072916666666666685,
+          "b1_correct_count": 3.5,
+          "coverage": 0.8,
+          "dataset": "arc2_supporting",
+          "maximum_defect_included": 0.7468803589499329,
+          "mean_defect_retained": 0.18231565373897515,
+          "operating_point": "decile",
+          "retained_puzzles": 96,
+          "risk": 0.9635416666666666,
+          "target_coverage": 0.8,
+          "total_puzzles": 120
+        },
+        {
+          "accuracy": 0.032407407407407406,
+          "accuracy_improvement_vs_full": 0.0032407407407407385,
+          "b1_correct_count": 3.5,
+          "coverage": 0.9,
+          "dataset": "arc2_supporting",
+          "maximum_defect_included": 0.9201305551598635,
+          "mean_defect_retained": 0.2568532206094522,
+          "operating_point": "decile",
+          "retained_puzzles": 108,
+          "risk": 0.9675925925925926,
+          "target_coverage": 0.9,
+          "total_puzzles": 120
+        },
+        {
+          "accuracy": 0.029166666666666667,
+          "accuracy_improvement_vs_full": 0.0,
+          "b1_correct_count": 3.5,
+          "coverage": 1.0,
+          "dataset": "arc2_supporting",
+          "maximum_defect_included": 0.9914287041388813,
+          "mean_defect_retained": 0.3270191617624541,
+          "operating_point": "decile+quartile",
+          "retained_puzzles": 120,
+          "risk": 0.9708333333333333,
+          "target_coverage": 1.0,
+          "total_puzzles": 120
+        }
+      ],
+      "puzzles": 120,
+      "random_order_expected_aurc": 0.9708333333333333,
+      "reversed_defect_aurc": 0.9855539633501768
+    }
+  },
+  "defect": {
+    "exact_formula": "Delta(tau) = 1 - sum_g sum_h c_g c_h S(g,h) / K^2",
+    "frozen_level": "pair-scoped descriptor",
+    "invalid_prediction_semantics": "S(empty,empty)=1 and S(empty,nonempty)=0; invalid emissions remain exact-grid modes",
+    "orientation": "lower_is_more_confident",
+    "puzzle_aggregation": "arithmetic mean across test-output descriptors; each puzzle weight is 1"
+  },
+  "phase": "Phase 3 Step 3.1",
+  "protected_artifacts": {
+    "fingerprints": {
+      "cache_arc1_blank": {
+        "aggregate_sha256": "93b929d2028cdc9054006df4eede0ba51d1d7b9fadc25754262f6955764e9951",
+        "bytes": 17258993,
+        "files": 423
+      },
+      "cache_arc1_normal": {
+        "aggregate_sha256": "a1cb09731097b3b006ada31dd218ca1ebe97aabc16902d02afbf60cef10e03f8",
+        "bytes": 14778506,
+        "files": 423
+      },
+      "cache_arc2_normal": {
+        "aggregate_sha256": "e0a02fc07ad08a4350358711f94ffe7ce71f1f3d968f1ae8e2c3c1a0907f3be2",
+        "bytes": 9870660,
+        "files": 176
+      },
+      "committed_split": {
+        "aggregate_sha256": "a48412a7a071750b86d98d2d330a06d6131d058d5ce9ebbcabf005e029c8c9d7",
+        "bytes": 14208,
+        "files": 1
+      },
+      "frozen_arc1_blank": {
+        "aggregate_sha256": "e72d66c50784e92f3e1abbb7d25b7d3ea8afcfd235a7e7f744d259520982b89b",
+        "bytes": 134515,
+        "files": 16
+      },
+      "frozen_arc1_main": {
+        "aggregate_sha256": "3d47a841c13904ba4dbe10ac5f7e69adc80b48369e65d35d48e2577258f455ac",
+        "bytes": 159889,
+        "files": 21
+      },
+      "frozen_arc2": {
+        "aggregate_sha256": "691359b67804908c118b3191a3974185554626a7b21d5d044356e273ee0a1994",
+        "bytes": 69291,
+        "files": 14
+      },
+      "phase1_compute_matched_q": {
+        "aggregate_sha256": "474bba82446719404195ced7252bf512f3752f1484184c5192825e5bac21abca",
+        "bytes": 87176,
+        "files": 11
+      },
+      "phase1_m1_beta": {
+        "aggregate_sha256": "c3d269ce09472de70a79ae64451aae73fd12fefd60a550b5be35269088bdf837",
+        "bytes": 2058096,
+        "files": 17
+      },
+      "phase1_top2_policy": {
+        "aggregate_sha256": "0c175a1942d7e67f185e1397ee4e3839d2067402811ea19c2d9081aaabf21130",
+        "bytes": 69076,
+        "files": 11
+      },
+      "phase1_top_mode": {
+        "aggregate_sha256": "b6836a8a56ba3c94b7331c62f51a062179e08fa94d4b70ec5c44e4be65dc993e",
+        "bytes": 236418,
+        "files": 9
+      },
+      "phase2_discriminative_cell": {
+        "aggregate_sha256": "269bc21d62b9b044435ef757c93ff27b197baa8bf128ff6df31cb6d902835dd4",
+        "bytes": 399375,
+        "files": 18
+      }
+    },
+    "unchanged": true
+  },
+  "random_baseline": "exact expectation: full-coverage risk at every cutoff and therefore expected AURC equals full-coverage risk",
+  "scope": "deterministic CPU-only selective prediction / risk-coverage",
+  "status": "complete",
+  "tie_break": "ascending puzzle_id after the frozen confidence statistic"
+}

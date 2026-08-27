@@ -1,0 +1,5 @@
+metric,condition,value,ci95_low,ci95_high
+coverage,normal,0.6175,,
+coverage,blank,0.1025,,
+b1_rank1,normal,0.4025,0.335,0.4725
+b1_rank1,blank,0.04,0.015,0.07

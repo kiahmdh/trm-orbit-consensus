@@ -1,0 +1,1 @@
+split,method,puzzle_id,descriptor_ids,current_rank1_candidate_correct,current_rank2_candidate_correct,b1_top1_correct,hedge_attempt1_correct,hedge_attempt2_correct,old_top2_score,hedged_top2_score,old_top2_success,hedged_top2_success

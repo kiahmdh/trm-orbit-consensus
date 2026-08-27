@@ -1,0 +1,27 @@
+[
+  {
+    "bytes": 3561,
+    "path": "FINAL_FREEZE.md",
+    "sha256": "0a27bb9c1179d441b5ef47f00716c02a10110319b48aa0353fd9daf4f4f5f330"
+  },
+  {
+    "bytes": 15360,
+    "path": "final_artifact_checksums.csv",
+    "sha256": "f513ea4268e9e6682534d1880760af8c78572b9fb022c7746c4a377f264d1a13"
+  },
+  {
+    "bytes": 1991,
+    "path": "final_claims.json",
+    "sha256": "9cf7b3382e5c7033464c91e07c031827e5d0a4f9a58ad94238b46b32f181858c"
+  },
+  {
+    "bytes": 77669,
+    "path": "final_results_manifest.json",
+    "sha256": "a0c2d8d85de0a0a071fe13bf319bd39cfeceead6216c39ebb3d1db4dabb56619"
+  },
+  {
+    "bytes": 28581,
+    "path": "final_results_summary.csv",
+    "sha256": "7ece5831d3198a1b670fbe70e5766959d0b69065ee3d798fcae0ae1eb8867f82"
+  }
+]

@@ -1,0 +1,1569 @@
+{
+  "derivation_policy": "Only deterministic formatting, permitted arithmetic, analytic random expectations, and histogram bin counts are derived.",
+  "format_version": 1,
+  "generation_timestamp": "2026-08-19T00:00:00Z",
+  "input_inventory": {
+    "csv_files": 70,
+    "json_files": 46,
+    "used_files": 25
+  },
+  "input_policy": "read-only JSON/CSV allowlist from manifests/release_manifest.json",
+  "macro_trace": {
+    "ARCOneDescriptors": {
+      "source": "results/provenance/cache_completion.json",
+      "transformation": "verbatim",
+      "value": "419"
+    },
+    "ARCOnePuzzles": {
+      "source": "results/provenance/cache_completion.json",
+      "transformation": "verbatim",
+      "value": "400"
+    },
+    "ARCTwoBOne": {
+      "source": "results/arc2_supporting/frozen_method_results.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "2.92"
+    },
+    "ARCTwoBOneRankOne": {
+      "source": "results/arc2_supporting/frozen_method_results.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "2.9167"
+    },
+    "ARCTwoBOneTopTwo": {
+      "source": "results/arc2_supporting/frozen_method_results.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "5.0000"
+    },
+    "ARCTwoCoverage": {
+      "source": "results/arc2_supporting/frozen_method_results.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "11.6667"
+    },
+    "ARCTwoDefectAURC": {
+      "source": "results/risk_coverage/risk_coverage_summary.json",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.9181"
+    },
+    "ARCTwoMOneRankOne": {
+      "source": "results/arc2_supporting/frozen_method_results.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "2.9167"
+    },
+    "ARCTwoMOneTopTwo": {
+      "source": "results/arc2_supporting/frozen_method_results.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "4.5833"
+    },
+    "ARCTwoMThreeRankOne": {
+      "source": "results/arc2_supporting/frozen_method_results.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "2.9167"
+    },
+    "ARCTwoMThreeTopTwo": {
+      "source": "results/arc2_supporting/frozen_method_results.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "3.7500"
+    },
+    "ARCTwoMTwoRankOne": {
+      "source": "results/arc2_supporting/frozen_method_results.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "2.9167"
+    },
+    "ARCTwoMTwoTopTwo": {
+      "source": "results/arc2_supporting/frozen_method_results.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "3.7500"
+    },
+    "ARCTwoRandomAURC": {
+      "source": "results/risk_coverage/risk_coverage_summary.json",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.9708"
+    },
+    "BOneRankDelta": {
+      "source": "results/arc1_main/main_test_results.csv",
+      "transformation": "derived: exact difference from frozen B1 Rank-1",
+      "value": "+0.00"
+    },
+    "BOneRankOne": {
+      "source": "results/arc1_main/main_test_results.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "40.25"
+    },
+    "BOneTopTwo": {
+      "source": "results/arc1_main/main_test_results.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "45.50"
+    },
+    "BZeroRankDelta": {
+      "source": "results/arc1_main/main_test_results.csv",
+      "transformation": "derived: exact difference from frozen B1 Rank-1",
+      "value": "-11.00"
+    },
+    "BZeroRankOne": {
+      "source": "results/arc1_main/main_test_results.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "29.25"
+    },
+    "BZeroTopTwo": {
+      "source": "results/arc1_main/main_test_results.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "29.25"
+    },
+    "BetaFlipDescriptors": {
+      "source": "results/m1_beta_diagnostic/m1_beta_summary.json",
+      "transformation": "verbatim",
+      "value": "144"
+    },
+    "BetaFlipLeSweep": {
+      "source": "results/m1_beta_diagnostic/m1_beta_summary.json",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "8.33"
+    },
+    "BetaFlipMedian": {
+      "source": "results/m1_beta_diagnostic/m1_beta_summary.json",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "248"
+    },
+    "BetaFlipMedianTwo": {
+      "source": "results/m1_beta_diagnostic/m1_beta_summary.json",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "248.37"
+    },
+    "BetaSweepMaximum": {
+      "source": "results/m1_beta_diagnostic/m1_beta_summary.csv",
+      "transformation": "derived: maximum frozen beta",
+      "value": "16"
+    },
+    "BlankBOne": {
+      "source": "results/arc1_blank_ablation/frozen_method_results.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "4.00"
+    },
+    "BlankBOneHigh": {
+      "source": "results/arc1_blank_ablation/paired_bootstrap_cis.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "7.00"
+    },
+    "BlankBOneLow": {
+      "source": "results/arc1_blank_ablation/paired_bootstrap_cis.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "1.50"
+    },
+    "BlankCoverage": {
+      "source": "results/arc1_blank_ablation/frozen_method_results.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "10.25"
+    },
+    "BudgetFifty": {
+      "source": "results/arc1_main/selection_gap.csv",
+      "transformation": "verbatim: frozen budget column",
+      "value": "50"
+    },
+    "BudgetThousand": {
+      "source": "results/arc1_main/selection_gap.csv",
+      "transformation": "verbatim: frozen budget column",
+      "value": "1000"
+    },
+    "BudgetTwoFifty": {
+      "source": "results/arc1_main/selection_gap.csv",
+      "transformation": "verbatim: frozen budget column",
+      "value": "250"
+    },
+    "ComputeAxisHigh": {
+      "source": "results/compute_matched_q_audit/compute_matched_q_audit.csv",
+      "transformation": "derived: ceiling of frozen maximum percent plus one presentation point",
+      "value": "43"
+    },
+    "ComputeAxisLow": {
+      "source": "results/compute_matched_q_audit/compute_matched_q_audit.csv",
+      "transformation": "derived: floor of frozen minimum percent minus two presentation points",
+      "value": "38"
+    },
+    "ComputeKFiftyBOne": {
+      "source": "results/compute_matched_q_audit/compute_matched_q_audit.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "40.475"
+    },
+    "ComputeKFiftyMOne": {
+      "source": "results/compute_matched_q_audit/compute_matched_q_audit.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "40.375"
+    },
+    "ComputeKFiftyMThree": {
+      "source": "results/compute_matched_q_audit/compute_matched_q_audit.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "40.375"
+    },
+    "ComputeKFiftyMTwo": {
+      "source": "results/compute_matched_q_audit/compute_matched_q_audit.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "40.375"
+    },
+    "ComputeKThousandBOne": {
+      "source": "results/compute_matched_q_audit/compute_matched_q_audit.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "40.350"
+    },
+    "ComputeKThousandMOne": {
+      "source": "results/compute_matched_q_audit/compute_matched_q_audit.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "40.350"
+    },
+    "ComputeKThousandMThree": {
+      "source": "results/compute_matched_q_audit/compute_matched_q_audit.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "41.250"
+    },
+    "ComputeKThousandMTwo": {
+      "source": "results/compute_matched_q_audit/compute_matched_q_audit.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "41.250"
+    },
+    "ComputeKTwoFiftyBOne": {
+      "source": "results/compute_matched_q_audit/compute_matched_q_audit.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "40.500"
+    },
+    "ComputeKTwoFiftyMOne": {
+      "source": "results/compute_matched_q_audit/compute_matched_q_audit.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "40.650"
+    },
+    "ComputeKTwoFiftyMThree": {
+      "source": "results/compute_matched_q_audit/compute_matched_q_audit.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "40.500"
+    },
+    "ComputeKTwoFiftyMTwo": {
+      "source": "results/compute_matched_q_audit/compute_matched_q_audit.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "40.500"
+    },
+    "CoverageKFifty": {
+      "source": "results/arc1_main/selection_gap.csv",
+      "transformation": "derived: mean over ten frozen repeats and percent formatting",
+      "value": "52.0875"
+    },
+    "CoverageKThousand": {
+      "source": "results/arc1_main/selection_gap.csv",
+      "transformation": "derived: mean over ten frozen repeats and percent formatting",
+      "value": "61.75"
+    },
+    "CoverageKTwoFifty": {
+      "source": "results/arc1_main/selection_gap.csv",
+      "transformation": "derived: mean over ten frozen repeats and percent formatting",
+      "value": "57.9125"
+    },
+    "DefectAURC": {
+      "source": "results/risk_coverage_bootstrap/aurc_bootstrap_summary.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.316"
+    },
+    "DefectAURCFour": {
+      "source": "results/risk_coverage_bootstrap/aurc_bootstrap_summary.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.3159"
+    },
+    "DefectAURCHigh": {
+      "source": "results/risk_coverage_bootstrap/aurc_bootstrap_summary.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.3949"
+    },
+    "DefectAURCLow": {
+      "source": "results/risk_coverage_bootstrap/aurc_bootstrap_summary.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.2468"
+    },
+    "DefectAUROC": {
+      "source": "results/arc1_main/h1_auroc_results.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.842"
+    },
+    "DefectAUROCExact": {
+      "source": "results/arc1_main/h1_auroc_results.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.841862"
+    },
+    "DefectAccuracyQuarter": {
+      "source": "results/risk_coverage_bootstrap/operating_point_bootstrap_arc1.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "88.00"
+    },
+    "DefectAccuracyQuarterHigh": {
+      "source": "results/risk_coverage_bootstrap/operating_point_bootstrap_arc1.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "98.00"
+    },
+    "DefectAccuracyQuarterLow": {
+      "source": "results/risk_coverage_bootstrap/operating_point_bootstrap_arc1.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "78.00"
+    },
+    "DefectMinusEntropy": {
+      "source": "results/risk_coverage_bootstrap/aurc_paired_differences.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "+0.0382"
+    },
+    "DefectMinusEntropyHigh": {
+      "source": "results/risk_coverage_bootstrap/aurc_paired_differences.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.0704"
+    },
+    "DefectMinusEntropyLow": {
+      "source": "results/risk_coverage_bootstrap/aurc_paired_differences.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.0084"
+    },
+    "DefectMinusMargin": {
+      "source": "results/risk_coverage_bootstrap/aurc_paired_differences.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "+0.0551"
+    },
+    "DefectMinusMarginHigh": {
+      "source": "results/risk_coverage_bootstrap/aurc_paired_differences.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.0865"
+    },
+    "DefectMinusMarginLow": {
+      "source": "results/risk_coverage_bootstrap/aurc_paired_differences.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.0270"
+    },
+    "DefectMinusRandom": {
+      "source": "results/risk_coverage_bootstrap/aurc_paired_differences.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "-0.2816"
+    },
+    "DefectMinusRandomHigh": {
+      "source": "results/risk_coverage_bootstrap/aurc_paired_differences.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "-0.2463"
+    },
+    "DefectMinusRandomLow": {
+      "source": "results/risk_coverage_bootstrap/aurc_paired_differences.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "-0.3096"
+    },
+    "DefectMinusShare": {
+      "source": "results/risk_coverage_bootstrap/aurc_paired_differences.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "+0.0538"
+    },
+    "DefectMinusShareHigh": {
+      "source": "results/risk_coverage_bootstrap/aurc_paired_differences.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.0851"
+    },
+    "DefectMinusShareLow": {
+      "source": "results/risk_coverage_bootstrap/aurc_paired_differences.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.0256"
+    },
+    "DefectMinusWinnerQ": {
+      "source": "results/risk_coverage_bootstrap/aurc_paired_differences.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "+0.0031"
+    },
+    "DefectMinusWinnerQHigh": {
+      "source": "results/risk_coverage_bootstrap/aurc_paired_differences.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.0444"
+    },
+    "DefectMinusWinnerQLow": {
+      "source": "results/risk_coverage_bootstrap/aurc_paired_differences.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "-0.0385"
+    },
+    "DisagreeCells": {
+      "source": "results/discriminative_cell_dev/discriminative_cell_summary.json",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "4.0"
+    },
+    "DiscBothCorrect": {
+      "source": "results/discriminative_cell_dev/discriminative_cell_summary.json",
+      "transformation": "verbatim",
+      "value": "13"
+    },
+    "DiscBothWrong": {
+      "source": "results/discriminative_cell_dev/discriminative_cell_summary.json",
+      "transformation": "verbatim",
+      "value": "15"
+    },
+    "DiscCorrectToWrong": {
+      "source": "results/discriminative_cell_dev/discriminative_cell_summary.json",
+      "transformation": "verbatim",
+      "value": "1"
+    },
+    "DiscPrefCorrectCount": {
+      "source": "results/discriminative_cell_dev/discriminative_cell_summary.json",
+      "transformation": "verbatim",
+      "value": "21"
+    },
+    "DiscPrefTieCount": {
+      "source": "results/discriminative_cell_dev/discriminative_cell_summary.json",
+      "transformation": "verbatim",
+      "value": "9"
+    },
+    "DiscPrefWrongCount": {
+      "source": "results/discriminative_cell_dev/discriminative_cell_summary.json",
+      "transformation": "verbatim",
+      "value": "16"
+    },
+    "DiscTies": {
+      "source": "results/discriminative_cell_dev/discriminative_cell_summary.json",
+      "transformation": "verbatim",
+      "value": "9"
+    },
+    "DiscWrongToCorrect": {
+      "source": "results/discriminative_cell_dev/discriminative_cell_summary.json",
+      "transformation": "verbatim",
+      "value": "8"
+    },
+    "EntropyAURC": {
+      "source": "results/risk_coverage_bootstrap/aurc_bootstrap_summary.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.278"
+    },
+    "EntropyAURCFour": {
+      "source": "results/risk_coverage_bootstrap/aurc_bootstrap_summary.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.2777"
+    },
+    "EntropyAURCHigh": {
+      "source": "results/risk_coverage_bootstrap/aurc_bootstrap_summary.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.3533"
+    },
+    "EntropyAURCLow": {
+      "source": "results/risk_coverage_bootstrap/aurc_bootstrap_summary.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.2126"
+    },
+    "EntropyTailProbability": {
+      "source": "results/risk_coverage_bootstrap/aurc_paired_differences.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.0059"
+    },
+    "EntropyTwoSidedP": {
+      "source": "results/risk_coverage_bootstrap/aurc_paired_differences.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.0120"
+    },
+    "FailPrefCorrect": {
+      "source": "results/discriminative_cell_dev/discriminative_cell_summary.json",
+      "transformation": "derived: frozen count divided by frozen total",
+      "value": "30.4"
+    },
+    "FailPrefCorrectCount": {
+      "source": "results/discriminative_cell_dev/discriminative_cell_summary.json",
+      "transformation": "verbatim",
+      "value": "14"
+    },
+    "FailPrefTieCount": {
+      "source": "results/discriminative_cell_dev/discriminative_cell_summary.json",
+      "transformation": "verbatim",
+      "value": "0"
+    },
+    "FailPrefWrong": {
+      "source": "results/discriminative_cell_dev/discriminative_cell_summary.json",
+      "transformation": "derived: frozen count divided by frozen total",
+      "value": "69.6"
+    },
+    "FailPrefWrongCount": {
+      "source": "results/discriminative_cell_dev/discriminative_cell_summary.json",
+      "transformation": "verbatim",
+      "value": "32"
+    },
+    "FailureCount": {
+      "source": "results/discriminative_cell_dev/discriminative_cell_summary.json",
+      "transformation": "derived: sum of frozen counts",
+      "value": "46"
+    },
+    "FullARCOneBOne": {
+      "source": "results/provenance/cache_completion.json",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "40.00"
+    },
+    "GapKFifty": {
+      "source": "results/arc1_main/selection_gap.csv",
+      "transformation": "derived: mean over ten frozen repeats and percent formatting",
+      "value": "12.80"
+    },
+    "GapKThousand": {
+      "source": "results/arc1_main/selection_gap.csv",
+      "transformation": "derived: mean over ten frozen repeats and percent formatting",
+      "value": "21.75"
+    },
+    "GapKTwoFifty": {
+      "source": "results/arc1_main/selection_gap.csv",
+      "transformation": "derived: mean over ten frozen repeats and percent formatting",
+      "value": "17.825"
+    },
+    "GapRepeats": {
+      "source": "results/arc1_main/selection_gap.csv",
+      "transformation": "derived: count of frozen repeat rows at one budget",
+      "value": "10"
+    },
+    "IdentifierCount": {
+      "source": "results/provenance/arc1_preflight.json",
+      "transformation": "verbatim",
+      "value": "876406"
+    },
+    "MOneRankDelta": {
+      "source": "results/arc1_main/main_test_results.csv",
+      "transformation": "derived: exact difference from frozen B1 Rank-1",
+      "value": "+0.00"
+    },
+    "MOneRankOne": {
+      "source": "results/arc1_main/main_test_results.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "40.25"
+    },
+    "MOneTopTwo": {
+      "source": "results/arc1_main/main_test_results.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "45.50"
+    },
+    "MThreeActive": {
+      "source": "results/arc1_main/analysis_report.json",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "86.00"
+    },
+    "MThreeFallback": {
+      "source": "results/arc1_main/analysis_report.json",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.5"
+    },
+    "MThreeFiltered": {
+      "source": "results/arc1_main/analysis_report.json",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.8416"
+    },
+    "MThreeRankChange": {
+      "source": "results/arc1_main/main_test_results.csv",
+      "transformation": "derived: exact difference of frozen TEST values",
+      "value": "+0.00"
+    },
+    "MThreeRankDelta": {
+      "source": "results/arc1_main/paired_bootstrap_cis.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "+1.00"
+    },
+    "MThreeRankDeltaHigh": {
+      "source": "results/arc1_main/paired_bootstrap_cis.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "+2.50"
+    },
+    "MThreeRankDeltaLow": {
+      "source": "results/arc1_main/paired_bootstrap_cis.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "+0.00"
+    },
+    "MThreeRankOne": {
+      "source": "results/arc1_main/main_test_results.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "41.25"
+    },
+    "MThreeTopDelta": {
+      "source": "results/arc1_main/paired_bootstrap_cis.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "-1.50"
+    },
+    "MThreeTopDeltaHigh": {
+      "source": "results/arc1_main/paired_bootstrap_cis.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "+0.00"
+    },
+    "MThreeTopDeltaLow": {
+      "source": "results/arc1_main/paired_bootstrap_cis.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "-3.50"
+    },
+    "MThreeTopTwo": {
+      "source": "results/arc1_main/main_test_results.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "44.00"
+    },
+    "MTwoRankDelta": {
+      "source": "results/arc1_main/paired_bootstrap_cis.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "+1.00"
+    },
+    "MTwoRankDeltaHigh": {
+      "source": "results/arc1_main/paired_bootstrap_cis.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "+2.50"
+    },
+    "MTwoRankDeltaLow": {
+      "source": "results/arc1_main/paired_bootstrap_cis.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "+0.00"
+    },
+    "MTwoRankOne": {
+      "source": "results/arc1_main/main_test_results.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "41.25"
+    },
+    "MTwoTopDelta": {
+      "source": "results/arc1_main/paired_bootstrap_cis.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "-1.50"
+    },
+    "MTwoTopDeltaHigh": {
+      "source": "results/arc1_main/paired_bootstrap_cis.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "+0.00"
+    },
+    "MTwoTopDeltaLow": {
+      "source": "results/arc1_main/paired_bootstrap_cis.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "-3.50"
+    },
+    "MTwoTopTwo": {
+      "source": "results/arc1_main/main_test_results.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "44.00"
+    },
+    "MajorityKFifty": {
+      "source": "results/arc1_main/selection_gap.csv",
+      "transformation": "derived: mean over ten frozen repeats and percent formatting",
+      "value": "39.2875"
+    },
+    "MajorityKThousand": {
+      "source": "results/arc1_main/selection_gap.csv",
+      "transformation": "derived: mean over ten frozen repeats and percent formatting",
+      "value": "40.00"
+    },
+    "MajorityKTwoFifty": {
+      "source": "results/arc1_main/selection_gap.csv",
+      "transformation": "derived: mean over ten frozen repeats and percent formatting",
+      "value": "40.0875"
+    },
+    "MarginAURC": {
+      "source": "results/risk_coverage_bootstrap/aurc_bootstrap_summary.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.261"
+    },
+    "MarginAURCFour": {
+      "source": "results/risk_coverage_bootstrap/aurc_bootstrap_summary.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.2608"
+    },
+    "MarginAURCHigh": {
+      "source": "results/risk_coverage_bootstrap/aurc_bootstrap_summary.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.3340"
+    },
+    "MarginAURCLow": {
+      "source": "results/risk_coverage_bootstrap/aurc_bootstrap_summary.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.1987"
+    },
+    "MarginTailProbability": {
+      "source": "results/risk_coverage_bootstrap/aurc_paired_differences.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.0002"
+    },
+    "MarginTwoSidedP": {
+      "source": "results/risk_coverage_bootstrap/aurc_paired_differences.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.0006"
+    },
+    "MedianTopSim": {
+      "source": "results/discriminative_cell_dev/discriminative_cell_summary.json",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.96"
+    },
+    "NormalBOne": {
+      "source": "results/arc1_main/main_test_results.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "40.25"
+    },
+    "NormalCoverage": {
+      "source": "results/arc1_main/main_test_results.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "61.75"
+    },
+    "QuarterCoverage": {
+      "source": "results/risk_coverage_bootstrap/operating_point_bootstrap_arc1.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "25"
+    },
+    "RandomAURC": {
+      "source": "results/risk_coverage/risk_coverage_summary.json",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.5975"
+    },
+    "RandomTailProbability": {
+      "source": "results/risk_coverage_bootstrap/aurc_paired_differences.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "1.0000"
+    },
+    "RandomTwoSidedP": {
+      "source": "results/risk_coverage_bootstrap/aurc_paired_differences.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.0002"
+    },
+    "ShareAURC": {
+      "source": "results/risk_coverage_bootstrap/aurc_bootstrap_summary.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.262"
+    },
+    "ShareAURCFour": {
+      "source": "results/risk_coverage_bootstrap/aurc_bootstrap_summary.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.2621"
+    },
+    "ShareAURCHigh": {
+      "source": "results/risk_coverage_bootstrap/aurc_bootstrap_summary.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.3351"
+    },
+    "ShareAURCLow": {
+      "source": "results/risk_coverage_bootstrap/aurc_bootstrap_summary.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.1998"
+    },
+    "ShareTailProbability": {
+      "source": "results/risk_coverage_bootstrap/aurc_paired_differences.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.0001"
+    },
+    "ShareTwoSidedP": {
+      "source": "results/risk_coverage_bootstrap/aurc_paired_differences.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.0004"
+    },
+    "WinnerQAURC": {
+      "source": "results/risk_coverage_bootstrap/aurc_bootstrap_summary.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.313"
+    },
+    "WinnerQAURCFour": {
+      "source": "results/risk_coverage_bootstrap/aurc_bootstrap_summary.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.3128"
+    },
+    "WinnerQAURCHigh": {
+      "source": "results/risk_coverage_bootstrap/aurc_bootstrap_summary.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.3944"
+    },
+    "WinnerQAURCLow": {
+      "source": "results/risk_coverage_bootstrap/aurc_bootstrap_summary.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.2435"
+    },
+    "WinnerQTailProbability": {
+      "source": "results/risk_coverage_bootstrap/aurc_paired_differences.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.4438"
+    },
+    "WinnerQTwoSidedP": {
+      "source": "results/risk_coverage_bootstrap/aurc_paired_differences.csv",
+      "transformation": "derived: decimal or percent formatting of frozen field",
+      "value": "0.8877"
+    }
+  },
+  "outputs": [
+    {
+      "bytes": 2192,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "VALIDATION_REPORT.md",
+      "sha256": "965fb7b65cf1d3af89cacb2f224e48c3605c65ecaa31053406835d883b815176",
+      "sources": [
+        {
+          "path": "results/arc1_blank_ablation/frozen_method_results.csv",
+          "sha256": "62c26dc9cab62e3c41e0b6d50a2a82482c5e71f1c9b66f450f47efa69cec5c9d"
+        },
+        {
+          "path": "results/arc1_blank_ablation/paired_bootstrap_cis.csv",
+          "sha256": "1b43bc5a11d841c4f283cde6fb46fb540c44e2c1d035c0a17a59eb1e0fcc61a9"
+        },
+        {
+          "path": "results/arc1_main/analysis_report.json",
+          "sha256": "f92d0d1310ab5dbd01ae463e7db8ec2f3dbb6e6041e242f41419dc7ae57bf23d"
+        },
+        {
+          "path": "results/arc1_main/h1_auroc_results.csv",
+          "sha256": "3bded17f57c3e7236ef4800214a7e04c582545ba142a7f172357e9d564cb3818"
+        },
+        {
+          "path": "results/arc1_main/main_test_results.csv",
+          "sha256": "6dcb897ac3ec7dfc1d1408f00ada7f47c6680e0b3fcc3341290caa71fc9954fb"
+        },
+        {
+          "path": "results/arc1_main/orbit_statistics.csv",
+          "sha256": "1ad8c33634e57a2ce1a268ac52a2e5170b5992dc0ce74430d620f83b7344b9b4"
+        },
+        {
+          "path": "results/arc1_main/paired_bootstrap_cis.csv",
+          "sha256": "3f7ae85c75035c8b843aa02468b053e2926ccb119933882261edc5fabb1c4a97"
+        },
+        {
+          "path": "results/arc1_main/selection_gap.csv",
+          "sha256": "6674abcc3edd0da4e157ed43cc9ad8d08c241b4530f60ac897fb70e2901ef62e"
+        },
+        {
+          "path": "results/arc2_supporting/frozen_method_results.csv",
+          "sha256": "5263530e77953201ea817349aba8d8e6c7fe1dfcfe952aa14871e293f25f7b01"
+        },
+        {
+          "path": "results/compute_matched_q_audit/compute_matched_q_audit.csv",
+          "sha256": "890f4c151d98eb509d5ba24cb8a175ef66bcdc1ad4c10439c43e6fb8af119e7d"
+        },
+        {
+          "path": "results/discriminative_cell_dev/discriminative_cell_summary.json",
+          "sha256": "a85dc9c2e1eb62e1a1602e0cfcd02dda31cefe0aaedc69e59873c2cfb8ec8b3d"
+        },
+        {
+          "path": "results/final_freeze/final_results_manifest.json",
+          "sha256": "a0c2d8d85de0a0a071fe13bf319bd39cfeceead6216c39ebb3d1db4dabb56619"
+        },
+        {
+          "path": "results/m1_beta_diagnostic/m1_beta_flip_thresholds.csv",
+          "sha256": "024faf40a8281be821dd3c29537605cde5ca4be02257c1bb8de2b5267f95b36b"
+        },
+        {
+          "path": "results/m1_beta_diagnostic/m1_beta_summary.csv",
+          "sha256": "addc00b17e6fda0e4c254b70bec2932e518dcd9eb86781857b02fb824a60f7e5"
+        },
+        {
+          "path": "results/m1_beta_diagnostic/m1_beta_summary.json",
+          "sha256": "4a46e5a5f1677b642762107f1b30010b9b216b707c4d09b9276024cdb23c47f5"
+        },
+        {
+          "path": "results/provenance/arc1_preflight.json",
+          "sha256": "598d9a84635d2ebb8f2771f1164899c2f337281d92f11050fcc4ab709bc770fe"
+        },
+        {
+          "path": "results/provenance/cache_completion.json",
+          "sha256": "2013d8d1bf8f791afcf0014d65f5ae0cb41b53fd8af1c8a4ab33d6dfc0d4bf26"
+        },
+        {
+          "path": "results/risk_coverage/arc1_operating_points.csv",
+          "sha256": "b4ca022f663aa3f90d90ba7ba8affdf2951328d17bf7bf20455473d9259052e1"
+        },
+        {
+          "path": "results/risk_coverage/arc1_risk_coverage.csv",
+          "sha256": "5a52dfd928710d9619451e863dd49ae2d181eabd0160d030b1b0bb8866265bc0"
+        },
+        {
+          "path": "results/risk_coverage/arc2_risk_coverage.csv",
+          "sha256": "67b6d36523bcff08c7819c0bc0ee46fcf16df26955c39fcd4708050523e35a8b"
+        },
+        {
+          "path": "results/risk_coverage/confidence_comparison.csv",
+          "sha256": "70bf2858260cb672bab6c25a80108d8d7a2dba788d29cd28028cc1baf3216f25"
+        },
+        {
+          "path": "results/risk_coverage/risk_coverage_summary.json",
+          "sha256": "b754c1b53c6ccc13fa6fdd9e5295b14ffdf0f6827fcab1e691addc46666a9e39"
+        },
+        {
+          "path": "results/risk_coverage_bootstrap/aurc_bootstrap_summary.csv",
+          "sha256": "f8b176612b8cccd71647e889cf84d86856f4b9c75756b5280ece0d7867930a73"
+        },
+        {
+          "path": "results/risk_coverage_bootstrap/aurc_paired_differences.csv",
+          "sha256": "7ef1c0240efcee42f5ed9dde6a7165180d9d146fe5f5892b88001cb67cbac12c"
+        },
+        {
+          "path": "results/risk_coverage_bootstrap/operating_point_bootstrap_arc1.csv",
+          "sha256": "25b1926e5a91b5e8712bd7cd8f2f0f6eab6295b33fc3657889c924b02760513e"
+        }
+      ],
+      "transformation": "derived: validation of frozen values, fonts, provenance, and two-pass byte stability"
+    },
+    {
+      "bytes": 64536,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "build_assets.py",
+      "sha256": "79568ba822822265f79c5fbb5d4334abd23473c3e555195303b04c407cb2bdae",
+      "sources": [],
+      "transformation": "derived: deterministic renderer constrained by the frozen release manifest and camera-ready presentation specification"
+    },
+    {
+      "bytes": 4056,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "captions/captions.tex",
+      "sha256": "f43b01a0f719e025a028f4a03a862713f10715fb0b8466092fd9be7c3a2ae957",
+      "sources": [
+        {
+          "path": "results/arc1_main/selection_gap.csv",
+          "sha256": "6674abcc3edd0da4e157ed43cc9ad8d08c241b4530f60ac897fb70e2901ef62e"
+        },
+        {
+          "path": "results/risk_coverage/arc1_risk_coverage.csv",
+          "sha256": "5a52dfd928710d9619451e863dd49ae2d181eabd0160d030b1b0bb8866265bc0"
+        },
+        {
+          "path": "results/risk_coverage/confidence_comparison.csv",
+          "sha256": "70bf2858260cb672bab6c25a80108d8d7a2dba788d29cd28028cc1baf3216f25"
+        },
+        {
+          "path": "results/m1_beta_diagnostic/m1_beta_summary.csv",
+          "sha256": "addc00b17e6fda0e4c254b70bec2932e518dcd9eb86781857b02fb824a60f7e5"
+        },
+        {
+          "path": "results/m1_beta_diagnostic/m1_beta_summary.json",
+          "sha256": "4a46e5a5f1677b642762107f1b30010b9b216b707c4d09b9276024cdb23c47f5"
+        },
+        {
+          "path": "results/arc1_main/orbit_statistics.csv",
+          "sha256": "1ad8c33634e57a2ce1a268ac52a2e5170b5992dc0ce74430d620f83b7344b9b4"
+        },
+        {
+          "path": "results/arc1_main/main_test_results.csv",
+          "sha256": "6dcb897ac3ec7dfc1d1408f00ada7f47c6680e0b3fcc3341290caa71fc9954fb"
+        },
+        {
+          "path": "results/arc1_main/paired_bootstrap_cis.csv",
+          "sha256": "3f7ae85c75035c8b843aa02468b053e2926ccb119933882261edc5fabb1c4a97"
+        },
+        {
+          "path": "results/compute_matched_q_audit/compute_matched_q_audit.csv",
+          "sha256": "890f4c151d98eb509d5ba24cb8a175ef66bcdc1ad4c10439c43e6fb8af119e7d"
+        },
+        {
+          "path": "results/arc1_blank_ablation/frozen_method_results.csv",
+          "sha256": "62c26dc9cab62e3c41e0b6d50a2a82482c5e71f1c9b66f450f47efa69cec5c9d"
+        },
+        {
+          "path": "results/arc1_blank_ablation/paired_bootstrap_cis.csv",
+          "sha256": "1b43bc5a11d841c4f283cde6fb46fb540c44e2c1d035c0a17a59eb1e0fcc61a9"
+        },
+        {
+          "path": "results/arc2_supporting/frozen_method_results.csv",
+          "sha256": "5263530e77953201ea817349aba8d8e6c7fe1dfcfe952aa14871e293f25f7b01"
+        },
+        {
+          "path": "results/risk_coverage/risk_coverage_summary.json",
+          "sha256": "b754c1b53c6ccc13fa6fdd9e5295b14ffdf0f6827fcab1e691addc46666a9e39"
+        },
+        {
+          "path": "results/discriminative_cell_dev/discriminative_cell_summary.json",
+          "sha256": "a85dc9c2e1eb62e1a1602e0cfcd02dda31cefe0aaedc69e59873c2cfb8ec8b3d"
+        },
+        {
+          "path": "results/arc1_main/analysis_report.json",
+          "sha256": "f92d0d1310ab5dbd01ae463e7db8ec2f3dbb6e6041e242f41419dc7ae57bf23d"
+        }
+      ],
+      "transformation": "derived: finding-oriented prose with numerical values referenced through artifact-generated macros"
+    },
+    {
+      "bytes": 16437,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "figures/appendix/figA1_compute_matched.pdf",
+      "sha256": "27b71290c3e932e81f07027c871c5b586e3a61bd3561cc5584892784b92de748",
+      "sources": [
+        {
+          "path": "results/compute_matched_q_audit/compute_matched_q_audit.csv",
+          "sha256": "890f4c151d98eb509d5ba24cb8a175ef66bcdc1ad4c10439c43e6fb8af119e7d"
+        }
+      ],
+      "transformation": "verbatim: frozen compute-matched mean Rank-1 values and percent formatting"
+    },
+    {
+      "bytes": 13105,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "figures/appendix/figA2_dispersion.pdf",
+      "sha256": "76b8b4294a477b7a746dc2bf64333c76c2d17f547f8be963b90452f608fc7612",
+      "sources": [
+        {
+          "path": "results/arc1_main/orbit_statistics.csv",
+          "sha256": "1ad8c33634e57a2ce1a268ac52a2e5170b5992dc0ce74430d620f83b7344b9b4"
+        }
+      ],
+      "transformation": "verbatim: 419 frozen task statistics; derived: deterministic histogram bins"
+    },
+    {
+      "bytes": 12327,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "figures/appendix/figA3_blankid.pdf",
+      "sha256": "79f480ee5062b3223897a7ca767943957b0a2a88ea2dbba51ffc3cbdbeaa2017",
+      "sources": [
+        {
+          "path": "results/arc1_main/main_test_results.csv",
+          "sha256": "6dcb897ac3ec7dfc1d1408f00ada7f47c6680e0b3fcc3341290caa71fc9954fb"
+        },
+        {
+          "path": "results/arc1_blank_ablation/frozen_method_results.csv",
+          "sha256": "62c26dc9cab62e3c41e0b6d50a2a82482c5e71f1c9b66f450f47efa69cec5c9d"
+        },
+        {
+          "path": "results/arc1_main/paired_bootstrap_cis.csv",
+          "sha256": "3f7ae85c75035c8b843aa02468b053e2926ccb119933882261edc5fabb1c4a97"
+        },
+        {
+          "path": "results/arc1_blank_ablation/paired_bootstrap_cis.csv",
+          "sha256": "1b43bc5a11d841c4f283cde6fb46fb540c44e2c1d035c0a17a59eb1e0fcc61a9"
+        }
+      ],
+      "transformation": "verbatim: frozen TEST coverage/rank-1 and available rank-1 bootstrap CIs"
+    },
+    {
+      "bytes": 15132,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "figures/appendix/figA4_arc2_risk_coverage.pdf",
+      "sha256": "43d29051c4e3fa192736b35973210b0add76b6c19b8724c8827f917735613dd3",
+      "sources": [
+        {
+          "path": "results/risk_coverage/arc2_risk_coverage.csv",
+          "sha256": "67b6d36523bcff08c7819c0bc0ee46fcf16df26955c39fcd4708050523e35a8b"
+        },
+        {
+          "path": "results/risk_coverage/risk_coverage_summary.json",
+          "sha256": "b754c1b53c6ccc13fa6fdd9e5295b14ffdf0f6827fcab1e691addc46666a9e39"
+        },
+        {
+          "path": "results/arc2_supporting/frozen_method_results.csv",
+          "sha256": "5263530e77953201ea817349aba8d8e6c7fe1dfcfe952aa14871e293f25f7b01"
+        }
+      ],
+      "transformation": "verbatim: frozen ARC-2 defect curve and AURCs; derived: analytic random expectation and percent formatting"
+    },
+    {
+      "bytes": 16185,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "figures/main/fig1_gap.pdf",
+      "sha256": "ec08b3c9c63ee3634e4f85ebcf23cdbff8fbe71172b38f11ec01df0a5339a501",
+      "sources": [
+        {
+          "path": "results/arc1_main/selection_gap.csv",
+          "sha256": "6674abcc3edd0da4e157ed43cc9ad8d08c241b4530f60ac897fb70e2901ef62e"
+        }
+      ],
+      "transformation": "derived: mean of ten frozen repeats per budget and percent formatting"
+    },
+    {
+      "bytes": 20261,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "figures/main/fig2_risk_coverage.pdf",
+      "sha256": "7c7e9a96a2ec202e1163580a1e04d84e14cd952b9c00b06390588929f577fa0a",
+      "sources": [
+        {
+          "path": "results/risk_coverage/arc1_risk_coverage.csv",
+          "sha256": "5a52dfd928710d9619451e863dd49ae2d181eabd0160d030b1b0bb8866265bc0"
+        },
+        {
+          "path": "results/risk_coverage/confidence_comparison.csv",
+          "sha256": "70bf2858260cb672bab6c25a80108d8d7a2dba788d29cd28028cc1baf3216f25"
+        },
+        {
+          "path": "results/risk_coverage/arc1_operating_points.csv",
+          "sha256": "b4ca022f663aa3f90d90ba7ba8affdf2951328d17bf7bf20455473d9259052e1"
+        },
+        {
+          "path": "results/risk_coverage/risk_coverage_summary.json",
+          "sha256": "b754c1b53c6ccc13fa6fdd9e5295b14ffdf0f6827fcab1e691addc46666a9e39"
+        },
+        {
+          "path": "results/arc1_main/main_test_results.csv",
+          "sha256": "6dcb897ac3ec7dfc1d1408f00ada7f47c6680e0b3fcc3341290caa71fc9954fb"
+        }
+      ],
+      "transformation": "verbatim: five frozen 200-cutoff curves and AURCs; derived: analytic random expectation and percent formatting"
+    },
+    {
+      "bytes": 22210,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "figures/main/fig3_beta_dynamics.pdf",
+      "sha256": "ced60830bde52cb6f8401c3afc3639116ebc31abc277645bb5d8c7fac050f055",
+      "sources": [
+        {
+          "path": "results/m1_beta_diagnostic/m1_beta_summary.csv",
+          "sha256": "addc00b17e6fda0e4c254b70bec2932e518dcd9eb86781857b02fb824a60f7e5"
+        },
+        {
+          "path": "results/m1_beta_diagnostic/m1_beta_flip_thresholds.csv",
+          "sha256": "024faf40a8281be821dd3c29537605cde5ca4be02257c1bb8de2b5267f95b36b"
+        },
+        {
+          "path": "results/m1_beta_diagnostic/m1_beta_summary.json",
+          "sha256": "4a46e5a5f1677b642762107f1b30010b9b216b707c4d09b9276024cdb23c47f5"
+        }
+      ],
+      "transformation": "verbatim: frozen DEV sweep, transitions, and all beta-flip values; derived: deterministic histogram bins"
+    },
+    {
+      "bytes": 40006,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "figures/png_preview/fig1_gap.png",
+      "sha256": "6118e8519f068583aa2045b2e7a946424c2eb709717f641c46ac0e66640f8494",
+      "sources": [
+        {
+          "path": "results/arc1_main/selection_gap.csv",
+          "sha256": "6674abcc3edd0da4e157ed43cc9ad8d08c241b4530f60ac897fb70e2901ef62e"
+        }
+      ],
+      "transformation": "derived: mean of ten frozen repeats per budget and percent formatting; derived: 200-dpi raster preview of the identical figure"
+    },
+    {
+      "bytes": 99978,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "figures/png_preview/fig2_risk_coverage.png",
+      "sha256": "e18b4f3ac1d4d09562bbf38e812bd5d1545d3a5309940a59ebd9c8667cc04da1",
+      "sources": [
+        {
+          "path": "results/risk_coverage/arc1_risk_coverage.csv",
+          "sha256": "5a52dfd928710d9619451e863dd49ae2d181eabd0160d030b1b0bb8866265bc0"
+        },
+        {
+          "path": "results/risk_coverage/confidence_comparison.csv",
+          "sha256": "70bf2858260cb672bab6c25a80108d8d7a2dba788d29cd28028cc1baf3216f25"
+        },
+        {
+          "path": "results/risk_coverage/arc1_operating_points.csv",
+          "sha256": "b4ca022f663aa3f90d90ba7ba8affdf2951328d17bf7bf20455473d9259052e1"
+        },
+        {
+          "path": "results/risk_coverage/risk_coverage_summary.json",
+          "sha256": "b754c1b53c6ccc13fa6fdd9e5295b14ffdf0f6827fcab1e691addc46666a9e39"
+        },
+        {
+          "path": "results/arc1_main/main_test_results.csv",
+          "sha256": "6dcb897ac3ec7dfc1d1408f00ada7f47c6680e0b3fcc3341290caa71fc9954fb"
+        }
+      ],
+      "transformation": "verbatim: five frozen 200-cutoff curves and AURCs; derived: analytic random expectation and percent formatting; derived: 200-dpi raster preview of the identical figure"
+    },
+    {
+      "bytes": 94537,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "figures/png_preview/fig3_beta_dynamics.png",
+      "sha256": "fe0426b40ec787b397919cfd47ee4120572ea97ece30ea90cce691ce7ae9b3a9",
+      "sources": [
+        {
+          "path": "results/m1_beta_diagnostic/m1_beta_summary.csv",
+          "sha256": "addc00b17e6fda0e4c254b70bec2932e518dcd9eb86781857b02fb824a60f7e5"
+        },
+        {
+          "path": "results/m1_beta_diagnostic/m1_beta_flip_thresholds.csv",
+          "sha256": "024faf40a8281be821dd3c29537605cde5ca4be02257c1bb8de2b5267f95b36b"
+        },
+        {
+          "path": "results/m1_beta_diagnostic/m1_beta_summary.json",
+          "sha256": "4a46e5a5f1677b642762107f1b30010b9b216b707c4d09b9276024cdb23c47f5"
+        }
+      ],
+      "transformation": "verbatim: frozen DEV sweep, transitions, and all beta-flip values; derived: deterministic histogram bins; derived: 200-dpi raster preview of the identical figure"
+    },
+    {
+      "bytes": 44458,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "figures/png_preview/figA1_compute_matched.png",
+      "sha256": "7d708e1eef21d869706c6d25030d2fe5b5acfaa909fb23c8f2663c076356c789",
+      "sources": [
+        {
+          "path": "results/compute_matched_q_audit/compute_matched_q_audit.csv",
+          "sha256": "890f4c151d98eb509d5ba24cb8a175ef66bcdc1ad4c10439c43e6fb8af119e7d"
+        }
+      ],
+      "transformation": "verbatim: frozen compute-matched mean Rank-1 values and percent formatting; derived: 200-dpi raster preview of the identical figure"
+    },
+    {
+      "bytes": 43687,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "figures/png_preview/figA2_dispersion.png",
+      "sha256": "971b610140c7bf2697ef4f95392ab2ece0b115830d60721514edd9bfc0cf03fe",
+      "sources": [
+        {
+          "path": "results/arc1_main/orbit_statistics.csv",
+          "sha256": "1ad8c33634e57a2ce1a268ac52a2e5170b5992dc0ce74430d620f83b7344b9b4"
+        }
+      ],
+      "transformation": "verbatim: 419 frozen task statistics; derived: deterministic histogram bins; derived: 200-dpi raster preview of the identical figure"
+    },
+    {
+      "bytes": 20874,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "figures/png_preview/figA3_blankid.png",
+      "sha256": "9e480690dd1a0369d3a8261360c444e41c5996d634648111cbc5a462821e0b1f",
+      "sources": [
+        {
+          "path": "results/arc1_main/main_test_results.csv",
+          "sha256": "6dcb897ac3ec7dfc1d1408f00ada7f47c6680e0b3fcc3341290caa71fc9954fb"
+        },
+        {
+          "path": "results/arc1_blank_ablation/frozen_method_results.csv",
+          "sha256": "62c26dc9cab62e3c41e0b6d50a2a82482c5e71f1c9b66f450f47efa69cec5c9d"
+        },
+        {
+          "path": "results/arc1_main/paired_bootstrap_cis.csv",
+          "sha256": "3f7ae85c75035c8b843aa02468b053e2926ccb119933882261edc5fabb1c4a97"
+        },
+        {
+          "path": "results/arc1_blank_ablation/paired_bootstrap_cis.csv",
+          "sha256": "1b43bc5a11d841c4f283cde6fb46fb540c44e2c1d035c0a17a59eb1e0fcc61a9"
+        }
+      ],
+      "transformation": "verbatim: frozen TEST coverage/rank-1 and available rank-1 bootstrap CIs; derived: 200-dpi raster preview of the identical figure"
+    },
+    {
+      "bytes": 39487,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "figures/png_preview/figA4_arc2_risk_coverage.png",
+      "sha256": "20a92882723258821d44e41b6c3c112fedcd3942e77e6d511fc3e50687fc74d1",
+      "sources": [
+        {
+          "path": "results/risk_coverage/arc2_risk_coverage.csv",
+          "sha256": "67b6d36523bcff08c7819c0bc0ee46fcf16df26955c39fcd4708050523e35a8b"
+        },
+        {
+          "path": "results/risk_coverage/risk_coverage_summary.json",
+          "sha256": "b754c1b53c6ccc13fa6fdd9e5295b14ffdf0f6827fcab1e691addc46666a9e39"
+        },
+        {
+          "path": "results/arc2_supporting/frozen_method_results.csv",
+          "sha256": "5263530e77953201ea817349aba8d8e6c7fe1dfcfe952aa14871e293f25f7b01"
+        }
+      ],
+      "transformation": "verbatim: frozen ARC-2 defect curve and AURCs; derived: analytic random expectation and percent formatting; derived: 200-dpi raster preview of the identical figure"
+    },
+    {
+      "bytes": 167,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "intermediates/fig1_gap.csv",
+      "sha256": "c809de19a9bc7f5d7800ac5901d5dadb64144fa1deabb015f9c7ade09b73a02c",
+      "sources": [
+        {
+          "path": "results/arc1_main/selection_gap.csv",
+          "sha256": "6674abcc3edd0da4e157ed43cc9ad8d08c241b4530f60ac897fb70e2901ef62e"
+        }
+      ],
+      "transformation": "derived: deterministic mean over ten frozen repeats at each budget"
+    },
+    {
+      "bytes": 46513,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "intermediates/fig2_risk_coverage.csv",
+      "sha256": "f97c40a86cc4b4259ef9e5ce875be50d4be93ebba8cc64d82c03cda31a9de8dd",
+      "sources": [
+        {
+          "path": "results/risk_coverage/arc1_risk_coverage.csv",
+          "sha256": "5a52dfd928710d9619451e863dd49ae2d181eabd0160d030b1b0bb8866265bc0"
+        },
+        {
+          "path": "results/risk_coverage/risk_coverage_summary.json",
+          "sha256": "b754c1b53c6ccc13fa6fdd9e5295b14ffdf0f6827fcab1e691addc46666a9e39"
+        },
+        {
+          "path": "results/arc1_main/main_test_results.csv",
+          "sha256": "6dcb897ac3ec7dfc1d1408f00ada7f47c6680e0b3fcc3341290caa71fc9954fb"
+        }
+      ],
+      "transformation": "verbatim: five frozen 200-cutoff curves; derived: analytic constant random-order expectation"
+    },
+    {
+      "bytes": 1015,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "intermediates/fig3_beta_dynamics.csv",
+      "sha256": "cccc549f76b551545e0d7283a2b56a8932408ae3a85ccd8233cca5bad99f6c67",
+      "sources": [
+        {
+          "path": "results/m1_beta_diagnostic/m1_beta_summary.csv",
+          "sha256": "addc00b17e6fda0e4c254b70bec2932e518dcd9eb86781857b02fb824a60f7e5"
+        }
+      ],
+      "transformation": "verbatim: frozen DEV beta sweep and decision transitions"
+    },
+    {
+      "bytes": 4803,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "intermediates/fig3_beta_flip.csv",
+      "sha256": "6a522d325bdea00bcd7b6e84f6dbb71a28f115968b5f9618c5bc84fec8d2e644",
+      "sources": [
+        {
+          "path": "results/m1_beta_diagnostic/m1_beta_flip_thresholds.csv",
+          "sha256": "024faf40a8281be821dd3c29537605cde5ca4be02257c1bb8de2b5267f95b36b"
+        }
+      ],
+      "transformation": "verbatim: all 144 frozen per-descriptor beta-flip values"
+    },
+    {
+      "bytes": 320,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "intermediates/figA1_compute_matched.csv",
+      "sha256": "143734b4a1648252fd9e2e15f81507fe04d12663d32b6d68ebe54971a9e4f5cf",
+      "sources": [
+        {
+          "path": "results/compute_matched_q_audit/compute_matched_q_audit.csv",
+          "sha256": "890f4c151d98eb509d5ba24cb8a175ef66bcdc1ad4c10439c43e6fb8af119e7d"
+        }
+      ],
+      "transformation": "verbatim: frozen compute-matched audit means"
+    },
+    {
+      "bytes": 13990,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "intermediates/figA2_dispersion.csv",
+      "sha256": "383bfd5e33519c41f8e818216d53433f5cccf22e1256e24215a6546a8cee096a",
+      "sources": [
+        {
+          "path": "results/arc1_main/orbit_statistics.csv",
+          "sha256": "1ad8c33634e57a2ce1a268ac52a2e5170b5992dc0ce74430d620f83b7344b9b4"
+        }
+      ],
+      "transformation": "verbatim: frozen pair-scoped orbit statistics"
+    },
+    {
+      "bytes": 158,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "intermediates/figA3_blankid.csv",
+      "sha256": "2aba7f93877894a49d6cac6f08c52d957af2dce1a8f92b7b4c2d6a8d97e22973",
+      "sources": [
+        {
+          "path": "results/arc1_main/main_test_results.csv",
+          "sha256": "6dcb897ac3ec7dfc1d1408f00ada7f47c6680e0b3fcc3341290caa71fc9954fb"
+        },
+        {
+          "path": "results/arc1_blank_ablation/frozen_method_results.csv",
+          "sha256": "62c26dc9cab62e3c41e0b6d50a2a82482c5e71f1c9b66f450f47efa69cec5c9d"
+        },
+        {
+          "path": "results/arc1_main/paired_bootstrap_cis.csv",
+          "sha256": "3f7ae85c75035c8b843aa02468b053e2926ccb119933882261edc5fabb1c4a97"
+        },
+        {
+          "path": "results/arc1_blank_ablation/paired_bootstrap_cis.csv",
+          "sha256": "1b43bc5a11d841c4f283cde6fb46fb540c44e2c1d035c0a17a59eb1e0fcc61a9"
+        }
+      ],
+      "transformation": "verbatim: frozen TEST values and available rank-1 bootstrap CIs"
+    },
+    {
+      "bytes": 15125,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "intermediates/figA4_arc2_risk_coverage.csv",
+      "sha256": "3d90a04c126f014baad9c46bf236120bf2ae48acf1559a2a5fdc12ff7d1dae1b",
+      "sources": [
+        {
+          "path": "results/risk_coverage/arc2_risk_coverage.csv",
+          "sha256": "67b6d36523bcff08c7819c0bc0ee46fcf16df26955c39fcd4708050523e35a8b"
+        },
+        {
+          "path": "results/risk_coverage/risk_coverage_summary.json",
+          "sha256": "b754c1b53c6ccc13fa6fdd9e5295b14ffdf0f6827fcab1e691addc46666a9e39"
+        },
+        {
+          "path": "results/arc2_supporting/frozen_method_results.csv",
+          "sha256": "5263530e77953201ea817349aba8d8e6c7fe1dfcfe952aa14871e293f25f7b01"
+        }
+      ],
+      "transformation": "verbatim: frozen ARC-2 defect curve; derived: analytic constant random-order expectation"
+    },
+    {
+      "bytes": 6001,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "macros/numbers.tex",
+      "sha256": "dc41c3599fc3057f9ffab59123d6b9fa2da3dd83525fd23a5c0dd36974df040a",
+      "sources": [
+        {
+          "path": "results/arc1_blank_ablation/frozen_method_results.csv",
+          "sha256": "62c26dc9cab62e3c41e0b6d50a2a82482c5e71f1c9b66f450f47efa69cec5c9d"
+        },
+        {
+          "path": "results/arc1_blank_ablation/paired_bootstrap_cis.csv",
+          "sha256": "1b43bc5a11d841c4f283cde6fb46fb540c44e2c1d035c0a17a59eb1e0fcc61a9"
+        },
+        {
+          "path": "results/arc1_main/analysis_report.json",
+          "sha256": "f92d0d1310ab5dbd01ae463e7db8ec2f3dbb6e6041e242f41419dc7ae57bf23d"
+        },
+        {
+          "path": "results/arc1_main/h1_auroc_results.csv",
+          "sha256": "3bded17f57c3e7236ef4800214a7e04c582545ba142a7f172357e9d564cb3818"
+        },
+        {
+          "path": "results/arc1_main/main_test_results.csv",
+          "sha256": "6dcb897ac3ec7dfc1d1408f00ada7f47c6680e0b3fcc3341290caa71fc9954fb"
+        },
+        {
+          "path": "results/arc1_main/paired_bootstrap_cis.csv",
+          "sha256": "3f7ae85c75035c8b843aa02468b053e2926ccb119933882261edc5fabb1c4a97"
+        },
+        {
+          "path": "results/arc1_main/selection_gap.csv",
+          "sha256": "6674abcc3edd0da4e157ed43cc9ad8d08c241b4530f60ac897fb70e2901ef62e"
+        },
+        {
+          "path": "results/arc2_supporting/frozen_method_results.csv",
+          "sha256": "5263530e77953201ea817349aba8d8e6c7fe1dfcfe952aa14871e293f25f7b01"
+        },
+        {
+          "path": "results/compute_matched_q_audit/compute_matched_q_audit.csv",
+          "sha256": "890f4c151d98eb509d5ba24cb8a175ef66bcdc1ad4c10439c43e6fb8af119e7d"
+        },
+        {
+          "path": "results/discriminative_cell_dev/discriminative_cell_summary.json",
+          "sha256": "a85dc9c2e1eb62e1a1602e0cfcd02dda31cefe0aaedc69e59873c2cfb8ec8b3d"
+        },
+        {
+          "path": "results/m1_beta_diagnostic/m1_beta_summary.csv",
+          "sha256": "addc00b17e6fda0e4c254b70bec2932e518dcd9eb86781857b02fb824a60f7e5"
+        },
+        {
+          "path": "results/m1_beta_diagnostic/m1_beta_summary.json",
+          "sha256": "4a46e5a5f1677b642762107f1b30010b9b216b707c4d09b9276024cdb23c47f5"
+        },
+        {
+          "path": "results/provenance/arc1_preflight.json",
+          "sha256": "598d9a84635d2ebb8f2771f1164899c2f337281d92f11050fcc4ab709bc770fe"
+        },
+        {
+          "path": "results/provenance/cache_completion.json",
+          "sha256": "2013d8d1bf8f791afcf0014d65f5ae0cb41b53fd8af1c8a4ab33d6dfc0d4bf26"
+        },
+        {
+          "path": "results/risk_coverage/risk_coverage_summary.json",
+          "sha256": "b754c1b53c6ccc13fa6fdd9e5295b14ffdf0f6827fcab1e691addc46666a9e39"
+        },
+        {
+          "path": "results/risk_coverage_bootstrap/aurc_bootstrap_summary.csv",
+          "sha256": "f8b176612b8cccd71647e889cf84d86856f4b9c75756b5280ece0d7867930a73"
+        },
+        {
+          "path": "results/risk_coverage_bootstrap/aurc_paired_differences.csv",
+          "sha256": "7ef1c0240efcee42f5ed9dde6a7165180d9d146fe5f5892b88001cb67cbac12c"
+        },
+        {
+          "path": "results/risk_coverage_bootstrap/operating_point_bootstrap_arc1.csv",
+          "sha256": "25b1926e5a91b5e8712bd7cd8f2f0f6eab6295b33fc3657889c924b02760513e"
+        }
+      ],
+      "transformation": "artifact-traced verbatim/derived formatting; per-macro trace in manifest.json"
+    },
+    {
+      "bytes": 499,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "tables/tab1_main_results.tex",
+      "sha256": "36c4244b5490cf6b979fda4c121a089f260d00582b730e5628f1d8c38bbcd73a",
+      "sources": [
+        {
+          "path": "results/arc1_main/main_test_results.csv",
+          "sha256": "6dcb897ac3ec7dfc1d1408f00ada7f47c6680e0b3fcc3341290caa71fc9954fb"
+        },
+        {
+          "path": "results/arc1_main/paired_bootstrap_cis.csv",
+          "sha256": "3f7ae85c75035c8b843aa02468b053e2926ccb119933882261edc5fabb1c4a97"
+        }
+      ],
+      "transformation": "verbatim: frozen TEST results/CIs; derived: B0 difference and percent formatting"
+    },
+    {
+      "bytes": 400,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "tables/tab2_failure_alignment.tex",
+      "sha256": "522a217e1bfba2468c498945175fd037cb849861da5439ffee29767d05325d93",
+      "sources": [
+        {
+          "path": "results/discriminative_cell_dev/discriminative_cell_summary.json",
+          "sha256": "a85dc9c2e1eb62e1a1602e0cfcd02dda31cefe0aaedc69e59873c2cfb8ec8b3d"
+        }
+      ],
+      "transformation": "verbatim: frozen puzzle-level preference counts"
+    },
+    {
+      "bytes": 299,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "tables/tabA1_compute_matched.tex",
+      "sha256": "552024576c94d398e8e367b1c893580b795005f953d245f4b8825e5922a762df",
+      "sources": [
+        {
+          "path": "results/compute_matched_q_audit/compute_matched_q_audit.csv",
+          "sha256": "890f4c151d98eb509d5ba24cb8a175ef66bcdc1ad4c10439c43e6fb8af119e7d"
+        }
+      ],
+      "transformation": "verbatim: frozen compute-matched means and percent formatting"
+    },
+    {
+      "bytes": 264,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "tables/tabA2_gap.tex",
+      "sha256": "25e4d72b238722cc2089852037f9e42174bdb3479bf68055df32c140f807bd19",
+      "sources": [
+        {
+          "path": "results/arc1_main/selection_gap.csv",
+          "sha256": "6674abcc3edd0da4e157ed43cc9ad8d08c241b4530f60ac897fb70e2901ef62e"
+        }
+      ],
+      "transformation": "derived: mean of ten frozen repeats and percent formatting"
+    },
+    {
+      "bytes": 950,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "tables/tabA3_selective_aurc.tex",
+      "sha256": "1d908973a29dea3a6c45f88efa3646a78c79c6230633a58c8c84722f3e4997a8",
+      "sources": [
+        {
+          "path": "results/risk_coverage_bootstrap/aurc_bootstrap_summary.csv",
+          "sha256": "f8b176612b8cccd71647e889cf84d86856f4b9c75756b5280ece0d7867930a73"
+        },
+        {
+          "path": "results/risk_coverage_bootstrap/aurc_paired_differences.csv",
+          "sha256": "7ef1c0240efcee42f5ed9dde6a7165180d9d146fe5f5892b88001cb67cbac12c"
+        },
+        {
+          "path": "results/risk_coverage/risk_coverage_summary.json",
+          "sha256": "b754c1b53c6ccc13fa6fdd9e5295b14ffdf0f6827fcab1e691addc46666a9e39"
+        }
+      ],
+      "transformation": "verbatim: frozen AURCs/CIs/differences/tail fractions/p-values and fixed formatting"
+    },
+    {
+      "bytes": 422,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "tables/tabA4_arc2.tex",
+      "sha256": "b9b852a72129b10420c75b90b36a02bd89d1e05104c86ae05f23947260da2e66",
+      "sources": [
+        {
+          "path": "results/arc2_supporting/frozen_method_results.csv",
+          "sha256": "5263530e77953201ea817349aba8d8e6c7fe1dfcfe952aa14871e293f25f7b01"
+        }
+      ],
+      "transformation": "verbatim: frozen ARC-2 supporting results and percent formatting"
+    },
+    {
+      "bytes": 276,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "tables/tabA5_m3_stats.tex",
+      "sha256": "56cdd9236aab83ce93eb741da911eda09923489f4a7b8859f0a7c4c4314c75dc",
+      "sources": [
+        {
+          "path": "results/arc1_main/analysis_report.json",
+          "sha256": "f92d0d1310ab5dbd01ae463e7db8ec2f3dbb6e6041e242f41419dc7ae57bf23d"
+        },
+        {
+          "path": "results/arc1_main/main_test_results.csv",
+          "sha256": "6dcb897ac3ec7dfc1d1408f00ada7f47c6680e0b3fcc3341290caa71fc9954fb"
+        }
+      ],
+      "transformation": "verbatim: frozen M3 rates; derived: exact Rank-1 difference and percent formatting"
+    },
+    {
+      "bytes": 317,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "tables/tabA6_disccell_transitions.tex",
+      "sha256": "bdf30a4282aa40e781f785f709d0ace844d2c9e11b6b99611f5effa8243ac160",
+      "sources": [
+        {
+          "path": "results/discriminative_cell_dev/discriminative_cell_summary.json",
+          "sha256": "a85dc9c2e1eb62e1a1602e0cfcd02dda31cefe0aaedc69e59873c2cfb8ec8b3d"
+        }
+      ],
+      "transformation": "verbatim: frozen puzzle-level discriminative transition matrix"
+    },
+    {
+      "bytes": null,
+      "generation_timestamp": "2026-08-19T00:00:00Z",
+      "path": "manifest.json",
+      "sha256": null,
+      "sources": [],
+      "transformation": "derived: self-describing provenance manifest; self-hash excluded"
+    }
+  ],
+  "self_exclusion": "manifest.json has no recursive self-hash",
+  "timestamp_policy": "fixed to the frozen Phase-4 date for byte determinism"
+}

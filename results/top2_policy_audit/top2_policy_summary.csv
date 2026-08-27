@@ -1,0 +1,9 @@
+split,method,puzzle_count,descriptor_count,rank1_accuracy,frozen_record_rank1_accuracy,current_top2_accuracy,frozen_record_top2_accuracy,committed_hedge_top2_accuracy,committed_minus_current_top2,structured_ranking_top2_accuracy,structured_minus_committed_top2,release_shape_audit_top2_accuracy_dev_only,current_matches_committed,rank1_changed_by_hedge,hedge_applicability
+dev,B1,200,208,0.3975,,0.4375,,0.4375,0.0,0.4375,0.0,,True,False,ordinary first-two ranking; no special hedge
+dev,M1,200,208,0.4025,0.4025,0.4375,0.4375,0.4375,0.0,0.4375,0.0,,True,False,ordinary first-two ranking; no special hedge
+dev,M1+M2,200,208,0.3975,0.3975,0.4375,0.4375,0.4375,0.0,0.4275,-0.010000000000000009,0.4275,True,False,proposal §4.6 B1-diversity hedge
+dev,M1+M2+M3,200,208,0.3975,,0.4375,,0.4375,0.0,0.4275,-0.010000000000000009,0.4275,True,False,proposal §4.6 B1-diversity hedge
+test,B1,200,211,0.4025,0.4025,0.455,0.455,0.455,0.0,0.455,0.0,,True,False,ordinary first-two ranking; no special hedge
+test,M1,200,211,0.4025,0.4025,0.455,0.455,0.455,0.0,0.455,0.0,,True,False,ordinary first-two ranking; no special hedge
+test,M1+M2,200,211,0.4125,0.4125,0.44,0.44,0.44,0.0,0.44,0.0,,True,False,proposal §4.6 B1-diversity hedge
+test,M1+M2+M3,200,211,0.4125,0.4125,0.44,0.44,0.44,0.0,0.44,0.0,,True,False,proposal §4.6 B1-diversity hedge

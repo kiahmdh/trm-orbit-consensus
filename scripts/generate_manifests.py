@@ -14,7 +14,35 @@ RESULT_DIRECTORIES = (
     "paper_summary",
     "release_audit",
     "provenance",
+    "top_mode_diagnostic",
+    "top2_policy_audit",
+    "compute_matched_q_audit",
+    "m1_beta_diagnostic",
+    "discriminative_cell_dev",
+    "risk_coverage",
+    "risk_coverage_bootstrap",
+    "final_freeze",
 )
+LOCAL_ONLY_PARTS = {
+    ".git",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".venv",
+    "__pycache__",
+    "artifacts",
+    "build",
+    "checkpoints",
+    "data",
+    "dist",
+    "external",
+}
+
+
+def _is_publishable(root: Path, path: Path) -> bool:
+    relative = path.relative_to(root)
+    return not any(
+        part in LOCAL_ONLY_PARTS or part.endswith(".egg-info") for part in relative.parts
+    )
 
 
 def _sha256(path: Path) -> str:
@@ -49,6 +77,19 @@ def _provenance(relative: Path) -> tuple[str, str]:
         return text.replace("results/", "artifacts/", 1), "derived summary"
     if text.startswith("results/provenance/"):
         return "release-audit derivation from pinned metadata", "derived summary"
+    diagnostic_groups = (
+        "top_mode_diagnostic",
+        "top2_policy_audit",
+        "compute_matched_q_audit",
+        "m1_beta_diagnostic",
+        "discriminative_cell_dev",
+        "risk_coverage",
+        "risk_coverage_bootstrap",
+    )
+    if text.startswith(tuple(f"results/{name}/" for name in diagnostic_groups)):
+        return text.replace("results/", "artifacts/results/", 1), "derived summary"
+    if text.startswith("results/final_freeze/"):
+        return "Phase-4 reconciliation of compact release artifacts", "derived summary"
     if text == "experiments/run_arc_cache.py":
         return (
             "proj/TinyRecursiveModels/experiments/run_arc1_normal_cache.py",
@@ -108,29 +149,42 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Generate deterministic release manifests")
     parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[1])
     parser.add_argument("--source-root", type=Path)
+    parser.add_argument(
+        "--release-only",
+        action="store_true",
+        help="refresh only the complete publication inventory; leave frozen scientific manifests unchanged",
+    )
     args = parser.parse_args()
     root = args.root.resolve()
     source_root = args.source_root.resolve() if args.source_root else None
 
-    _write_result_manifests(root)
-    scientific_paths = sorted(path for path in (root / "results").rglob("*") if path.is_file())
-    artifact_entries = [_entry(root, path, source_root) for path in scientific_paths]
-    artifact_manifest = {
-        "format_version": 1,
-        "release_date": "2026-08-18",
-        "artifacts": artifact_entries,
-    }
-    _write_json(root / "manifests" / "artifact_manifest.json", artifact_manifest)
+    if args.release_only:
+        artifact_manifest = json.loads(
+            (root / "manifests" / "artifact_manifest.json").read_text(encoding="utf-8")
+        )
+        artifact_entries = artifact_manifest["artifacts"]
+    else:
+        _write_result_manifests(root)
+        scientific_paths = sorted(
+            path for path in (root / "results").rglob("*") if path.is_file()
+        )
+        artifact_entries = [_entry(root, path, source_root) for path in scientific_paths]
+        artifact_manifest = {
+            "format_version": 1,
+            "release_date": "2026-08-19",
+            "artifacts": artifact_entries,
+        }
+        _write_json(root / "manifests" / "artifact_manifest.json", artifact_manifest)
 
     excluded = {root / "manifests" / "release_manifest.json"}
     all_files = sorted(
         path
         for path in root.rglob("*")
-        if path.is_file() and ".git" not in path.parts and path not in excluded
+        if path.is_file() and _is_publishable(root, path) and path not in excluded
     )
     release_manifest = {
         "format_version": 1,
-        "release_date": "2026-08-18",
+        "release_date": "2026-08-19",
         "self_exclusion": "manifests/release_manifest.json is excluded to avoid a self-hash",
         "scientific_configuration": {
             "trm_commit": "010206d1f0c25ebac0865f69e39c09969e6b896b",

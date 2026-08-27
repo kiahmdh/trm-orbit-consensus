@@ -1,0 +1,37 @@
+[
+  {
+    "bytes": 37791,
+    "path": "background_dominance.csv",
+    "sha256": "ea4b273c0d4392c41a185738b244ac178e294177caf0b0679aabc76872659cb4"
+  },
+  {
+    "bytes": 2021,
+    "path": "discriminative_cell_dev_report.md",
+    "sha256": "d839d1463848ed53dee1fe44bc77a944534672474ba8f510010e170362e37d6c"
+  },
+  {
+    "bytes": 13076,
+    "path": "discriminative_cell_failure_cases.csv",
+    "sha256": "3ae06f4ec1430617c84ee745b7c597ab4d56cf7e9f9630746800bae826f75dd2"
+  },
+  {
+    "bytes": 776,
+    "path": "discriminative_cell_local_signal.csv",
+    "sha256": "1a5f5255ef5157240336806cabe85c6c3624c2502140efa135cac2f1efe2d33b"
+  },
+  {
+    "bytes": 2302,
+    "path": "discriminative_cell_summary.csv",
+    "sha256": "bd5a79bfc3d82ee6a3d8439d877d12001af570fade83f046e0e927fbdd3534e2"
+  },
+  {
+    "bytes": 20262,
+    "path": "discriminative_cell_summary.json",
+    "sha256": "a85dc9c2e1eb62e1a1602e0cfcd02dda31cefe0aaedc69e59873c2cfb8ec8b3d"
+  },
+  {
+    "bytes": 95298,
+    "path": "discriminative_cell_transitions.csv",
+    "sha256": "1fee8db54e41da90b2267bb2d7d45e71310a4b0cc3a4e9899209a41c59822428"
+  }
+]

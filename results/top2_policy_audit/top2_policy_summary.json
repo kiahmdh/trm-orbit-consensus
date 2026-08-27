@@ -1,0 +1,325 @@
+{
+  "implementation_trace": {
+    "B1": "ranking[:2]",
+    "M1": "ranking[:2]",
+    "M1+M2": "two_attempt_policy(M2 ranking, B1 ranking)",
+    "M1+M2+M3": "two_attempt_policy(M3 ranking, B1 ranking)",
+    "current_matches_primary_proposal": true,
+    "main_producer": "release/structured-orbit-consensus/scripts/run_arc1_analysis.py:7,16-20",
+    "main_scoring": "release/structured-orbit-consensus/src/orbit_consensus/arc1_analysis.py:178-215",
+    "main_table_write": "release/structured-orbit-consensus/src/orbit_consensus/arc1_analysis.py:941-943",
+    "shape_audit_actual_behavior": "searches modal-shape-only M2/M3 ranking for a different shape; none is reachable, so it falls back to structured rank-2",
+    "shape_audit_dev_different_shape_slots_found": 0,
+    "shape_audit_dev_rankings_with_two_candidates": 402,
+    "shape_audit_logic": "release/structured-orbit-consensus/src/orbit_consensus/analysis_pipeline.py:636-669",
+    "shape_audit_producer": "release/structured-orbit-consensus/scripts/run_shape_hedge_audit.py:12-15,95-104",
+    "two_attempt_helper": "release/structured-orbit-consensus/src/orbit_consensus/aggregators.py:213-222"
+  },
+  "interpretation": {
+    "any_rank1_changed": false,
+    "m2_m3_test_regression_removed": false,
+    "main_top2_is_different_valid_metric": false,
+    "main_top2_is_exact_committed_primary_hedge": true,
+    "main_top2_technically_wrong": false,
+    "paper_recommendation": "Report committed hedged second-attempt accuracy as main pass@2; optionally report structured-ranking Top-2 separately with an explicit label. Do not label the existing 42.75% DEV audit as realized runner-up-shape performance.",
+    "test_regression_percentage_points_vs_b1": -1.5
+  },
+  "proposal_trace": {
+    "document_id": "16QicLuTfwuobtOYIl4xeEKZ2krRWdOOyXKsX2Uomh3w",
+    "ordinary_top2": "B1 \u00a74.2: first two candidates under the B1 ranking; M1 analogously uses its ranking prefix",
+    "primary_paragraph_indexes": [
+      15679,
+      16031
+    ],
+    "primary_section_4_6": "slot 1=M2 rank-1; slot 2=B1 rank-1; if identical, slot 2=M2 rank-2",
+    "shape_variant": "additional DEV-only evaluation: slot 2 from best candidate of runner-up shape when modal-shape error is non-trivial",
+    "source": "Google Doc: Beyond Majority Voting: Structured Orbit Consensus for Tiny Recursive Models",
+    "tab_id": "t.0"
+  },
+  "results": [
+    {
+      "committed_hedge_top2_accuracy": 0.4375,
+      "committed_minus_current_top2": 0.0,
+      "current_matches_committed": true,
+      "current_top2_accuracy": 0.4375,
+      "descriptor_count": 208,
+      "frozen_record_rank1_accuracy": null,
+      "frozen_record_top2_accuracy": null,
+      "hedge_applicability": "ordinary first-two ranking; no special hedge",
+      "method": "B1",
+      "puzzle_count": 200,
+      "rank1_accuracy": 0.3975,
+      "rank1_changed_by_hedge": false,
+      "release_shape_audit_top2_accuracy_dev_only": null,
+      "split": "dev",
+      "structured_minus_committed_top2": 0.0,
+      "structured_ranking_top2_accuracy": 0.4375
+    },
+    {
+      "committed_hedge_top2_accuracy": 0.4375,
+      "committed_minus_current_top2": 0.0,
+      "current_matches_committed": true,
+      "current_top2_accuracy": 0.4375,
+      "descriptor_count": 208,
+      "frozen_record_rank1_accuracy": 0.4025,
+      "frozen_record_top2_accuracy": 0.4375,
+      "hedge_applicability": "ordinary first-two ranking; no special hedge",
+      "method": "M1",
+      "puzzle_count": 200,
+      "rank1_accuracy": 0.4025,
+      "rank1_changed_by_hedge": false,
+      "release_shape_audit_top2_accuracy_dev_only": null,
+      "split": "dev",
+      "structured_minus_committed_top2": 0.0,
+      "structured_ranking_top2_accuracy": 0.4375
+    },
+    {
+      "committed_hedge_top2_accuracy": 0.4375,
+      "committed_minus_current_top2": 0.0,
+      "current_matches_committed": true,
+      "current_top2_accuracy": 0.4375,
+      "descriptor_count": 208,
+      "frozen_record_rank1_accuracy": 0.3975,
+      "frozen_record_top2_accuracy": 0.4375,
+      "hedge_applicability": "proposal \u00a74.6 B1-diversity hedge",
+      "method": "M1+M2",
+      "puzzle_count": 200,
+      "rank1_accuracy": 0.3975,
+      "rank1_changed_by_hedge": false,
+      "release_shape_audit_top2_accuracy_dev_only": 0.4275,
+      "split": "dev",
+      "structured_minus_committed_top2": -0.010000000000000009,
+      "structured_ranking_top2_accuracy": 0.4275
+    },
+    {
+      "committed_hedge_top2_accuracy": 0.4375,
+      "committed_minus_current_top2": 0.0,
+      "current_matches_committed": true,
+      "current_top2_accuracy": 0.4375,
+      "descriptor_count": 208,
+      "frozen_record_rank1_accuracy": null,
+      "frozen_record_top2_accuracy": null,
+      "hedge_applicability": "proposal \u00a74.6 B1-diversity hedge",
+      "method": "M1+M2+M3",
+      "puzzle_count": 200,
+      "rank1_accuracy": 0.3975,
+      "rank1_changed_by_hedge": false,
+      "release_shape_audit_top2_accuracy_dev_only": 0.4275,
+      "split": "dev",
+      "structured_minus_committed_top2": -0.010000000000000009,
+      "structured_ranking_top2_accuracy": 0.4275
+    },
+    {
+      "committed_hedge_top2_accuracy": 0.455,
+      "committed_minus_current_top2": 0.0,
+      "current_matches_committed": true,
+      "current_top2_accuracy": 0.455,
+      "descriptor_count": 211,
+      "frozen_record_rank1_accuracy": 0.4025,
+      "frozen_record_top2_accuracy": 0.455,
+      "hedge_applicability": "ordinary first-two ranking; no special hedge",
+      "method": "B1",
+      "puzzle_count": 200,
+      "rank1_accuracy": 0.4025,
+      "rank1_changed_by_hedge": false,
+      "release_shape_audit_top2_accuracy_dev_only": null,
+      "split": "test",
+      "structured_minus_committed_top2": 0.0,
+      "structured_ranking_top2_accuracy": 0.455
+    },
+    {
+      "committed_hedge_top2_accuracy": 0.455,
+      "committed_minus_current_top2": 0.0,
+      "current_matches_committed": true,
+      "current_top2_accuracy": 0.455,
+      "descriptor_count": 211,
+      "frozen_record_rank1_accuracy": 0.4025,
+      "frozen_record_top2_accuracy": 0.455,
+      "hedge_applicability": "ordinary first-two ranking; no special hedge",
+      "method": "M1",
+      "puzzle_count": 200,
+      "rank1_accuracy": 0.4025,
+      "rank1_changed_by_hedge": false,
+      "release_shape_audit_top2_accuracy_dev_only": null,
+      "split": "test",
+      "structured_minus_committed_top2": 0.0,
+      "structured_ranking_top2_accuracy": 0.455
+    },
+    {
+      "committed_hedge_top2_accuracy": 0.44,
+      "committed_minus_current_top2": 0.0,
+      "current_matches_committed": true,
+      "current_top2_accuracy": 0.44,
+      "descriptor_count": 211,
+      "frozen_record_rank1_accuracy": 0.4125,
+      "frozen_record_top2_accuracy": 0.44,
+      "hedge_applicability": "proposal \u00a74.6 B1-diversity hedge",
+      "method": "M1+M2",
+      "puzzle_count": 200,
+      "rank1_accuracy": 0.4125,
+      "rank1_changed_by_hedge": false,
+      "release_shape_audit_top2_accuracy_dev_only": null,
+      "split": "test",
+      "structured_minus_committed_top2": 0.0,
+      "structured_ranking_top2_accuracy": 0.44
+    },
+    {
+      "committed_hedge_top2_accuracy": 0.44,
+      "committed_minus_current_top2": 0.0,
+      "current_matches_committed": true,
+      "current_top2_accuracy": 0.44,
+      "descriptor_count": 211,
+      "frozen_record_rank1_accuracy": 0.4125,
+      "frozen_record_top2_accuracy": 0.44,
+      "hedge_applicability": "proposal \u00a74.6 B1-diversity hedge",
+      "method": "M1+M2+M3",
+      "puzzle_count": 200,
+      "rank1_accuracy": 0.4125,
+      "rank1_changed_by_hedge": false,
+      "release_shape_audit_top2_accuracy_dev_only": null,
+      "split": "test",
+      "structured_minus_committed_top2": 0.0,
+      "structured_ranking_top2_accuracy": 0.44
+    }
+  ],
+  "runtime_seconds": 202.92234231671318,
+  "scope": {
+    "cache": "artifacts/cache/arc1_normal",
+    "cpu_only": true,
+    "dev_descriptors": 208,
+    "dev_puzzles": 200,
+    "frozen_results": "artifacts/results/arc1_main",
+    "release": ".",
+    "step": "Step 1.2 \u2014 Top-2 / \u00a74.6 hedge definition audit",
+    "test_descriptors": 211,
+    "test_puzzles": 200
+  },
+  "transition_accounting": {
+    "dev": {
+      "B1": {
+        "changed_fractional_other": 0,
+        "differing_puzzle_count": 0,
+        "old_fail_to_hedge_success": 0,
+        "old_success_to_hedge_fail": 0,
+        "puzzle_count": 200,
+        "unchanged_complete_success": 87,
+        "unchanged_failure": 112,
+        "unchanged_partial_success": 1
+      },
+      "M1": {
+        "changed_fractional_other": 0,
+        "differing_puzzle_count": 0,
+        "old_fail_to_hedge_success": 0,
+        "old_success_to_hedge_fail": 0,
+        "puzzle_count": 200,
+        "unchanged_complete_success": 87,
+        "unchanged_failure": 112,
+        "unchanged_partial_success": 1
+      },
+      "M1+M2": {
+        "changed_fractional_other": 0,
+        "differing_puzzle_count": 0,
+        "old_fail_to_hedge_success": 0,
+        "old_success_to_hedge_fail": 0,
+        "puzzle_count": 200,
+        "unchanged_complete_success": 87,
+        "unchanged_failure": 112,
+        "unchanged_partial_success": 1
+      },
+      "M1+M2+M3": {
+        "changed_fractional_other": 0,
+        "differing_puzzle_count": 0,
+        "old_fail_to_hedge_success": 0,
+        "old_success_to_hedge_fail": 0,
+        "puzzle_count": 200,
+        "unchanged_complete_success": 87,
+        "unchanged_failure": 112,
+        "unchanged_partial_success": 1
+      }
+    },
+    "test": {
+      "B1": {
+        "changed_fractional_other": 0,
+        "differing_puzzle_count": 0,
+        "old_fail_to_hedge_success": 0,
+        "old_success_to_hedge_fail": 0,
+        "puzzle_count": 200,
+        "unchanged_complete_success": 90,
+        "unchanged_failure": 108,
+        "unchanged_partial_success": 2
+      },
+      "M1": {
+        "changed_fractional_other": 0,
+        "differing_puzzle_count": 0,
+        "old_fail_to_hedge_success": 0,
+        "old_success_to_hedge_fail": 0,
+        "puzzle_count": 200,
+        "unchanged_complete_success": 90,
+        "unchanged_failure": 108,
+        "unchanged_partial_success": 2
+      },
+      "M1+M2": {
+        "changed_fractional_other": 0,
+        "differing_puzzle_count": 0,
+        "old_fail_to_hedge_success": 0,
+        "old_success_to_hedge_fail": 0,
+        "puzzle_count": 200,
+        "unchanged_complete_success": 87,
+        "unchanged_failure": 111,
+        "unchanged_partial_success": 2
+      },
+      "M1+M2+M3": {
+        "changed_fractional_other": 0,
+        "differing_puzzle_count": 0,
+        "old_fail_to_hedge_success": 0,
+        "old_success_to_hedge_fail": 0,
+        "puzzle_count": 200,
+        "unchanged_complete_success": 87,
+        "unchanged_failure": 111,
+        "unchanged_partial_success": 2
+      }
+    }
+  },
+  "transition_totals": {
+    "differing_puzzles": 0,
+    "old_fail_to_hedge_success": 0,
+    "old_success_to_hedge_fail": 0
+  },
+  "validation": {
+    "all_current_attempts_equal_committed_attempts": true,
+    "all_numeric_outputs_finite": true,
+    "cache_fingerprint_after": {
+      "aggregate_sha256": "6cb320cb9b0e45c114d95722654663d2b7e98b01027a1d4a647c21ea4ce60fa1",
+      "npz_bytes": 14655304,
+      "npz_files": 419
+    },
+    "cache_fingerprint_before": {
+      "aggregate_sha256": "6cb320cb9b0e45c114d95722654663d2b7e98b01027a1d4a647c21ea4ce60fa1",
+      "npz_bytes": 14655304,
+      "npz_files": 419
+    },
+    "cache_unchanged": true,
+    "committed_split_sha256_after": "0f6e16e36c3b37703928a294655905d4af659fcda5f9f8b12d5d336931a6106d",
+    "committed_split_sha256_before": "0f6e16e36c3b37703928a294655905d4af659fcda5f9f8b12d5d336931a6106d",
+    "committed_split_unchanged": true,
+    "cuda_visible_devices": "",
+    "deterministic_repeat": true,
+    "full_pass_repeat_match": true,
+    "full_pass_repeat_output": "determinism_repeat",
+    "existing_results_fingerprint_after": {
+      "aggregate_sha256": "3d47a841c13904ba4dbe10ac5f7e69adc80b48369e65d35d48e2577258f455ac",
+      "bytes": 159889,
+      "files": 21
+    },
+    "existing_results_fingerprint_before": {
+      "aggregate_sha256": "3d47a841c13904ba4dbe10ac5f7e69adc80b48369e65d35d48e2577258f455ac",
+      "bytes": 159889,
+      "files": 21
+    },
+    "existing_results_unchanged": true,
+    "focused_tests_failed": 0,
+    "focused_tests_passed": 5,
+    "frozen_test_table_reproduced_exactly": true,
+    "torch_imported": false
+  }
+}

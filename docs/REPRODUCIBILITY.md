@@ -1,5 +1,8 @@
 # Reproducibility
 
+**EXPERIMENTS FROZEN AS OF FINAL PHASE-4 AUDIT.** Reproduction means verifying the
+frozen record; it does not authorize new method development, tuning, or TEST use.
+
 ## Frozen contract
 
 - TRM code commit: `010206d1f0c25ebac0865f69e39c09969e6b896b`.
@@ -102,6 +105,11 @@ changing numerical behavior. Production therefore remained at batch size 1.
 5. Run blank-ID and ARC2 supporting analyses with those frozen parameters.
 6. Run the dev-only shape-hedge audit without inspecting test to select a variant.
 7. Run `scripts/audit_release_inputs.py` against the full external workspace.
+8. Verify the Phase-1/2 compact diagnostics and Phase-3 selective-prediction outputs.
+9. Run `scripts/build_final_freeze.py` to validate sources and regenerate the shared
+   JSON/CSV freeze record.
+10. Run `scripts/generate_manifests.py --source-root /path/to/workspace` followed by
+    `scripts/verify_release.py` and `scripts/verify_compact_results.py`.
 
 Every analysis producer refuses to overwrite a non-empty directory. Use a fresh
 output location; compare its manifest to the committed compact results afterward.
@@ -121,5 +129,29 @@ output location; compare its manifest to the committed compact results afterward
 
 - ARC1 40% is an exact pinned reproduction.
 - Blank ID is a validated zero-embedding ablation with an upstream scorer caveat.
-- ARC2 is internally reproduced at 2.9167% under the pinned path, but the external
-  6.2% claim remains unresolved; it is supporting evidence only.
+- ARC2 is internally consistent at 2.9167% under the pinned path, but it is **not**
+  a reproduction of the external approximately 6.2% result; the discrepancy remains
+  unresolved and ARC2 is supporting evidence only.
+
+The Phase-4 builder writes `results/final_freeze/final_results_manifest.json` and
+`final_results_summary.csv` from one in-memory record, preventing JSON/CSV drift.
+Its checksum table covers compact scientific outputs, while the repository manifests
+cover both the scientific inventory and the complete public release.
+
+## Camera-ready assets and release archive
+
+The paper assets are a deterministic rendering of the frozen release JSON/CSV files;
+they do not read NPZ caches, raw ARC data, checkpoints, or model outputs.
+
+```bash
+python -m pip install -e '.[figures]'
+CUDA_VISIBLE_DEVICES= PYTHONDONTWRITEBYTECODE=1 python paper_assets/build_assets.py
+python scripts/generate_manifests.py --release-only
+python scripts/verify_release.py
+python scripts/package_release.py
+```
+
+`generate_manifests.py --release-only` leaves the frozen scientific manifests
+unchanged and refreshes only the complete publication inventory. The packager reads
+that verified inventory and emits a deterministic `.tar.gz` plus SHA256 file next to
+the repository. Local environments and ignored runtime outputs are never archived.

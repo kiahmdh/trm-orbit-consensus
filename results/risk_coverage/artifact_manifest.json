@@ -1,0 +1,72 @@
+[
+  {
+    "bytes": 68916,
+    "path": "arc1_accuracy_coverage.png",
+    "sha256": "d552d793d217bbb624ca26a7b9d34a63c762d918422754bf6e1eb5d74da6fc55"
+  },
+  {
+    "bytes": 1690,
+    "path": "arc1_operating_points.csv",
+    "sha256": "b4ca022f663aa3f90d90ba7ba8affdf2951328d17bf7bf20455473d9259052e1"
+  },
+  {
+    "bytes": 181100,
+    "path": "arc1_risk_coverage.csv",
+    "sha256": "5a52dfd928710d9619451e863dd49ae2d181eabd0160d030b1b0bb8866265bc0"
+  },
+  {
+    "bytes": 66848,
+    "path": "arc1_risk_coverage.png",
+    "sha256": "38d35ea613696065641c317e16991c70dae1e19301be095f34b4e34892902614"
+  },
+  {
+    "bytes": 1608,
+    "path": "arc2_operating_points.csv",
+    "sha256": "73b7384391f9dc9404da02b750a81748da54573503041ddbcc5e5d1e9507eed8"
+  },
+  {
+    "bytes": 114603,
+    "path": "arc2_risk_coverage.csv",
+    "sha256": "67b6d36523bcff08c7819c0bc0ee46fcf16df26955c39fcd4708050523e35a8b"
+  },
+  {
+    "bytes": 1411,
+    "path": "blank_operating_points.csv",
+    "sha256": "802494617fb3a8b723d12d415694531a9ae91150c5fc951fad8eb4028a8e613a"
+  },
+  {
+    "bytes": 179790,
+    "path": "blank_risk_coverage.csv",
+    "sha256": "45ad9ef32a09358d2087c02aba6f0bb9615edc1bf607390f679bde2df4bcffc8"
+  },
+  {
+    "bytes": 6187,
+    "path": "confidence_comparison.csv",
+    "sha256": "70bf2858260cb672bab6c25a80108d8d7a2dba788d29cd28028cc1baf3216f25"
+  },
+  {
+    "bytes": 76782,
+    "path": "risk_coverage_puzzle_data.csv",
+    "sha256": "e3eb87b6c0db3ad635f2a6f62b3d6a976dbf5162418a5b4a14b14cb234b73d26"
+  },
+  {
+    "bytes": 5691,
+    "path": "risk_coverage_report.md",
+    "sha256": "5058f1722041ad6f26b35a41b18c7674e6c8088883e921b339388657c8973eac"
+  },
+  {
+    "bytes": 626,
+    "path": "risk_coverage_summary.csv",
+    "sha256": "4f1826e1184d880ee83af15be52ed2e81fc86705b2ef7c6ba80f94ba2a9280b2"
+  },
+  {
+    "bytes": 22596,
+    "path": "risk_coverage_summary.json",
+    "sha256": "b754c1b53c6ccc13fa6fdd9e5295b14ffdf0f6827fcab1e691addc46666a9e39"
+  },
+  {
+    "bytes": 45810,
+    "path": "supporting_risk_coverage.png",
+    "sha256": "be86cc3dde0a381a54b09248aa6d1cabcea0805c952fa0dac1f56787b18939d0"
+  }
+]

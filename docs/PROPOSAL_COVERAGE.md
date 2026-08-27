@@ -24,6 +24,13 @@ but its interpretation is constrained; it does not mean the artifact is missing.
 | Step 17 — ARC2 supporting evaluation | PASS WITH CAVEAT | `results/arc2_supporting/analysis_report.json`; `results/reproduction_audit/diagnostic_report.json` | Pinned paths agree at 2.9167%; classified supporting, not benchmark reproduction. |
 | Marginal-support ablation | PASS | `results/arc1_main/marginal_support_ablation.csv` | Emitted and distinct-uniform definitions were compared on dev. |
 | Shape-hedged second attempt (§4.6) | PASS WITH CAVEAT | `results/release_audit/shape_hedged_second_attempt.csv`; `results/release_audit/audit_report.json` | The file was not present before release audit. The committed frozen experiment was then executed CPU-only on dev; both variants changed top-2 by -1.00 point. No test-driven selection occurred. |
+| Phase 1.1 — top-mode structural discrimination | PASS, NEGATIVE MECHANISM RESULT | `results/top_mode_diagnostic/` | Local mixed-comparison signal exists, but it prefers the wrong B1 winner on 32/46 covered failures. |
+| Phase 1.2 — committed Top-2 policy audit | PASS, NEGATIVE RESULT | `results/top2_policy_audit/` | Policy implementation is exact; 44.00% TEST Top-2 and the regression are real. Different-shape runner-up: 0/402 eligible DEV rankings. |
+| Phase 1.3 — compute-matched Q/leakage audit | PASS | `results/compute_matched_q_audit/` | No Q or full-orbit leakage; frozen budget curves remain valid. |
+| Phase 1.4 — M1 beta and background-dominance diagnostics | PASS, MIXED | `results/m1_beta_diagnostic/`; `results/discriminative_cell_dev/background_dominance_summary.csv` | Beta response is non-monotonic; whole-grid similarity is dominated by shared/background cells. |
+| Phase 2 — discriminative-cell DEV experiment | PASS, AMBIGUOUS / NO-GO | `results/discriminative_cell_dev/` | DEV-only; failure preference improves but selector accuracy does not. No TEST evaluation occurred. |
+| Phase 3 — selective prediction and bootstrap | PASS WITH NEGATIVE COMPARISON | `results/risk_coverage/`; `results/risk_coverage_bootstrap/` | Defect beats random ordering but is worse than vote margin/share/entropy by AURC. |
+| Phase 4 — final experiment freeze | PASS | `results/final_freeze/` | Headline results, claims, reconciliation, and compact-artifact checksums are frozen together. |
 
 All items were actually parsed and their expected row counts, parameter grids,
 inventories, or score contracts were checked. The definitive verifier is
@@ -31,3 +38,5 @@ inventories, or score contracts were checked. The definitive verifier is
 regenerated or overwritten.
 
 FULL COMMITTED PROPOSAL COVERAGE CONFIRMED
+
+EXPERIMENTAL RESULTS ARE FROZEN.

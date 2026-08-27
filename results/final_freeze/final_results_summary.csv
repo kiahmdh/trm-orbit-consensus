@@ -1,0 +1,163 @@
+result_id,claim,dataset,split,metric,method,value,unit,ci95_low,ci95_high,uncertainty,artifact_source,classification,note
+R001,ARC1 baseline reproduction,ARC1,all,puzzle_count,B1,400,puzzles,,,,results/provenance/cache_completion.json,PRIMARY,
+R002,ARC1 baseline reproduction,ARC1,all,descriptor_count,B1,419,descriptors,,,,results/provenance/cache_completion.json,PRIMARY,
+R003,ARC1 baseline reproduction,ARC1,all,candidate_count,B1,385815,emissions,,,,results/provenance/cache_completion.json,PRIMARY,
+R004,ARC1 baseline reproduction,ARC1,all,invalid_prediction_count,B1,92,emissions,,,,results/provenance/cache_completion.json,PRIMARY,
+R005,ARC1 baseline reproduction,ARC1,all,online_B1,pinned upstream,0.4,fraction,,,,results/provenance/cache_completion.json,PRIMARY,EXACT BASELINE REPRODUCTION
+R006,ARC1 baseline reproduction,ARC1,all,cache_B1,cache recomputation,0.4,fraction,,,,results/provenance/cache_completion.json,PRIMARY,EXACT BASELINE REPRODUCTION
+R007,ARC1 baseline reproduction,ARC1,all,published_verification,published reference,0.4,fraction,,,,results/provenance/cache_completion.json,PRIMARY,EXACT BASELINE REPRODUCTION
+R008,Committed puzzle split,ARC1,dev,puzzle_count,split,200,puzzles,,,,results/arc1_main/committed_split.json,PRIMARY,
+R009,Committed puzzle split,ARC1,dev,descriptor_count,split,208,descriptors,,,,results/arc1_main/committed_split.json,PRIMARY,
+R010,Committed puzzle split,ARC1,test,puzzle_count,split,200,puzzles,,,,results/arc1_main/committed_split.json,PRIMARY,
+R011,Committed puzzle split,ARC1,test,descriptor_count,split,211,descriptors,,,,results/arc1_main/committed_split.json,PRIMARY,
+R012,Committed puzzle split,ARC1,dev/test,puzzle_overlap,split,0,puzzles,,,,results/arc1_main/committed_split.json,PRIMARY,
+R013,Frozen held-out methods,ARC1,test,rank1_accuracy,B0,0.2925,fraction,,,,results/arc1_main/main_test_results.csv,PRIMARY,
+R014,Frozen held-out methods,ARC1,test,top2_accuracy,B0,0.2925,fraction,,,,results/arc1_main/main_test_results.csv,PRIMARY,
+R015,Frozen held-out methods,ARC1,test,rank1_accuracy,B1,0.4025,fraction,,,,results/arc1_main/main_test_results.csv,PRIMARY,
+R016,Frozen held-out methods,ARC1,test,top2_accuracy,B1,0.455,fraction,,,,results/arc1_main/main_test_results.csv,PRIMARY,
+R017,Frozen held-out methods,ARC1,test,rank1_accuracy,M1,0.4025,fraction,,,,results/arc1_main/main_test_results.csv,NEGATIVE,
+R018,Frozen held-out methods,ARC1,test,top2_accuracy,M1,0.455,fraction,,,,results/arc1_main/main_test_results.csv,NEGATIVE,
+R019,Frozen held-out methods,ARC1,test,rank1_accuracy,M1+M2,0.4125,fraction,,,,results/arc1_main/main_test_results.csv,NEGATIVE,
+R020,Frozen held-out methods,ARC1,test,top2_accuracy,M1+M2,0.44,fraction,,,,results/arc1_main/main_test_results.csv,NEGATIVE,
+R021,Frozen held-out methods,ARC1,test,rank1_accuracy,M1+M2+M3,0.4125,fraction,,,,results/arc1_main/main_test_results.csv,NEGATIVE,
+R022,Frozen held-out methods,ARC1,test,top2_accuracy,M1+M2+M3,0.44,fraction,,,,results/arc1_main/main_test_results.csv,NEGATIVE,
+R023,Frozen hyperparameters,ARC1,dev,M1_centrality,frozen selector,distinct,setting,,,,results/arc1_main/frozen_hyperparameters.json,PRIMARY,selected on DEV only
+R024,Frozen hyperparameters,ARC1,dev,M1_beta,frozen selector,1.0,setting,,,,results/arc1_main/frozen_hyperparameters.json,PRIMARY,selected on DEV only
+R025,Frozen hyperparameters,ARC1,dev,M2_lambda,frozen selector,0.05,setting,,,,results/arc1_main/frozen_hyperparameters.json,PRIMARY,selected on DEV only
+R026,Frozen hyperparameters,ARC1,dev,M2_epsilon,frozen selector,1e-06,setting,,,,results/arc1_main/frozen_hyperparameters.json,PRIMARY,selected on DEV only
+R027,Frozen hyperparameters,ARC1,dev,M2_marginal_support,frozen selector,emitted,setting,,,,results/arc1_main/frozen_hyperparameters.json,PRIMARY,selected on DEV only
+R028,Main paired bootstrap,ARC1,test,rank1_delta_vs_B1,M1,0.0,fraction,0.0,0.0,"10,000 paired puzzle bootstrap",results/arc1_main/paired_bootstrap_cis.csv,NEGATIVE,two-sided p-style=1.0
+R029,Main paired bootstrap,ARC1,test,rank1_delta_vs_B1,M1+M2,0.01,fraction,0.0,0.025,"10,000 paired puzzle bootstrap",results/arc1_main/paired_bootstrap_cis.csv,NEGATIVE,two-sided p-style=0.2663733626637336
+R030,Main paired bootstrap,ARC1,test,rank1_delta_vs_B1,M1+M2+M3,0.01,fraction,0.0,0.025,"10,000 paired puzzle bootstrap",results/arc1_main/paired_bootstrap_cis.csv,NEGATIVE,two-sided p-style=0.263973602639736
+R031,Main paired bootstrap,ARC1,test,top2_delta_vs_B1,M1+M2,-0.015,fraction,-0.035,0.0,"10,000 paired puzzle bootstrap",results/arc1_main/paired_bootstrap_cis.csv,NEGATIVE,two-sided p-style=0.09919008099190081
+R032,Candidate-generation/selection gap,ARC1,all,pass_at_k,k=50,0.520875,fraction,,,,results/arc1_main/selection_gap.csv,PRIMARY,
+R033,Candidate-generation/selection gap,ARC1,all,majority_at_k,k=50,0.392875,fraction,,,,results/arc1_main/selection_gap.csv,PRIMARY,
+R034,Candidate-generation/selection gap,ARC1,all,selection_gap,k=50,0.128,fraction,,,,results/arc1_main/selection_gap.csv,PRIMARY,
+R035,Candidate-generation/selection gap,ARC1,all,pass_at_k,k=250,0.579125,fraction,,,,results/arc1_main/selection_gap.csv,PRIMARY,
+R036,Candidate-generation/selection gap,ARC1,all,majority_at_k,k=250,0.400875,fraction,,,,results/arc1_main/selection_gap.csv,PRIMARY,
+R037,Candidate-generation/selection gap,ARC1,all,selection_gap,k=250,0.17825,fraction,,,,results/arc1_main/selection_gap.csv,PRIMARY,
+R038,Candidate-generation/selection gap,ARC1,all,pass_at_k,k=1000,0.6175,fraction,,,,results/arc1_main/selection_gap.csv,PRIMARY,
+R039,Candidate-generation/selection gap,ARC1,all,majority_at_k,k=1000,0.4,fraction,,,,results/arc1_main/selection_gap.csv,PRIMARY,
+R040,Candidate-generation/selection gap,ARC1,all,selection_gap,k=1000,0.2175,fraction,,,,results/arc1_main/selection_gap.csv,PRIMARY,
+R041,Coverage-conditioned selection,ARC1,test,candidate_coverage,orbit,0.6175,fraction,,,,results/arc1_main/coverage_conditioned_results.csv,PRIMARY,
+R042,Coverage-conditioned selection,ARC1,test,rank1_given_coverage,B1,0.6532258064516129,fraction,,,,results/arc1_main/coverage_conditioned_results.csv,PRIMARY,
+R043,Coverage-conditioned selection,ARC1,test,rank1_given_coverage,M1+M2,0.6693548387096774,fraction,,,,results/arc1_main/coverage_conditioned_results.csv,PRIMARY,
+R044,Task-level structural defect,ARC1,test,failure_AUROC,defect,0.8418617947451856,area,,,,results/arc1_main/h1_auroc_results.csv,PRIMARY,
+R045,Task-level structural defect,ARC1,all,failure_AUROC,defect,0.8215755208333333,area,,,,results/arc1_main/h1_auroc_results.csv,PRIMARY,
+R046,Task-level structural defect,ARC1,all,defect_correctness_correlation,defect,-0.3561751889305399,correlation,,,,results/arc1_main/h1_auroc_results.csv,PRIMARY,
+R047,Task-level structural defect,ARC1 blank-ID,test,failure_AUROC,defect,0.7708333333333334,area,,,,results/arc1_blank_ablation/defect_auroc.csv,ABLATION,
+R048,Task-level structural defect,ARC2,all,failure_AUROC,defect,0.8279174330676476,area,,,,results/arc2_supporting/defect_auroc.csv,SUPPORTING,
+R049,Local top-mode structural signal,ARC1,dev,covered_puzzles,M1 centrality,124,puzzles,,,,results/top_mode_diagnostic/top_mode_summary.json,SECONDARY,
+R050,Local top-mode structural signal,ARC1,dev,covered_descriptors,M1 centrality,131,descriptors,,,,results/top_mode_diagnostic/top_mode_summary.json,SECONDARY,
+R051,Local top-mode structural signal,ARC1,dev,top2_pooled_AUROC,M1 centrality,0.5451182454749637,area,,,,results/top_mode_diagnostic/top_mode_summary.json,SECONDARY,
+R052,Local top-mode structural signal,ARC1,dev,top2_pairwise_accuracy,M1 centrality,0.7469135802469136,fraction,0.654320987654321,0.8333333333333334,"10,000 puzzle bootstrap",results/top_mode_diagnostic/top_mode_summary.json,SECONDARY,
+R053,Local top-mode structural signal,ARC1,dev,top5_pooled_AUROC,M1 centrality,0.5491473096148192,area,,,,results/top_mode_diagnostic/top_mode_summary.json,SECONDARY,
+R054,Local top-mode structural signal,ARC1,dev,top5_within_puzzle_AUROC,M1 centrality,0.729868913857678,area,0.6643258426966292,0.7940074906367042,"10,000 puzzle bootstrap",results/top_mode_diagnostic/top_mode_summary.json,SECONDARY,
+R055,Local top-mode structural signal,ARC1,dev,covered_B1_failure_puzzles,M1 centrality,46,puzzles,,,,results/top_mode_diagnostic/top_mode_summary.json,SECONDARY,
+R056,Local top-mode structural signal,ARC1,dev,correct_alternative_preferred,M1 centrality,14,puzzle-equivalents,,,,results/top_mode_diagnostic/top_mode_summary.json,SECONDARY,
+R057,Local top-mode structural signal,ARC1,dev,wrong_B1_preferred,M1 centrality,32,puzzle-equivalents,,,,results/top_mode_diagnostic/top_mode_summary.json,SECONDARY,
+R058,M1 beta diagnostic,ARC1,dev,rank1_accuracy,distinct beta=-16,0.28,fraction,,,,results/m1_beta_diagnostic/m1_beta_summary.csv,SECONDARY,
+R059,M1 beta diagnostic,ARC1,dev,rank1_accuracy,distinct beta=-8,0.325,fraction,,,,results/m1_beta_diagnostic/m1_beta_summary.csv,SECONDARY,
+R060,M1 beta diagnostic,ARC1,dev,rank1_accuracy,distinct beta=-4,0.3925,fraction,,,,results/m1_beta_diagnostic/m1_beta_summary.csv,SECONDARY,
+R061,M1 beta diagnostic,ARC1,dev,rank1_accuracy,distinct beta=-2,0.3925,fraction,,,,results/m1_beta_diagnostic/m1_beta_summary.csv,SECONDARY,
+R062,M1 beta diagnostic,ARC1,dev,rank1_accuracy,distinct beta=-1,0.3975,fraction,,,,results/m1_beta_diagnostic/m1_beta_summary.csv,SECONDARY,
+R063,M1 beta diagnostic,ARC1,dev,rank1_accuracy,distinct beta=0,0.3975,fraction,,,,results/m1_beta_diagnostic/m1_beta_summary.csv,SECONDARY,
+R064,M1 beta diagnostic,ARC1,dev,rank1_accuracy,distinct beta=1,0.4025,fraction,,,,results/m1_beta_diagnostic/m1_beta_summary.csv,SECONDARY,
+R065,M1 beta diagnostic,ARC1,dev,rank1_accuracy,distinct beta=2,0.4025,fraction,,,,results/m1_beta_diagnostic/m1_beta_summary.csv,SECONDARY,
+R066,M1 beta diagnostic,ARC1,dev,rank1_accuracy,distinct beta=4,0.4025,fraction,,,,results/m1_beta_diagnostic/m1_beta_summary.csv,SECONDARY,
+R067,M1 beta diagnostic,ARC1,dev,rank1_accuracy,distinct beta=8,0.3975,fraction,,,,results/m1_beta_diagnostic/m1_beta_summary.csv,SECONDARY,
+R068,M1 beta diagnostic,ARC1,dev,rank1_accuracy,distinct beta=16,0.39,fraction,,,,results/m1_beta_diagnostic/m1_beta_summary.csv,SECONDARY,
+R069,M1 beta diagnostic,ARC1,dev,beta1_changed_decisions,distinct,6,puzzle-equivalents,,,,results/m1_beta_diagnostic/m1_beta_summary.json,SECONDARY,MIXED / NON-MONOTONIC
+R070,M1 beta diagnostic,ARC1,dev,beta1_fixes,distinct,1,puzzle-equivalents,,,,results/m1_beta_diagnostic/m1_beta_summary.json,SECONDARY,MIXED / NON-MONOTONIC
+R071,M1 beta diagnostic,ARC1,dev,beta1_breaks,distinct,0,puzzle-equivalents,,,,results/m1_beta_diagnostic/m1_beta_summary.json,SECONDARY,MIXED / NON-MONOTONIC
+R072,M1 beta diagnostic,ARC1,dev,beta_flip_q25,distinct,63.29631604288519,beta,,,,results/m1_beta_diagnostic/m1_beta_summary.json,SECONDARY,MIXED / NON-MONOTONIC
+R073,M1 beta diagnostic,ARC1,dev,beta_flip_median,distinct,248.37414325754463,beta,,,,results/m1_beta_diagnostic/m1_beta_summary.json,SECONDARY,MIXED / NON-MONOTONIC
+R074,M1 beta diagnostic,ARC1,dev,beta_flip_q75,distinct,993.9686545057837,beta,,,,results/m1_beta_diagnostic/m1_beta_summary.json,SECONDARY,MIXED / NON-MONOTONIC
+R075,M1 beta diagnostic,ARC1,dev,beta_flip_fraction_le_16,distinct,0.08333333333333333,fraction,,,,results/m1_beta_diagnostic/m1_beta_summary.json,SECONDARY,MIXED / NON-MONOTONIC
+R076,M1 beta diagnostic,ARC1,dev,beta16_net_gain,distinct,-1.5,puzzle-equivalents,,,,results/m1_beta_diagnostic/m1_beta_summary.json,SECONDARY,MIXED / NON-MONOTONIC
+R077,Background dominance,ARC1,dev,covered_top_mode_similarity_median,descriptive,0.96,fraction,,,,results/discriminative_cell_dev/discriminative_cell_summary.json,SECONDARY,
+R078,Background dominance,ARC1,dev,covered_top_mode_disagreement_median,descriptive,0.04,fraction,,,,results/discriminative_cell_dev/discriminative_cell_summary.json,SECONDARY,
+R079,Background dominance,ARC1,dev,covered_top_mode_fraction_ge_90pct_agreement,descriptive,0.7288135593220338,fraction,,,,results/discriminative_cell_dev/discriminative_cell_summary.json,SECONDARY,
+R080,Background dominance,ARC1,dev,covered_top_mode_dominant_color_occupancy_median,descriptive,0.6026315789473684,fraction,,,,results/discriminative_cell_dev/discriminative_cell_summary.json,SECONDARY,
+R081,Background dominance,ARC1,dev,covered_top_mode_agreement_explained_by_dominant_color_median,descriptive,0.6085810668353362,fraction,,,,results/discriminative_cell_dev/discriminative_cell_summary.json,SECONDARY,
+R082,Background dominance,ARC1,dev,B1_failure_similarity_median,descriptive,0.96,fraction,,,,results/discriminative_cell_dev/discriminative_cell_summary.json,SECONDARY,
+R083,Background dominance,ARC1,dev,B1_failure_disagreement_median,descriptive,0.04,fraction,,,,results/discriminative_cell_dev/discriminative_cell_summary.json,SECONDARY,
+R084,Background dominance,ARC1,dev,B1_failure_dominant_color_occupancy_median,descriptive,0.6681072428971588,fraction,,,,results/discriminative_cell_dev/discriminative_cell_summary.json,SECONDARY,
+R085,Discriminative-cell DEV experiment,ARC1,dev,rank1_accuracy,B1 beta=0,0.3975,fraction,,,,results/discriminative_cell_dev/discriminative_cell_summary.json,NEGATIVE,DEV ONLY; AMBIGUOUS / NO-GO FOR TEST
+R086,Discriminative-cell DEV experiment,ARC1,dev,rank1_accuracy,original_M1 beta=1,0.4025,fraction,,,,results/discriminative_cell_dev/discriminative_cell_summary.json,NEGATIVE,DEV ONLY; AMBIGUOUS / NO-GO FOR TEST
+R087,Discriminative-cell DEV experiment,ARC1,dev,rank1_accuracy,discriminative_M1 beta=1,0.4,fraction,,,,results/discriminative_cell_dev/discriminative_cell_summary.json,NEGATIVE,DEV ONLY; AMBIGUOUS / NO-GO FOR TEST
+R088,Discriminative-cell DEV experiment,ARC1,dev,rank1_accuracy,discriminative_M1 beta=4,0.3875,fraction,,,,results/discriminative_cell_dev/discriminative_cell_summary.json,NEGATIVE,DEV ONLY; AMBIGUOUS / NO-GO FOR TEST
+R089,Discriminative-cell DEV experiment,ARC1,dev,original_correct_preference,discriminative diagnostic,0.30434782608695654,fraction,,,,results/discriminative_cell_dev/discriminative_cell_summary.json,NEGATIVE,No TEST evaluation performed
+R090,Discriminative-cell DEV experiment,ARC1,dev,original_wrong_preference,discriminative diagnostic,0.6956521739130435,fraction,,,,results/discriminative_cell_dev/discriminative_cell_summary.json,NEGATIVE,No TEST evaluation performed
+R091,Discriminative-cell DEV experiment,ARC1,dev,discriminative_correct_preference,discriminative diagnostic,0.45652173913043476,fraction,,,,results/discriminative_cell_dev/discriminative_cell_summary.json,NEGATIVE,No TEST evaluation performed
+R092,Discriminative-cell DEV experiment,ARC1,dev,discriminative_wrong_preference,discriminative diagnostic,0.34782608695652173,fraction,,,,results/discriminative_cell_dev/discriminative_cell_summary.json,NEGATIVE,No TEST evaluation performed
+R093,Discriminative-cell DEV experiment,ARC1,dev,discriminative_tie_fraction,discriminative diagnostic,0.1956521739130435,fraction,,,,results/discriminative_cell_dev/discriminative_cell_summary.json,NEGATIVE,No TEST evaluation performed
+R094,Discriminative-cell DEV experiment,ARC1,dev,original_top5_pairwise_accuracy,discriminative diagnostic,0.729868913857678,fraction,,,,results/discriminative_cell_dev/discriminative_cell_summary.json,NEGATIVE,No TEST evaluation performed
+R095,Discriminative-cell DEV experiment,ARC1,dev,discriminative_top5_pairwise_accuracy,discriminative diagnostic,0.5994850187265918,fraction,,,,results/discriminative_cell_dev/discriminative_cell_summary.json,NEGATIVE,No TEST evaluation performed
+R096,Top-2 policy audit,ARC1,test,committed_top2_accuracy,B1,0.455,fraction,,,,results/top2_policy_audit/top2_policy_summary.csv,NEGATIVE,
+R097,Top-2 policy audit,ARC1,test,committed_top2_accuracy,M1,0.455,fraction,,,,results/top2_policy_audit/top2_policy_summary.csv,NEGATIVE,
+R098,Top-2 policy audit,ARC1,test,committed_top2_accuracy,M1+M2,0.44,fraction,,,,results/top2_policy_audit/top2_policy_summary.csv,NEGATIVE,
+R099,Top-2 policy audit,ARC1,test,committed_top2_accuracy,M1+M2+M3,0.44,fraction,,,,results/top2_policy_audit/top2_policy_summary.csv,NEGATIVE,
+R100,Top-2 policy audit,ARC1,dev,different_shape_runner_up_found,shape hedge,0,rankings,,,,results/top2_policy_audit/top2_policy_summary.csv,NEGATIVE,0 of 402 eligible rankings
+R101,Top-2 policy audit,ARC1,dev,shape_hedged_top2_before,M2/M3,0.4375,fraction,,,,results/top2_policy_audit/top2_policy_summary.csv,NEGATIVE,
+R102,Top-2 policy audit,ARC1,dev,shape_hedged_top2_after,M2/M3,0.4275,fraction,,,,results/top2_policy_audit/top2_policy_summary.csv,NEGATIVE,
+R103,Compute-matched audit,ARC1,all,mean_rank1_accuracy,B1 k=50,0.40475,fraction,,,,results/compute_matched_q_audit/compute_matched_q_audit.csv,SECONDARY,IMPLEMENTATION CORRECT; no Q/full-orbit leakage
+R104,Compute-matched audit,ARC1,all,mean_rank1_accuracy,M1 k=50,0.40375,fraction,,,,results/compute_matched_q_audit/compute_matched_q_audit.csv,SECONDARY,IMPLEMENTATION CORRECT; no Q/full-orbit leakage
+R105,Compute-matched audit,ARC1,all,mean_rank1_accuracy,M1+M2 k=50,0.40375,fraction,,,,results/compute_matched_q_audit/compute_matched_q_audit.csv,SECONDARY,IMPLEMENTATION CORRECT; no Q/full-orbit leakage
+R106,Compute-matched audit,ARC1,all,mean_rank1_accuracy,M1+M2+M3 k=50,0.40375,fraction,,,,results/compute_matched_q_audit/compute_matched_q_audit.csv,SECONDARY,IMPLEMENTATION CORRECT; no Q/full-orbit leakage
+R107,Compute-matched audit,ARC1,all,mean_rank1_accuracy,B1 k=250,0.405,fraction,,,,results/compute_matched_q_audit/compute_matched_q_audit.csv,SECONDARY,IMPLEMENTATION CORRECT; no Q/full-orbit leakage
+R108,Compute-matched audit,ARC1,all,mean_rank1_accuracy,M1 k=250,0.4065,fraction,,,,results/compute_matched_q_audit/compute_matched_q_audit.csv,SECONDARY,IMPLEMENTATION CORRECT; no Q/full-orbit leakage
+R109,Compute-matched audit,ARC1,all,mean_rank1_accuracy,M1+M2 k=250,0.405,fraction,,,,results/compute_matched_q_audit/compute_matched_q_audit.csv,SECONDARY,IMPLEMENTATION CORRECT; no Q/full-orbit leakage
+R110,Compute-matched audit,ARC1,all,mean_rank1_accuracy,M1+M2+M3 k=250,0.405,fraction,,,,results/compute_matched_q_audit/compute_matched_q_audit.csv,SECONDARY,IMPLEMENTATION CORRECT; no Q/full-orbit leakage
+R111,Compute-matched audit,ARC1,all,mean_rank1_accuracy,B1 k=1000,0.4035,fraction,,,,results/compute_matched_q_audit/compute_matched_q_audit.csv,SECONDARY,IMPLEMENTATION CORRECT; no Q/full-orbit leakage
+R112,Compute-matched audit,ARC1,all,mean_rank1_accuracy,M1 k=1000,0.4035,fraction,,,,results/compute_matched_q_audit/compute_matched_q_audit.csv,SECONDARY,IMPLEMENTATION CORRECT; no Q/full-orbit leakage
+R113,Compute-matched audit,ARC1,all,mean_rank1_accuracy,M1+M2 k=1000,0.4125,fraction,,,,results/compute_matched_q_audit/compute_matched_q_audit.csv,SECONDARY,IMPLEMENTATION CORRECT; no Q/full-orbit leakage
+R114,Compute-matched audit,ARC1,all,mean_rank1_accuracy,M1+M2+M3 k=1000,0.4125,fraction,,,,results/compute_matched_q_audit/compute_matched_q_audit.csv,SECONDARY,IMPLEMENTATION CORRECT; no Q/full-orbit leakage
+R115,Selective prediction,ARC1,test,AURC,structural_defect,0.31586167853807995,area,0.24680880147422518,0.3948521220258649,"10,000 puzzle bootstrap",results/risk_coverage_bootstrap/risk_coverage_bootstrap_summary.json,PRIMARY,
+R116,Selective prediction,ARC1,test,expected_random_AURC,random,0.5975,area,,,,results/risk_coverage_bootstrap/risk_coverage_bootstrap_summary.json,PRIMARY,
+R117,Selective prediction,ARC1,test,AURC_delta_vs_random,structural_defect,-0.28163832146191997,area,-0.3096076300081239,-0.2463203774253707,"10,000 paired puzzle bootstrap",results/risk_coverage_bootstrap/risk_coverage_bootstrap_summary.json,PRIMARY,
+R118,Selective prediction,ARC1,test,retained_accuracy,structural_defect coverage=0.25,0.88,fraction,0.78,0.98,"10,000 puzzle bootstrap",results/risk_coverage_bootstrap/risk_coverage_bootstrap_summary.json,PRIMARY,
+R119,Selective prediction,ARC1,test,retained_accuracy,structural_defect coverage=0.5,0.63,fraction,0.52,0.74,"10,000 puzzle bootstrap",results/risk_coverage_bootstrap/risk_coverage_bootstrap_summary.json,PRIMARY,
+R120,Selective prediction,ARC1,test,retained_accuracy,structural_defect coverage=0.75,0.49,fraction,0.4066666666666667,0.5733333333333334,"10,000 puzzle bootstrap",results/risk_coverage_bootstrap/risk_coverage_bootstrap_summary.json,PRIMARY,
+R121,Selective prediction,ARC1,test,retained_accuracy,structural_defect coverage=1.0,0.4025,fraction,0.335,0.4725,"10,000 puzzle bootstrap",results/risk_coverage_bootstrap/risk_coverage_bootstrap_summary.json,PRIMARY,
+R122,Confidence baseline comparison,ARC1,test,AURC,structural_defect,0.31586167853807995,area,,,,results/risk_coverage_bootstrap/risk_coverage_bootstrap_summary.json,NEGATIVE,
+R123,Confidence baseline comparison,ARC1,test,AURC,vote_margin,0.2607539081534486,area,,,,results/risk_coverage_bootstrap/risk_coverage_bootstrap_summary.json,NEGATIVE,
+R124,Confidence baseline comparison,ARC1,test,AURC,vote_share,0.26206564698082846,area,,,,results/risk_coverage_bootstrap/risk_coverage_bootstrap_summary.json,NEGATIVE,
+R125,Confidence baseline comparison,ARC1,test,AURC,vote_entropy,0.2776887416829336,area,,,,results/risk_coverage_bootstrap/risk_coverage_bootstrap_summary.json,NEGATIVE,
+R126,Confidence baseline comparison,ARC1,test,AURC,winner_mean_Q,0.3127768181492204,area,,,,results/risk_coverage_bootstrap/risk_coverage_bootstrap_summary.json,NEGATIVE,
+R127,Confidence baseline comparison,ARC1,test,defect_minus_baseline_AURC,vote_margin,0.05510777038463133,area,0.02703551869187188,0.08649194590784394,"10,000 paired puzzle bootstrap",results/risk_coverage_bootstrap/risk_coverage_bootstrap_summary.json,NEGATIVE,positive means structural defect is worse
+R128,Confidence baseline comparison,ARC1,test,defect_minus_baseline_AURC,vote_share,0.05379603155725149,area,0.025594280662340593,0.08507348759741762,"10,000 paired puzzle bootstrap",results/risk_coverage_bootstrap/risk_coverage_bootstrap_summary.json,NEGATIVE,positive means structural defect is worse
+R129,Confidence baseline comparison,ARC1,test,defect_minus_baseline_AURC,vote_entropy,0.03817293685514633,area,0.008445785063642137,0.0704103186743909,"10,000 paired puzzle bootstrap",results/risk_coverage_bootstrap/risk_coverage_bootstrap_summary.json,NEGATIVE,positive means structural defect is worse
+R130,Confidence baseline comparison,ARC1,test,defect_minus_baseline_AURC,winner_mean_Q,0.0030848603888595227,area,-0.03849454231179205,0.04444328644283999,"10,000 paired puzzle bootstrap",results/risk_coverage_bootstrap/risk_coverage_bootstrap_summary.json,NEGATIVE,positive means structural defect is worse
+R131,Puzzle-ID blanking ablation,ARC1 blank-ID,all,B1_accuracy,B1,0.035,fraction,,,,results/arc1_blank_ablation/analysis_report.json,ABLATION,retained-prediction evaluation
+R132,Puzzle-ID blanking ablation,ARC1 blank-ID,test,rank1_accuracy,B1,0.04,fraction,,,,results/arc1_blank_ablation/frozen_method_results.csv,ABLATION,
+R133,Puzzle-ID blanking ablation,ARC1 blank-ID,test,rank1_accuracy,M1,0.04,fraction,,,,results/arc1_blank_ablation/frozen_method_results.csv,ABLATION,
+R134,Puzzle-ID blanking ablation,ARC1 blank-ID,test,rank1_accuracy,M1+M2,0.045,fraction,,,,results/arc1_blank_ablation/frozen_method_results.csv,ABLATION,
+R135,Puzzle-ID blanking ablation,ARC1 blank-ID,test,rank1_accuracy,M1+M2+M3,0.05,fraction,,,,results/arc1_blank_ablation/frozen_method_results.csv,ABLATION,
+R136,Puzzle-ID blanking ablation,ARC1 normal,test,B1_accuracy,B1,0.4025,fraction,,,,results/arc1_main/main_test_results.csv,ABLATION,
+R137,Puzzle-ID blanking ablation,ARC1 blank-ID,test,blank_minus_normal_B1,B1,-0.3625,fraction,-0.43,-0.295,"10,000 paired puzzle bootstrap",results/arc1_blank_ablation/paired_bootstrap_cis.csv,ABLATION,two-sided p-style=0.00019998
+R138,Puzzle-ID blanking ablation,ARC1 normal,test,candidate_coverage,orbit,0.6175,fraction,,,,results/arc1_main/coverage_conditioned_results.csv,ABLATION,
+R139,Puzzle-ID blanking ablation,ARC1 blank-ID,test,candidate_coverage,orbit,0.1025,fraction,,,,results/arc1_blank_ablation/frozen_method_results.csv,ABLATION,
+R140,Blank-ID selective prediction,ARC1 blank-ID,test,defect_AURC,structural_defect,0.922868554959021,area,0.8594246481700603,0.9773523396824799,"10,000 puzzle bootstrap",results/risk_coverage_bootstrap/risk_coverage_bootstrap_summary.json,CAVEATED,
+R141,Blank-ID selective prediction,ARC1 blank-ID,test,defect_minus_random_AURC,structural_defect,-0.03713144504097898,area,-0.08017539343748889,-0.0031207315016965487,"10,000 paired puzzle bootstrap",results/risk_coverage_bootstrap/risk_coverage_bootstrap_summary.json,CAVEATED,eight puzzle-equivalent correct outcomes
+R142,ARC2 supporting evaluation,ARC2,all,puzzle_count,pinned path,120,puzzles,,,,results/arc2_supporting/analysis_report.json,SUPPORTING,unresolved external reproduction discrepancy
+R143,ARC2 supporting evaluation,ARC2,all,descriptor_count,pinned path,172,descriptors,,,,results/arc2_supporting/analysis_report.json,SUPPORTING,unresolved external reproduction discrepancy
+R144,ARC2 supporting evaluation,ARC2,all,candidate_count,pinned path,170393,emissions,,,,results/arc2_supporting/analysis_report.json,SUPPORTING,unresolved external reproduction discrepancy
+R145,ARC2 supporting evaluation,ARC2,all,invalid_prediction_count,pinned path,188,emissions,,,,results/arc2_supporting/analysis_report.json,SUPPORTING,unresolved external reproduction discrepancy
+R146,ARC2 supporting evaluation,ARC2,all,pinned_upstream_pass_at_1,pinned path,0.029166666666666667,fraction,,,,results/arc2_supporting/analysis_report.json,SUPPORTING,unresolved external reproduction discrepancy
+R147,ARC2 supporting evaluation,ARC2,all,online_B1,pinned path,0.029166666666666667,fraction,,,,results/arc2_supporting/analysis_report.json,SUPPORTING,unresolved external reproduction discrepancy
+R148,ARC2 supporting evaluation,ARC2,all,cache_B1,pinned path,0.029166666666666667,fraction,,,,results/arc2_supporting/analysis_report.json,SUPPORTING,unresolved external reproduction discrepancy
+R149,ARC2 supporting evaluation,ARC2,all,pinned_upstream_pass_at_2,pinned path,0.05,fraction,,,,results/arc2_supporting/analysis_report.json,SUPPORTING,unresolved external reproduction discrepancy
+R150,ARC2 supporting evaluation,ARC2,all,external_reported_accuracy,pinned path,0.062,fraction,,,,results/arc2_supporting/analysis_report.json,SUPPORTING,unresolved external reproduction discrepancy
+R151,ARC2 supporting evaluation,ARC2,all,candidate_coverage,pinned path,0.11666666666666667,fraction,,,,results/arc2_supporting/analysis_report.json,SUPPORTING,unresolved external reproduction discrepancy
+R152,ARC2 supporting evaluation,ARC2,all,selection_gap,pinned path,0.0875,fraction,,,,results/arc2_supporting/analysis_report.json,SUPPORTING,unresolved external reproduction discrepancy
+R153,ARC2 supporting evaluation,ARC2,all,rank1_accuracy,B1,0.029166666666666667,fraction,,,,results/arc2_supporting/frozen_method_results.csv,SUPPORTING,
+R154,ARC2 supporting evaluation,ARC2,all,top2_accuracy,B1,0.05,fraction,,,,results/arc2_supporting/frozen_method_results.csv,SUPPORTING,
+R155,ARC2 supporting evaluation,ARC2,all,rank1_accuracy,M1,0.029166666666666667,fraction,,,,results/arc2_supporting/frozen_method_results.csv,SUPPORTING,
+R156,ARC2 supporting evaluation,ARC2,all,top2_accuracy,M1,0.04583333333333333,fraction,,,,results/arc2_supporting/frozen_method_results.csv,SUPPORTING,
+R157,ARC2 supporting evaluation,ARC2,all,rank1_accuracy,M1+M2,0.029166666666666667,fraction,,,,results/arc2_supporting/frozen_method_results.csv,SUPPORTING,
+R158,ARC2 supporting evaluation,ARC2,all,top2_accuracy,M1+M2,0.0375,fraction,,,,results/arc2_supporting/frozen_method_results.csv,SUPPORTING,
+R159,ARC2 supporting evaluation,ARC2,all,rank1_accuracy,M1+M2+M3,0.029166666666666667,fraction,,,,results/arc2_supporting/frozen_method_results.csv,SUPPORTING,
+R160,ARC2 supporting evaluation,ARC2,all,top2_accuracy,M1+M2+M3,0.0375,fraction,,,,results/arc2_supporting/frozen_method_results.csv,SUPPORTING,
+R161,ARC2 selective prediction,ARC2,all,defect_AURC,structural_defect,0.9180768700795726,area,0.8261435387233548,0.9978830911092326,"10,000 puzzle bootstrap",results/risk_coverage_bootstrap/risk_coverage_bootstrap_summary.json,SUPPORTING,
+R162,ARC2 selective prediction,ARC2,all,defect_minus_random_AURC,structural_defect,-0.05275646325376071,area,-0.12127500165351199,0.010857276406621201,"10,000 paired puzzle bootstrap",results/risk_coverage_bootstrap/risk_coverage_bootstrap_summary.json,SUPPORTING,ambiguous; only 3.5 puzzle-equivalent correct

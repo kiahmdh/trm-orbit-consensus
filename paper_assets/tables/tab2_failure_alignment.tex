@@ -1,0 +1,13 @@
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lrrr}
+\toprule
+Feature & Correct preferred & Wrong preferred & Tie \\
+\midrule
+Original whole-grid & 14 & 32 & 0 \\
+Discriminative-cell (DEV only) & 21 & 16 & 9 \\
+\bottomrule
+\end{tabular}
+\parbox{\linewidth}{\footnotesize Counts are over \FailureCount{} covered DEV B1 failures. The discriminative-cell variant was never run on TEST.}
+\end{table}

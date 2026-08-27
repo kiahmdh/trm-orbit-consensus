@@ -1,0 +1,38 @@
+{
+  "ablation": [
+    "Puzzle-ID blanking collapses candidate coverage from 61.75% to 10.25% on held-out ARC1."
+  ],
+  "forbidden": [
+    "M1/M2/M3 significantly outperform majority voting.",
+    "The +1 percentage-point M2 result is statistically significant.",
+    "Structural defect is better than vote margin, vote share, or vote entropy.",
+    "Discriminative-cell weighting was validated on TEST or improves the method.",
+    "The Top-2 regression was caused by a scoring bug.",
+    "Compute-matched results contained Q or full-orbit leakage.",
+    "ARC2 was reproduced at 2.9167%.",
+    "Blank-ID was reproduced at 0% under retained-prediction evaluation.",
+    "Invalid outputs were dropped.",
+    "TEST was used to tune hyperparameters.",
+    "ARC2 was used for tuning."
+  ],
+  "freeze_date": "2026-08-19",
+  "negative": [
+    "Structural defect is not better than vote margin, vote share, or vote entropy for selective prediction."
+  ],
+  "primary": [
+    "ARC1 has a 21.75 percentage-point candidate-generation/selection gap at k=1000.",
+    "Orbit-level structural defect predicts held-out ARC1 failure (AUROC 0.841862).",
+    "Candidate-level structured aggregation weakly exploits the signal: M1 has no gain, M2 has an exploratory +1 point, and M3 adds no gain."
+  ],
+  "secondary_mechanistic": [
+    "Candidate-level structural signal exists locally but is poorly aligned with exact B1 failures.",
+    "Whole-grid similarity is dominated by agreement over mostly unchanged/background cells.",
+    "Discriminative-cell weighting improves failure alignment but not DEV selector accuracy and was not evaluated on TEST.",
+    "M1 weakness is not explained by beta merely being too small.",
+    "Structural defect supports selective prediction relative to random ordering."
+  ],
+  "status": "EXPERIMENT LAYER CLOSED",
+  "supporting": [
+    "ARC2 qualitatively preserves the selection-gap/structural-signal pattern, but its absolute external-score discrepancy is unresolved."
+  ]
+}

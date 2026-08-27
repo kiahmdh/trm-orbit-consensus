@@ -10,7 +10,6 @@ import uuid
 from collections import defaultdict
 from pathlib import Path
 from typing import Any
-
 import numpy as np
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -20,7 +19,6 @@ UPSTREAM_ROOT = Path(
 for import_root in (UPSTREAM_ROOT, PROJECT_ROOT / "src"):
     if str(import_root) not in sys.path:
         sys.path.insert(0, str(import_root))
-
 import torch
 from benchmark_arc_probe import GIB, CudaMemoryGuard, make_config
 from dataset.build_arc_dataset import (
