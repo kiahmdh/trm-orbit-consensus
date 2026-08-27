@@ -1,4 +1,4 @@
-# Beyond Majority Voting: Structured Orbit Consensus for Tiny Recursive Models
+# The Coverage-Selection Gap in Tiny Recursive Models: Evidence from Augmentation Orbits
 
 This repository studies a training-free question for Tiny Recursive Models (TRM):
 when test-time augmentation produces hundreds of candidate ARC grids, can structure
